@@ -9,3 +9,5 @@ const register = async (req: Request, res: Response) => {
     // TODO: Return user
   } catch (error) {}
 };
+
+const router = Router;
