@@ -9,3 +9,7 @@ app.use(express.json());
 app.use(morgan('dev'));
 
 app.get('/', (req, res) => res.send('Hello there!'));
+
+app.listen(5005, async () => {
+  console.log('Server running at http://localhost:5005');
+});
