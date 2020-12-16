@@ -10,4 +10,5 @@ const register = async (req: Request, res: Response) => {
   } catch (error) {}
 };
 
-const router = Router;
+const router = Router();
+router.post('/register', register);
