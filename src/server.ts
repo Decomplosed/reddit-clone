@@ -12,4 +12,11 @@ app.get('/', (req, res) => res.send('Hello there!'));
 
 app.listen(5005, async () => {
   console.log('Server running at http://localhost:5005');
+
+  try {
+    await createConnection();
+    console.log('Database connected!');
+  } catch (error) {
+    console.log(error);
+  }
 });
