@@ -19,6 +19,7 @@ export class User extends BaseEntity {
   id: number;
 
   @Index()
+  @IsEmail()
   @Column({ unique: true })
   email: string;
 
