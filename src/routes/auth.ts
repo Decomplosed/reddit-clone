@@ -8,7 +8,7 @@ const register = async (req: Request, res: Response) => {
     // TODO: Validate data
 
     // TODO: Create user
-    const user = new User();
+    const user = new User({ email, username, password });
 
     // TODO: Return user
   } catch (error) {}
