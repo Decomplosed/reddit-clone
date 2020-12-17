@@ -6,7 +6,10 @@ const register = async (req: Request, res: Response) => {
 
   try {
     // TODO: Validate data
+
     // TODO: Create user
+    const user = new User();
+
     // TODO: Return user
   } catch (error) {}
 };
