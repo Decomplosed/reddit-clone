@@ -4,6 +4,7 @@ import {
   Column,
   BaseEntity,
   Index,
+  CreateDateColumn,
 } from 'typeorm';
 
 @Entity('users')
