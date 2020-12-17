@@ -13,7 +13,9 @@ const register = async (req: Request, res: Response) => {
     return res.json(user);
 
     // TODO: Return user
-  } catch (error) {}
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 const router = Router();
