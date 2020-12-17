@@ -29,6 +29,7 @@ export class User extends BaseEntity {
   username: string;
 
   @Column()
+  @Min(6)
   password: string;
 
   @CreateDateColumn()
