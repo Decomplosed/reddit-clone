@@ -10,6 +10,8 @@ const register = async (req: Request, res: Response) => {
 
     // TODO: Create user
     const user = new User({ email, username, password });
+    const errors = await validate(user);
+
     await user.save();
     return res.json(user);
 
