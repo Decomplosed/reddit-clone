@@ -1,7 +1,7 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, BaseEntity } from 'typeorm';
 
 @Entity('users')
-export class User {
+export class User extends BaseEntity {
   constructor(user: Partial<User>) {
     Object.assign(this, user);
   }
