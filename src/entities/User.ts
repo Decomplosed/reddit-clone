@@ -15,9 +15,11 @@ export class User extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number;
 
+  @Index()
   @Column({ unique: true })
   email: string;
 
+  @Index()
   @Column({ unique: true })
   username: string;
 
