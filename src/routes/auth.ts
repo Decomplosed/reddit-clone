@@ -1,4 +1,5 @@
 import { Request, Response, Router } from 'express';
+import { User } from '../entities/User';
 
 const register = async (req: Request, res: Response) => {
   const { email, username, password } = req.body;
