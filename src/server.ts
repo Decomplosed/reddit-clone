@@ -11,6 +11,7 @@ app.use(express.json());
 app.use(morgan('dev'));
 
 app.get('/', (_, res) => res.send('Hello there!'));
+app.use('/api/auth', authRoutes);
 
 app.listen(5005, async () => {
   console.log('Server running at http://localhost:5005');
