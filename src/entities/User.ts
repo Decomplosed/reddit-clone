@@ -24,6 +24,7 @@ export class User extends BaseEntity {
   email: string;
 
   @Index()
+  @Min(3)
   @Column({ unique: true })
   username: string;
 
