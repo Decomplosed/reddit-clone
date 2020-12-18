@@ -8,4 +8,6 @@ export default (req: Request, res: Response, next: NextFunction) => {
       req.body[key] = req.body[key].trim();
     }
   });
+
+  next();
 };
