@@ -11,6 +11,7 @@ const app = express();
 
 app.use(express.json());
 app.use(morgan('dev'));
+app.use(trim);
 
 app.get('/', (_, res) => res.send('Hello there!'));
 app.use('/api/auth', authRoutes);
