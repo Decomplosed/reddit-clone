@@ -14,9 +14,13 @@ const register = async (req: Request, res: Response) => {
     if (emailUser) errors.email = 'Email is already taken';
     if (usernameUser) errors.username = 'Username is already taken';
 
+    if (Object.keys(errors).length > 0) {
+      return res.status(400).json(errors);
+    }
+
     // TODO: Create user
     const user = new User({ email, username, password });
-    const errors = await validate(user);
+    errors = await validate(user);
 
     if (errors.length > 0) return res.status(400).json({ errors });
 
