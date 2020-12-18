@@ -11,6 +11,8 @@ const register = async (req: Request, res: Response) => {
     const emailUser = await User.findOne({ email });
     const usernameUser = await User.findOne({ username });
 
+    if (emailUser) errors.email = 'Email is already taken';
+
     // TODO: Create user
     const user = new User({ email, username, password });
     const errors = await validate(user);
