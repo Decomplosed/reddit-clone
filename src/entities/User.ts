@@ -18,6 +18,8 @@ export class User extends BaseEntity {
     super();
     Object.assign(this, user);
   }
+
+  @Exclude()
   @PrimaryGeneratedColumn()
   id: number;
 
