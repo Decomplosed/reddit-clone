@@ -10,6 +10,7 @@ import {
   BeforeInsert,
 } from 'typeorm';
 import bcrypt from 'bcrypt';
+import { classToPlain } from 'class-transformer';
 
 @Entity('users')
 export class User extends BaseEntity {
