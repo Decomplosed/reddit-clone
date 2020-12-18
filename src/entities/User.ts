@@ -9,6 +9,7 @@ import {
   UpdateDateColumn,
   BeforeInsert,
 } from 'typeorm';
+import bcrypt from 'bcrypt';
 
 @Entity('users')
 export class User extends BaseEntity {
