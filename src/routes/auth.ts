@@ -8,6 +8,7 @@ const register = async (req: Request, res: Response) => {
   try {
     // TODO: Validate data
     const emailUser = await User.findOne({ email });
+    const usernameUser = await User.findOne({ username });
 
     // TODO: Create user
     const user = new User({ email, username, password });
