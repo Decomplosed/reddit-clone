@@ -50,6 +50,6 @@ export class User extends BaseEntity {
   }
 
   toJSON() {
-    return classToPlain()
+    return classToPlain(this);
   }
 }
