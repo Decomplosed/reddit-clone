@@ -34,7 +34,7 @@ const register = async (req: Request, res: Response) => {
   }
 };
 
-const login = () => {}
+const login = (req: Request, res: Response) => {};
 
 const router = Router();
 router.post('/register', register);
