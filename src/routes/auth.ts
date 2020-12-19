@@ -38,6 +38,7 @@ const login = async (req: Request, res: Response) => {
   const { username, password } = req.body;
 
   try {
+    const user = await User.findOne({ username });
   } catch (error) {}
 };
 
