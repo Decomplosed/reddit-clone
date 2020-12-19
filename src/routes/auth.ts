@@ -55,7 +55,7 @@ const login = async (req: Request, res: Response) => {
     if (!passwordMatches)
       return res.status(401).json({ password: 'Password is incorrect' });
 
-    const token = jwt.sign({ username });
+    const token = jwt.sign({ username }, 'dasd3223dwa');
 
     return res.json(user);
   } catch (error) {}
