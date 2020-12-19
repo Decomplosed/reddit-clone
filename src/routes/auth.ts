@@ -46,7 +46,7 @@ const login = async (req: Request, res: Response) => {
     if (!passwordMatches)
       return res.status(401).json({ password: 'Password is incorrect' });
 
-    
+    return res.json(user);
   } catch (error) {}
 };
 
