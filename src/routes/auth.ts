@@ -63,6 +63,7 @@ const login = async (req: Request, res: Response) => {
       cookie.serialize('token', token, {
         httpOnly: true,
         secure: false,
+        sameSite: 'strict',
       }),
     );
 
