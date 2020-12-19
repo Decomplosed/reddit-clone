@@ -57,7 +57,7 @@ const login = async (req: Request, res: Response) => {
 
     const token = jwt.sign({ username }, 'dasd3223dwa');
 
-    return res.json(user);
+    return res.json({ user, token });
   } catch (error) {}
 };
 
