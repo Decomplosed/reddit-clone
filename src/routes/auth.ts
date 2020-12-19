@@ -1,6 +1,7 @@
 import { Request, Response, Router } from 'express';
 import { validate } from 'class-validator';
 import { User } from '../entities/User';
+import bcrypt from 'bcrypt';
 
 const register = async (req: Request, res: Response) => {
   const { email, username, password } = req.body;
