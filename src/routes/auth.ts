@@ -36,6 +36,9 @@ const register = async (req: Request, res: Response) => {
 
 const login = async (req: Request, res: Response) => {
   const { username, password } = req.body;
+
+  try {
+  } catch (error) {}
 };
 
 const router = Router();
