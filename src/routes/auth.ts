@@ -6,7 +6,7 @@ const register = async (req: Request, res: Response) => {
   const { email, username, password } = req.body;
 
   try {
-    // TODO: Validate data
+    // Validate data
     let errors: any = {};
     const emailUser = await User.findOne({ email });
     const usernameUser = await User.findOne({ username });
@@ -18,7 +18,7 @@ const register = async (req: Request, res: Response) => {
       return res.status(400).json(errors);
     }
 
-    // TODO: Create user
+    // Create user
     const user = new User({ email, username, password });
     errors = await validate(user);
 
@@ -27,7 +27,7 @@ const register = async (req: Request, res: Response) => {
     await user.save();
     return res.json(user);
 
-    // TODO: Return user
+    // Return user
   } catch (error) {
     console.log(error);
     return res.status(500).json(error);
