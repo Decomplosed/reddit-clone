@@ -58,6 +58,8 @@ const login = async (req: Request, res: Response) => {
 
     const token = jwt.sign({ username }, 'dasd3223dwa');
 
+    res.set('Set-Cookie', cookie.serialize());
+
     return res.json({ user, token });
   } catch (error) {}
 };
