@@ -49,5 +49,7 @@ export class User extends BaseEntity {
     this.password = await bcrypt.hash(this.password, 6);
   }
 
-  toJSON() {}
+  toJSON() {
+    return classToPlain()
+  }
 }
