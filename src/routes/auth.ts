@@ -42,6 +42,7 @@ const login = async (req: Request, res: Response) => {
     let errors: any = {};
 
     if (isEmpty(username)) errors.username = 'Username must not be empty';
+    if (isEmpty(password)) errors.password = 'Password must not be empty';
 
     const user = await User.findOne({ username });
     if (!user) return res.status(404).json({ error: 'User not found' });
