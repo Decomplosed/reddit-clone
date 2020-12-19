@@ -34,7 +34,9 @@ const register = async (req: Request, res: Response) => {
   }
 };
 
-const login = async (req: Request, res: Response) => {};
+const login = async (req: Request, res: Response) => {
+  const { username, password } = req.body;
+};
 
 const router = Router();
 router.post('/register', register);
