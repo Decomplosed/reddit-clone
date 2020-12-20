@@ -9,6 +9,7 @@ dotenv.config();
 import authRoutes from './routes/auth';
 
 import trim from './middleware/trim';
+import cookieParser from 'cookie-parser';
 
 const app = express();
 
