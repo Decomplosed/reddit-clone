@@ -74,7 +74,10 @@ const login = async (req: Request, res: Response) => {
   } catch (error) {}
 };
 
-const me = async (req: Request, res: Response) => {};
+const me = async (req: Request, res: Response) => {
+  try {
+  } catch (error) {}
+};
 
 const router = Router();
 router.post('/register', register);
