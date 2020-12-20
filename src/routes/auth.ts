@@ -81,6 +81,8 @@ const me = async (req: Request, res: Response) => {
 
     const { username }: any = jwt.verify(token, process.env.JWT_SECRET);
 
+    const user = await User.findOne({ username });
+
     return res.json({ message: 'testing' });
   } catch (error) {
     console.log(error);
