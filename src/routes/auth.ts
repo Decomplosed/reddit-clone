@@ -79,7 +79,9 @@ const me = async (req: Request, res: Response) => {
     console.log(req.cookies);
 
     return res.json({ message: 'testing' });
-  } catch (error) {}
+  } catch (error) {
+    return res.status(401).json({ error: 'Unauthenticated' });
+  }
 };
 
 const router = Router();
