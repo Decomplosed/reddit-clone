@@ -73,7 +73,7 @@ const login = async (req: Request, res: Response) => {
   } catch (error) {}
 };
 
-const me = () => {}
+const me = (req: Request, res: Response) => {};
 
 const router = Router();
 router.post('/register', register);
