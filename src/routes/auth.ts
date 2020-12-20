@@ -87,5 +87,6 @@ const me = async (req: Request, res: Response) => {
 const router = Router();
 router.post('/register', register);
 router.post('/login', login);
+router.post('/me', me);
 
 export default router;
