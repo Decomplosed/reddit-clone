@@ -90,7 +90,7 @@ const me = async (req: Request, res: Response) => {
   }
 };
 
-const logout = () => {};
+const logout = (req: Request, res: Response) => {};
 
 const router = Router();
 router.post('/register', register);
