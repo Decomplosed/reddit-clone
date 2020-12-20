@@ -3,13 +3,13 @@ import { createConnection } from 'typeorm';
 import express from 'express';
 import morgan from 'morgan';
 import dotenv from 'dotenv';
+import cookieParser from 'cookie-parser';
 
 dotenv.config();
 
 import authRoutes from './routes/auth';
 
 import trim from './middleware/trim';
-import cookieParser from 'cookie-parser';
 
 const app = express();
 
