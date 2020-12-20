@@ -90,7 +90,9 @@ const me = async (req: Request, res: Response) => {
   }
 };
 
-const logout = async (req: Request, res: Response) => {};
+const logout = async (req: Request, res: Response) => {
+  res.set('Set-Cookie', cookie.serialize('token', '', {}));
+};
 
 const router = Router();
 router.post('/register', register);
