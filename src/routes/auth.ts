@@ -65,6 +65,7 @@ const login = async (req: Request, res: Response) => {
         secure: false,
         sameSite: 'strict',
         maxAge: 3600,
+        path: '/',
       }),
     );
 
