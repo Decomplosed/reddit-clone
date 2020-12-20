@@ -76,7 +76,7 @@ const login = async (req: Request, res: Response) => {
 
 const me = async (req: Request, res: Response) => {
   try {
-    console.log(req.cookies);
+    const token = req.cookies.token;
 
     return res.json({ message: 'testing' });
   } catch (error) {
