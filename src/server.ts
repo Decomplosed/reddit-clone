@@ -19,7 +19,7 @@ app.use(trim);
 app.get('/', (_, res) => res.send('Hello there!'));
 app.use('/api/auth', authRoutes);
 
-app.listen(5005, async () => {
+app.listen(process.env.PORT, async () => {
   console.log('Server running at http://localhost:5005');
 
   try {
