@@ -69,7 +69,7 @@ const login = async (req: Request, res: Response) => {
       }),
     );
 
-    return res.json({ user, token });
+    return res.json(user);
   } catch (error) {}
 };
 
