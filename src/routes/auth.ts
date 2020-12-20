@@ -79,6 +79,8 @@ const me = async (req: Request, res: Response) => {
     const token = req.cookies.token;
     if (!token) throw new Error('Unauthenticated');
 
+    const { username } = jwt.verify(token, process.env.JWT_SECRET);
+
     return res.json({ message: 'testing' });
   } catch (error) {
     console.log(error);
