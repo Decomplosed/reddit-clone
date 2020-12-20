@@ -82,7 +82,7 @@ const me = async (req: Request, res: Response) => {
     return res.json({ message: 'testing' });
   } catch (error) {
     console.log(error);
-    return res.status(401).json({ error: 'Unauthenticated' });
+    return res.status(401).json({ error: error.message });
   }
 };
 
