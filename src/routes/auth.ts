@@ -75,7 +75,7 @@ const login = async (req: Request, res: Response) => {
   } catch (error) {}
 };
 
-const me = (req: Request, res: Response) => {
+const me = (_: Request, res: Response) => {
   return res.json(res.locals.user);
 };
 
