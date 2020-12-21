@@ -10,5 +10,6 @@ export default (req: Request, res: Response, next: NextFunction) => {
     if (!user) throw new Error('Unauthenticated');
   } catch (error) {
     console.log(error);
+    return res.status(401).json({ error: 'Unauthenticated' });
   }
 };
