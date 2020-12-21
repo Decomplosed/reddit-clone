@@ -1,6 +1,6 @@
 import { IsEmail, Length } from 'class-validator';
 import {
-  Entity,
+  Entity as TOEntity,
   PrimaryGeneratedColumn,
   Column,
   BaseEntity,
