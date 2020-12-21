@@ -4,7 +4,6 @@ import { User } from '../entities/User';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import cookie from 'cookie';
-import cookieParser from 'cookie-parser';
 
 const register = async (req: Request, res: Response) => {
   const { email, username, password } = req.body;
