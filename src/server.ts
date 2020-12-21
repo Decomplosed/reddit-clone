@@ -22,8 +22,8 @@ app.use(cookieParser());
 app.get('/', (_, res) => res.send('Hello there!'));
 app.use('/api/auth', authRoutes);
 
-app.listen(process.env.PORT, async () => {
-  console.log('Server running at http://localhost:5005');
+app.listen(PORT, async () => {
+  console.log(`Server running at http://localhost:${PORT}`);
 
   try {
     await createConnection();
