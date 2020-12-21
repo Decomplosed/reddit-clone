@@ -98,6 +98,6 @@ const router = Router();
 router.post('/register', register);
 router.post('/login', login);
 router.get('/me', auth, me);
-router.get('/logout', logout);
+router.get('/logout', auth, logout);
 
 export default router;
