@@ -1,3 +1,3 @@
 import { Request, Response } from 'express';
 
-export default () => {};
+export default (req: Request, res: Response) => {};
