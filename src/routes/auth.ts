@@ -90,7 +90,7 @@ const me = async (req: Request, res: Response) => {
   }
 };
 
-const logout = async (req: Request, res: Response) => {
+const logout = async (_: Request, res: Response) => {
   res.set(
     'Set-Cookie',
     cookie.serialize('token', '', {
