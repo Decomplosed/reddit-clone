@@ -75,20 +75,8 @@ const login = async (req: Request, res: Response) => {
   } catch (error) {}
 };
 
-const me = async (req: Request, res: Response) => {
-  try {
-    const token = req.cookies.token;
-    if (!token) throw new Error('Unauthenticated');
-
-    const { username }: any = jwt.verify(token, process.env.JWT_SECRET);
-    const user = await User.findOne({ username });
-    if (!user) throw new Error('Unauthenticated');
-
-    return res.json({ message: 'testing' });
-  } catch (error) {
-    console.log(error);
-    return res.status(401).json({ error: error.message });
-  }
+const me = (req: Request, res: Response) => {
+  return res.json(res.locals.user);
 };
 
 const logout = (_: Request, res: Response) => {
