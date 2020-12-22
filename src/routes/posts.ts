@@ -1,4 +1,4 @@
-import { Request, Response } from 'express';
+import { Router, Request, Response } from 'express';
 
 import auth from '../middleware/auth';
 
