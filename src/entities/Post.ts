@@ -6,10 +6,10 @@ import { Exclude } from 'class-transformer';
 import Entity from './Entity';
 
 @TOEntity('posts')
-export default class User extends Entity {
-  constructor(user: Partial<User>) {
+export default class Post extends Entity {
+  constructor(post: Partial<Post>) {
     super();
-    Object.assign(this, user);
+    Object.assign(this, post);
   }
 
   @Index()
