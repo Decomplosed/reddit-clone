@@ -5,7 +5,7 @@ import { Exclude } from 'class-transformer';
 
 import Entity from './Entity';
 
-@TOEntity('users')
+@TOEntity('posts')
 export default class User extends Entity {
   constructor(user: Partial<User>) {
     super();
