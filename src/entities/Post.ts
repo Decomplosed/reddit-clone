@@ -22,4 +22,7 @@ export default class Post extends Entity {
 
   @Column({ nullable: true, type: 'text' })
   body: string;
+
+  @Column()
+  subName: string;
 }
