@@ -8,4 +8,7 @@ export default class Post extends Entity {
     super();
     Object.assign(this, post);
   }
+
+  @Column()
+  identifier: string; // 7 character ID
 }
