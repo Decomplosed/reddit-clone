@@ -11,4 +11,7 @@ export default class Post extends Entity {
 
   @Column()
   identifier: string; // 7 character ID
+
+  @Column()
+  title: string;
 }
