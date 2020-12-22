@@ -16,7 +16,6 @@ export default class Post extends Entity {
   @Column()
   title: string;
 
-  @Index()
   @Column()
-  slug: string;
+  body: string;
 }
