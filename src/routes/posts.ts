@@ -8,6 +8,9 @@ const createPost = (req: Request, res: Response) => {
 
   if (title.trim() === '')
     return res.status(400).json({ title: 'Title must not be empty' });
+
+  try {
+  } catch (error) {}
 };
 
 const router = Router();
