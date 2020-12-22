@@ -6,7 +6,7 @@ import { Exclude } from 'class-transformer';
 import Entity from './Entity';
 
 @TOEntity('users')
-export class User extends Entity {
+export default class User extends Entity {
   constructor(user: Partial<User>) {
     super();
     Object.assign(this, user);
