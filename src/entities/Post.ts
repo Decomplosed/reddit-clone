@@ -11,24 +11,4 @@ export default class Post extends Entity {
     super();
     Object.assign(this, post);
   }
-
-  @Index()
-  @IsEmail()
-  @Column({ unique: true })
-  email: string;
-
-  @Index()
-  @Length(3, 255, { message: 'Username must be at least 3 characters long' })
-  @Column({ unique: true })
-  username: string;
-
-  @Exclude()
-  @Column()
-  @Length(6, 255)
-  password: string;
-
-  @BeforeInsert()
-  async hashPassword() {
-    this.password = await bcrypt.hash(this.password, 6);
-  }
 }
