@@ -33,6 +33,8 @@ export default class User extends Entity {
   @Length(6, 255)
   password: string;
 
+  @OneToMany(() =>)
+
   @BeforeInsert()
   async hashPassword() {
     this.password = await bcrypt.hash(this.password, 6);
