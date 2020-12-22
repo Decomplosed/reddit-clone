@@ -9,3 +9,5 @@ const createPost = (req: Request, res: Response) => {
 const router = Router();
 
 router.post('/', auth, createPost);
+
+export default router;
