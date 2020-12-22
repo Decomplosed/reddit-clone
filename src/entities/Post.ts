@@ -20,6 +20,6 @@ export default class Post extends Entity {
   @Column()
   slug: string;
 
-  @Column()
+  @Column({ nullable: true })
   body: string;
 }
