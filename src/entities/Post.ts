@@ -1,4 +1,10 @@
-import { Entity as TOEntity, Column, Index, ManyToOne } from 'typeorm';
+import {
+  Entity as TOEntity,
+  Column,
+  Index,
+  ManyToOne,
+  JoinColumn,
+} from 'typeorm';
 
 import Entity from './Entity';
 import User from './User';
