@@ -15,7 +15,7 @@ const createPost = (req: Request, res: Response) => {
     const post = new Post({ title, body, user, subName: sub });
     await post.save();
 
-    
+    return res.json(post);
   } catch (error) {}
 };
 
