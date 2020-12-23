@@ -26,4 +26,7 @@ export default class Post extends Entity {
 
   @Column()
   subName: string;
+
+  @ManyToOne(() => User, (user) => user.posts)
+  user: User;
 }
