@@ -34,5 +34,6 @@ export default class Post extends Entity {
   subName: string;
 
   @ManyToOne(() => User, (user) => user.posts)
+  @JoinColumn
   user: User;
 }
