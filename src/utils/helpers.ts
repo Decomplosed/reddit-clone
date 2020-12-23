@@ -1,4 +1,4 @@
-export function makeid(length) {
+export function makeid(length: number): string {
   var result = '';
   var characters =
     'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
