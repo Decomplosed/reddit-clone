@@ -11,6 +11,8 @@ const createPost = (req: Request, res: Response) => {
     return res.status(400).json({ title: 'Title must not be empty' });
 
   try {
+    //TODO: find sub
+    const post = new Post({title, body, user})
   } catch (error) {}
 };
 
