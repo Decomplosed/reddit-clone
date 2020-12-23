@@ -16,7 +16,9 @@ const createPost = async (req: Request, res: Response) => {
     await post.save();
 
     return res.json(post);
-  } catch (error) {}
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 const router = Router();
