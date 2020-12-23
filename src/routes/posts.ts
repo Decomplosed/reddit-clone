@@ -12,7 +12,7 @@ const createPost = (req: Request, res: Response) => {
 
   try {
     //TODO: find sub
-    const post = new Post({title, body, user})
+    const post = new Post({ title, body, user, subName: sub });
   } catch (error) {}
 };
 
