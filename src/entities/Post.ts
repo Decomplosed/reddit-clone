@@ -1,6 +1,7 @@
-import { Entity as TOEntity, Column, Index, BeforeInsert } from 'typeorm';
+import { Entity as TOEntity, Column, Index, ManyToOne } from 'typeorm';
 
 import Entity from './Entity';
+import User from './User';
 
 @TOEntity('posts')
 export default class Post extends Entity {
