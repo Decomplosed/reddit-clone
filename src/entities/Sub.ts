@@ -13,4 +13,7 @@ export default class Sub extends Entity {
   @Index()
   @Column({ unique: true })
   name: string;
+
+  @Column()
+  title: string;
 }
