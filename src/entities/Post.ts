@@ -4,6 +4,7 @@ import {
   Index,
   ManyToOne,
   JoinColumn,
+  BeforeInsert,
 } from 'typeorm';
 
 import Entity from './Entity';
