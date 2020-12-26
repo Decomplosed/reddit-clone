@@ -1,5 +1,5 @@
-import { Column, Entity as TOEntity, Index, ManyToMany, ManyToOne } from 'typeorm';
-import { slugify, makeId } from '../utils/helpers';
+import { Column, Entity as TOEntity, Index, JoinColumn, ManyToOne } from 'typeorm';
+import User from './User'
 
 import Entity from './Entity';
 
