@@ -4,10 +4,12 @@ import {
   Index,
   JoinColumn,
   ManyToOne,
+  OneToMany,
 } from 'typeorm';
 import User from './User';
 
 import Entity from './Entity';
+import Post from './Post';
 
 @TOEntity('subs')
 export default class Sub extends Entity {
