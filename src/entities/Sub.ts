@@ -17,6 +17,6 @@ export default class Sub extends Entity {
   @Column()
   title: string;
 
-  @Column()
+  @Column({ type: 'text' })
   description: string;
 }
