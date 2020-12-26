@@ -19,4 +19,7 @@ export default class Sub extends Entity {
 
   @Column({ type: 'text', nullable: true })
   description: string;
+
+  @Column({ nullable: true })
+  imageUrl: string;
 }
