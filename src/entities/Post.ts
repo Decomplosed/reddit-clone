@@ -41,5 +41,6 @@ export default class Post extends Entity {
   @BeforeInsert()
   makeIdAndSlug() {
     this.identifier = makeId(7);
+    this.slug = slugify();
   }
 }
