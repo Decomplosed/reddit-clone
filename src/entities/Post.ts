@@ -40,6 +40,6 @@ export default class Post extends Entity {
 
   @BeforeInsert()
   makeIdAndSlug() {
-    this.identifier = makeId();
+    this.identifier = makeId(7);
   }
 }
