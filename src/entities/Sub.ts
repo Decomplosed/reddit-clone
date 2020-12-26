@@ -37,4 +37,6 @@ export default class Sub extends Entity {
   @ManyToOne(() => User)
   @JoinColumn({ name: 'username', referencedColumnName: 'username' })
   user: User;
+
+  @OneToMany(() => Post, post => post.sub)
 }
