@@ -1,4 +1,4 @@
-import { Column, Entity as TOEntity } from 'typeorm';
+import { Column, Entity as TOEntity, Index } from 'typeorm';
 import { slugify, makeId } from '../utils/helpers';
 
 import Entity from './Entity';
