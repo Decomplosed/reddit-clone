@@ -6,7 +6,7 @@ import {
   JoinColumn,
   BeforeInsert,
 } from 'typeorm';
-import { slugify } from '../utils/helpers';
+import { slugify, makeId } from '../utils/helpers';
 
 import Entity from './Entity';
 import User from './User';
