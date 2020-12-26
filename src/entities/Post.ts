@@ -9,6 +9,7 @@ import {
 import { slugify, makeId } from '../utils/helpers';
 
 import Entity from './Entity';
+import Sub from './Sub';
 import User from './User';
 
 @TOEntity('posts')
