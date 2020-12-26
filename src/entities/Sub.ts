@@ -1,5 +1,11 @@
-import { Column, Entity as TOEntity, Index, JoinColumn, ManyToOne } from 'typeorm';
-import User from './User'
+import {
+  Column,
+  Entity as TOEntity,
+  Index,
+  JoinColumn,
+  ManyToOne,
+} from 'typeorm';
+import User from './User';
 
 import Entity from './Entity';
 
@@ -25,4 +31,8 @@ export default class Sub extends Entity {
 
   @Column({ nullable: true })
   bannerUrn: string;
+
+  @ManyToOne(() => User)
+  @JoinColumn({ name: 'username', referencedColumnName: 'username' })
+  user: User;
 }
