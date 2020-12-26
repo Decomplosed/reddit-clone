@@ -9,4 +9,6 @@ export default class Sub extends Entity {
     super();
     Object.assign(this, sub);
   }
+
+  @Column()
 }
