@@ -1,3 +1,3 @@
 import { Request, Response } from 'express';
 
-const createSub = (req: Request, res: Response) => {};
+const createSub = async (req: Request, res: Response) => {};
