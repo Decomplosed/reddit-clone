@@ -11,6 +11,8 @@ const createSub = async (req: Request, res: Response) => {
 
   try {
     let errors: any = {};
+
+    if (isEmpty(name)) errors.name = 'Name must not be emtpy';
   } catch (error) {}
 };
 
