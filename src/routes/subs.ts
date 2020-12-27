@@ -34,7 +34,9 @@ const createSub = async (req: Request, res: Response) => {
     await sub.save();
 
     return res.json(sub);
-  } catch (error) {}
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 const router = Router();
