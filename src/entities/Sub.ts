@@ -13,7 +13,7 @@ import Post from './Post';
 
 @TOEntity('subs')
 export default class Sub extends Entity {
-  constructor(post: Partial<Sub>) {
+  constructor(sub: Partial<Sub>) {
     super();
     Object.assign(this, sub);
   }
