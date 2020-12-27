@@ -1,6 +1,7 @@
 import { Router, Request, Response } from 'express';
-import Post from '../entities/Post';
 
+import Post from '../entities/Post';
+import Sub from '../entities/Sub';
 import auth from '../middleware/auth';
 
 const createPost = async (req: Request, res: Response) => {
