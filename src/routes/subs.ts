@@ -1,9 +1,10 @@
 import { Request, Response, Router } from 'express';
-import auth from '../middleware/auth';
 import { isEmpty } from 'class-validator';
+import { getRepository } from 'typeorm';
 
 import User from '../entities/User';
 import Sub from '../entities/Sub';
+import auth from '../middleware/auth';
 
 const createSub = async (req: Request, res: Response) => {
   const { name, title, description } = req.body;
