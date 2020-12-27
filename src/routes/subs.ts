@@ -9,6 +9,7 @@ const createSub = async (req: Request, res: Response) => {
   const user: User = res.locals.user;
 
   try {
+    let errors: any = {};
   } catch (error) {}
 };
 
