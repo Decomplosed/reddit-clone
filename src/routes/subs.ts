@@ -22,6 +22,9 @@ const createSub = async (req: Request, res: Response) => {
       .getOne();
 
     if (sub) errors.name = 'Sub exists already';
+    if (Object.keys(errors).length > 0) {
+      throw errors;
+    }
   } catch (error) {}
 };
 
