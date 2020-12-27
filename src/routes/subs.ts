@@ -15,6 +15,11 @@ const createSub = async (req: Request, res: Response) => {
 
     if (isEmpty(name)) errors.name = 'Name must not be emtpy';
     if (isEmpty(title)) errors.title = 'Title must not be emtpy';
+
+    const sub = await getRepository(Sub)
+      .createQueryBuilder('sub')
+      .where('lower(sub.name = :name)', { name: name.toLowerCase() })
+      .getOne();
   } catch (error) {}
 };
 
