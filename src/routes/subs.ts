@@ -1,4 +1,5 @@
 import { Request, Response, Router } from 'express';
+import auth from '../middleware/auth';
 
 import User from '../entities/User';
 import Sub from '../entities/Sub';
