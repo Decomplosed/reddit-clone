@@ -13,6 +13,8 @@ const createPost = async (req: Request, res: Response) => {
 
   try {
     //TODO: find sub
+    const sub = await Sub.findOneOrFail();
+
     const post = new Post({ title, body, user, subName: sub });
     await post.save();
 
