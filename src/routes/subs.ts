@@ -25,7 +25,9 @@ const createSub = async (req: Request, res: Response) => {
     if (Object.keys(errors).length > 0) {
       throw errors;
     }
-  } catch (error) {}
+  } catch (error) {
+    return res.status(400).json(error);
+  }
 };
 
 const router = Router();
