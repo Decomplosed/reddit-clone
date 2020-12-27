@@ -1,3 +1,3 @@
 import { Request, Response } from 'express';
 
-const createSub = () => {};
+const createSub = (req: Request, res: Response) => {};
