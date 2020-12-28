@@ -54,5 +54,6 @@ const router = Router();
 
 router.post('/', auth, createPost);
 router.get('/', getPosts);
+router.get('/:identifier/:slug', getPost);
 
 export default router;
