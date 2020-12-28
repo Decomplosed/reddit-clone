@@ -37,6 +37,19 @@ const getPosts = async (_: Request, res: Response) => {
   }
 };
 
+const getPost = async (_: Request, res: Response) => {
+  try {
+    const posts = await Post.find({
+      order: { createdAt: 'DESC' },
+    });
+
+    return res.json(posts);
+  } catch (error) {
+    console.log(error);
+    return res.json({ error: 'Something went wrong' });
+  }
+};
+
 const router = Router();
 
 router.post('/', auth, createPost);
