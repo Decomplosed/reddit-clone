@@ -12,7 +12,6 @@ const createPost = async (req: Request, res: Response) => {
     return res.status(400).json({ title: 'Title must not be empty' });
 
   try {
-    //TODO: find sub
     const subRecord = await Sub.findOneOrFail({ name: sub });
 
     const post = new Post({ title, body, user, sub: subRecord });
