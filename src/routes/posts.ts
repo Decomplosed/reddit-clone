@@ -39,5 +39,6 @@ const getPosts = async (_: Request, res: Response) => {
 const router = Router();
 
 router.post('/', auth, createPost);
+router.get('/', getPosts);
 
 export default router;
