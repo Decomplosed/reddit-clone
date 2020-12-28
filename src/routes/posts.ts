@@ -41,7 +41,7 @@ const getPost = async (req: Request, res: Response) => {
   const { identifier, slug } = req.params;
 
   try {
-    const posts = await Post.findOneOrFail();
+    const posts = await Post.findOneOrFail({ identifier, slug });
 
     return res.json(posts);
   } catch (error) {
