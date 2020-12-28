@@ -33,7 +33,7 @@ const getPosts = async (_: Request, res: Response) => {
     return res.json(posts);
   } catch (error) {
     console.log(error);
-    return res.json({ error: 'Something went wrong' });
+    return res.status(500).json({ error: 'Something went wrong' });
   }
 };
 
