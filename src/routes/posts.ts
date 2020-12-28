@@ -25,7 +25,7 @@ const createPost = async (req: Request, res: Response) => {
   }
 };
 
-const getPosts = async (req: Request, res: Response) => {
+const getPosts = async (_: Request, res: Response) => {
   try {
     const posts = await Post.find();
 
