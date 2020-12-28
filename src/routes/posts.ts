@@ -30,7 +30,9 @@ const getPosts = async (req: Request, res: Response) => {
     const posts = await Post.find();
 
     return res.json(posts);
-  } catch (error) {}
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 const router = Router();
