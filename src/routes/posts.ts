@@ -32,6 +32,7 @@ const getPosts = async (req: Request, res: Response) => {
     return res.json(posts);
   } catch (error) {
     console.log(error);
+    return res.json({ error: 'Something went wrong' });
   }
 };
 
