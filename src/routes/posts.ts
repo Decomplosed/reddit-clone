@@ -41,9 +41,9 @@ const getPost = async (req: Request, res: Response) => {
   const { identifier, slug } = req.params;
 
   try {
-    const posts = await Post.findOneOrFail({ identifier, slug });
+    const post = await Post.findOneOrFail({ identifier, slug });
 
-    return res.json(posts);
+    return res.json(post);
   } catch (error) {
     console.log(error);
     return res.status(404).json({ error: 'Post not found' });
