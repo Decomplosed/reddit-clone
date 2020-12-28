@@ -25,6 +25,8 @@ const createPost = async (req: Request, res: Response) => {
   }
 };
 
+const getPosts = () => {};
+
 const router = Router();
 
 router.post('/', auth, createPost);
