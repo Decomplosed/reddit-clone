@@ -41,9 +41,7 @@ const getPost = async (req: Request, res: Response) => {
   const { identifier, slug } = req.params;
 
   try {
-    const posts = await Post.find({
-      order: { createdAt: 'DESC' },
-    });
+    const posts = await Post.findOneOrFail();
 
     return res.json(posts);
   } catch (error) {
