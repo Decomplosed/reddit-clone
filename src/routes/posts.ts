@@ -38,6 +38,8 @@ const getPosts = async (_: Request, res: Response) => {
 };
 
 const getPost = async (req: Request, res: Response) => {
+  const { identifier, slug } = req.params;
+
   try {
     const posts = await Post.find({
       order: { createdAt: 'DESC' },
