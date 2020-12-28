@@ -27,7 +27,9 @@ const createPost = async (req: Request, res: Response) => {
 
 const getPosts = async (_: Request, res: Response) => {
   try {
-    const posts = await Post.find();
+    const posts = await Post.find({
+      order: { createdAt: 'DESC' },
+    });
 
     return res.json(posts);
   } catch (error) {
