@@ -37,4 +37,7 @@ export default class Comment extends Entity {
   post: Post;
 
   @BeforeInsert()
+  makeIdAndSlug() {
+    this.identifier = makeId(8);
+  }
 }
