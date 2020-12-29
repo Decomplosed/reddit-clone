@@ -53,7 +53,7 @@ const getPost = async (req: Request, res: Response) => {
   }
 };
 
-const commentOnPost = () => {};
+const commentOnPost = (req: Request, res: Response) => {};
 
 const router = Router();
 
