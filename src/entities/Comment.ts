@@ -34,4 +34,6 @@ export default class Comment extends Entity {
 
   @ManyToOne(() => Post, (post) => post.comments)
   post: Post;
+
+  @BeforeInsert()
 }
