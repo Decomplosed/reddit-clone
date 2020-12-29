@@ -1,4 +1,5 @@
 import {
+  BeforeInsert,
   Column,
   Entity as TOEntity,
   Index,
