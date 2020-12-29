@@ -5,6 +5,7 @@ import {
   ManyToOne,
   JoinColumn,
   BeforeInsert,
+  OneToMany,
 } from 'typeorm';
 import { slugify, makeId } from '../utils/helpers';
 
