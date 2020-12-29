@@ -11,6 +11,7 @@ import Entity from './Entity';
 import Post from './Post';
 import User from './User';
 
+import { makeId } from '../utils/helpers';
 @TOEntity('comments')
 export default class Comment extends Entity {
   constructor(comment: Partial<Comment>) {
