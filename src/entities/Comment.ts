@@ -1,6 +1,7 @@
 import { Column, Entity as TOEntity, ManyToOne } from 'typeorm';
 
 import Entity from './Entity';
+import User from './User';
 
 @TOEntity('comments')
 export default class Comment extends Entity {
