@@ -14,4 +14,7 @@ export default class Comment extends Entity {
 
   @Column()
   body: string;
+
+  @Column()
+  username: string;
 }
