@@ -45,6 +45,8 @@ export default class Post extends Entity {
   @JoinColumn({ name: 'subName', referencedColumnName: 'name' })
   sub: Sub;
 
+  @OneToMany()
+  
   @BeforeInsert()
   makeIdAndSlug() {
     this.identifier = makeId(7);
