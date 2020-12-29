@@ -17,4 +17,6 @@ export default class Comment extends Entity {
 
   @Column()
   username: string;
+
+  @ManyToOne()
 }
