@@ -47,6 +47,8 @@ export default class Post extends Entity {
   sub: Sub;
 
   @OneToMany(() => Comment)
+  comments: Comment[];
+
   @BeforeInsert()
   makeIdAndSlug() {
     this.identifier = makeId(7);
