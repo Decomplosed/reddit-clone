@@ -8,4 +8,7 @@ export default class Comment extends Entity {
     super();
     Object.assign(this, comment);
   }
+
+  @Column()
+  identifier: string;
 }
