@@ -46,7 +46,7 @@ export default class Post extends Entity {
   @JoinColumn({ name: 'subName', referencedColumnName: 'name' })
   sub: Sub;
 
-  @OneToMany(() => Comment)
+  @OneToMany(() => Comment, (comment) => comment.post)
   comments: Comment[];
 
   @BeforeInsert()
