@@ -17,6 +17,7 @@ export default class Comment extends Entity {
     Object.assign(this, comment);
   }
 
+  @Index()
   @Column()
   identifier: string;
 
