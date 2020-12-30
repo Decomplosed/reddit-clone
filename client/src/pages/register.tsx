@@ -9,7 +9,10 @@ export default function Register() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <div className='w-40 h-screen' style={{}}></div>
+      <div
+        className='w-40 h-screen'
+        style={{ backgroundImage: "url('/images/bricks.jpg')" }}
+      ></div>
     </div>
   );
 }
