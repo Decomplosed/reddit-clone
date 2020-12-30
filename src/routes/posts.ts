@@ -44,7 +44,7 @@ const getPost = async (req: Request, res: Response) => {
   try {
     const post = await Post.findOneOrFail(
       { identifier, slug },
-      { relations: ['sub'] },
+      { relations: ['sub', 'comments'] },
     );
 
     return res.json(post);
