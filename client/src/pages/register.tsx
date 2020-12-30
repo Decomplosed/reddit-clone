@@ -1,9 +1,8 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
 
 export default function Register() {
   return (
-    <div className={styles.container}>
+    <div className='flex'>
       <Head>
         <title>Register</title>
         <link rel='icon' href='/favicon.ico' />
