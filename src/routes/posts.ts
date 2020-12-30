@@ -72,6 +72,6 @@ const router = Router();
 router.post('/', auth, createPost);
 router.get('/', getPosts);
 router.get('/:identifier/:slug', getPost);
-router.post('/:identifier/:slug/comments', commentOnPost);
+router.post('/:identifier/:slug/comments', auth, commentOnPost);
 
 export default router;
