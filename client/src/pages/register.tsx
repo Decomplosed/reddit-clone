@@ -5,13 +5,11 @@ export default function Register() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Register</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>Register Page</h1>
-      </main>
+      <div className='w-40 h-screen' style={{}}></div>
     </div>
   );
 }
