@@ -63,6 +63,7 @@ const commentOnPost = async (req: Request, res: Response) => {
 
     const comment = new Comment({
       body,
+      user: res.locals.user,
     });
   } catch (error) {}
 };
