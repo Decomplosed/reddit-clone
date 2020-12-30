@@ -58,7 +58,7 @@ const commentOnPost = async (req: Request, res: Response) => {
   const body = req.body.body;
 
   try {
-    const post = await Post.findOneOrFail();
+    const post = await Post.findOneOrFail({ identifier, slug });
   } catch (error) {}
 };
 
