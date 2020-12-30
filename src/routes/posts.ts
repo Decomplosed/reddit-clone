@@ -70,7 +70,9 @@ const commentOnPost = async (req: Request, res: Response) => {
     await comment.save();
 
     return res.json(comment);
-  } catch (error) {}
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 const router = Router();
