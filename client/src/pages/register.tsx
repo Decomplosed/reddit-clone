@@ -12,7 +12,7 @@ export default function Register() {
         style={{ backgroundImage: "url('/images/bricks.jpg')" }}
       />
       <div className='flex flex-col'>
-        <h1></h1>
+        <h1 className='mb-2 text-lg'>Sign Up</h1>
       </div>
     </div>
   );
