@@ -17,7 +17,9 @@ export default function Register() {
           <p className='mb-10 text-xs'>
             By continuing, you agree to our User Agreement and Privacy Policy
           </p>
-          <form></form>
+          <form>
+            <div className='mb-6'></div>
+          </form>
         </div>
       </div>
     </div>
