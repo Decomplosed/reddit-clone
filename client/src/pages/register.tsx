@@ -9,7 +9,7 @@ export default function Register() {
       </Head>
 
       <div
-        className='w-40 h-screen'
+        className='w-40 h-screen bg-center bg-cover'
         style={{ backgroundImage: "url('/images/bricks.jpg')" }}
       ></div>
     </div>
