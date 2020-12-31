@@ -18,7 +18,9 @@ export default function Register() {
             By continuing, you agree to our User Agreement and Privacy Policy
           </p>
           <form>
-            <div className='mb-6'></div>
+            <div className='mb-6'>
+              <input type='checkbox' />
+            </div>
           </form>
         </div>
       </div>
