@@ -11,7 +11,7 @@ export default function Register() {
         className='w-40 h-screen bg-center bg-cover'
         style={{ backgroundImage: "url('/images/bricks.jpg')" }}
       />
-      <div className='flex flex-col'>
+      <div className='flex flex-col justify-center'>
         <h1 className='mb-2 text-lg'>Sign Up</h1>
       </div>
     </div>
