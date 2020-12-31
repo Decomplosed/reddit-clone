@@ -13,7 +13,9 @@ export default function Register() {
       />
       <div className='flex flex-col justify-center pl-6'>
         <h1 className='mb-2 text-lg'>Sign Up</h1>
-        <p className="mb-10 text-xs"></p>
+        <p className='mb-10 text-xs'>
+          By continuing, you agree to our User Agreement and Privacy Policy
+        </p>
       </div>
     </div>
   );
