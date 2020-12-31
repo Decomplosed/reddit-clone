@@ -7,11 +7,11 @@ export default function Register() {
         <title>Register</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-
       <div
         className='w-40 h-screen bg-center bg-cover'
         style={{ backgroundImage: "url('/images/bricks.jpg')" }}
-      ></div>
+      />
+      <div className='flex flex-col'></div>
     </div>
   );
 }
