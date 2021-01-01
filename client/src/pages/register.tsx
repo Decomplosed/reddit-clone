@@ -24,7 +24,7 @@ export default function Register() {
                 className='mr-1 cursor-pointer'
                 id='agreement'
               />
-              <label htmlFor='agreement'>
+              <label htmlFor='agreement' className='text-xs'>
                 I agree to get emails about cool stuff on Readit
               </label>
             </div>
