@@ -24,7 +24,9 @@ export default function Register() {
                 className='mr-1 cursor-pointer'
                 id='agreement'
               />
-              <label htmlFor='agreement'></label>
+              <label htmlFor='agreement'>
+                I agree to get emails about cool stuff on Reddit
+              </label>
             </div>
           </form>
         </div>
