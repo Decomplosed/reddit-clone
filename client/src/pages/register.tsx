@@ -25,7 +25,7 @@ export default function Register() {
                 id='agreement'
               />
               <label htmlFor='agreement'>
-                I agree to get emails about cool stuff on Reddit
+                I agree to get emails about cool stuff on Readit
               </label>
             </div>
           </form>
