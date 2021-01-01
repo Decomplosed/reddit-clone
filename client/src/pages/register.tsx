@@ -49,7 +49,7 @@ export default function Register() {
                 className='w-full px-3 py-2 bg-gray-100 border border-gray-400 rounded'
               />
             </div>
-            <button className='py-2 mb-4 text-xs font-bold text-white uppercase bg-blue-500 border border-blue-500 rounded'>
+            <button className='w-full py-2 mb-4 text-xs font-bold text-white uppercase bg-blue-500 border border-blue-500 rounded'>
               Sign Up
             </button>
           </form>
