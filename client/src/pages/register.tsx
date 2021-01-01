@@ -57,7 +57,7 @@ export default function Register() {
           <small>
             Already a readitor?
             <Link href='/login'>
-              <a className='ml-1 text-blue-500 uppercase'>Log in</a>
+              <a className='ml-1 text-blue-500 uppercase'>Log In</a>
             </Link>
           </small>
         </div>
