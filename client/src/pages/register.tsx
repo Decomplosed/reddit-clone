@@ -28,6 +28,7 @@ export default function Register() {
                 I agree to get emails about cool stuff on Readit
               </label>
             </div>
+            <div className='mb-2'></div>
           </form>
         </div>
       </div>
