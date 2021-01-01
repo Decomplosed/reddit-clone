@@ -55,7 +55,7 @@ export default function Register() {
             </button>
           </form>
           <small>
-            Already a readitor?{' '}
+            Already a readitor?
             <Link href='/login'>
               <a className='ml-1 text-blue-500 uppercase'>Log in</a>
             </Link>
