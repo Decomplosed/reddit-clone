@@ -53,6 +53,7 @@ export default function Register() {
               Sign Up
             </button>
           </form>
+          <small></small>
         </div>
       </div>
     </div>
