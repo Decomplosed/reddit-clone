@@ -28,7 +28,12 @@ export default function Register() {
                 I agree to get emails about cool stuff on Readit
               </label>
             </div>
-            <div className='mb-2'></div>
+            <div className='mb-2'>
+              <input
+                type='text'
+                className='w-full px-3 py-2 bg-gray-100 border border-gray-400 rounded'
+              />
+            </div>
           </form>
         </div>
       </div>
