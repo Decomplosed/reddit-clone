@@ -19,7 +19,12 @@ export default function Register() {
           </p>
           <form>
             <div className='mb-6'>
-              <input type='checkbox' className='mr-1 cursor-pointer' id='agreement' />
+              <input
+                type='checkbox'
+                className='mr-1 cursor-pointer'
+                id='agreement'
+              />
+              <label htmlFor='agreement'></label>
             </div>
           </form>
         </div>
