@@ -61,6 +61,7 @@ export default function Register() {
                 placeholder='Password'
                 className='w-full p-3 px-3 py-2 transition duration-200 border border-gray-300 rounded outline-none bg-gray-50 focus:bg-white hover:bg-white'
                 value={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
             </div>
             <button className='w-full py-2 mb-4 text-xs font-bold text-white uppercase bg-blue-500 border border-blue-500 rounded'>
