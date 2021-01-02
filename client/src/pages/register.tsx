@@ -6,7 +6,7 @@ export default function Register() {
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [agreement, setAgreement] = useState('');
+  const [agreement, setAgreement] = useState(false);
   const [errors, setErrors] = useState<any>({});
   return (
     <div className='flex'>
