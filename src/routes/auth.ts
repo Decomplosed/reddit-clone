@@ -51,6 +51,7 @@ const login = async (req: Request, res: Response) => {
       let mappedErrors = {};
       errors.forEach((err) => {
         const key = err.property;
+        const value = Object.entries(err.constraints[0][1]);
       });
       return res.status(400).json(errors);
     }
