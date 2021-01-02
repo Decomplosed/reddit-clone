@@ -20,7 +20,7 @@ export default class User extends Entity {
   }
 
   @Index()
-  @IsEmail()
+  @IsEmail(undefined, { message: 'Must be a valid email address' })
   @Column({ unique: true })
   email: string;
 
