@@ -32,7 +32,7 @@ export default class User extends Entity {
 
   @Exclude()
   @Column()
-  @Length(6, 255)
+  @Length(6, 255, { message: 'Must be at least 6 characters long' })
   password: string;
 
   @OneToMany(() => Post, (post) => post.user)
