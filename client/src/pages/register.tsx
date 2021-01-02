@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 export default function Register() {
+  const [email, setEmail] = useState('');
   return (
     <div className='flex'>
       <Head>
