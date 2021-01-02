@@ -7,6 +7,8 @@ import cookie from 'cookie';
 import User from '../entities/User';
 import auth from '../middleware/auth';
 
+const mapErrors = () => {}
+
 const register = async (req: Request, res: Response) => {
   const { email, username, password } = req.body;
 
