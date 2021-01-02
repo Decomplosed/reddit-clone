@@ -48,7 +48,7 @@ const login = async (req: Request, res: Response) => {
     if (isEmpty(username)) errors.username = 'Username must not be empty';
     if (isEmpty(password)) errors.password = 'Password must not be empty';
     if (Object.keys(errors).length > 0) {
-      let mappedErrors = {};
+      let mappedErrors: any = {};
       errors.forEach((err: any) => {
         const key = err.property;
         const value = Object.entries(err.constraints[0][1]);
