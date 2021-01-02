@@ -30,6 +30,7 @@ export default function Register() {
                 type='checkbox'
                 className='mr-1 cursor-pointer'
                 id='agreement'
+                checked={agreement}
               />
               <label htmlFor='agreement' className='text-xs cursor-pointer'>
                 I agree to get emails about cool stuff on Readit
