@@ -31,6 +31,7 @@ export default function Register() {
                 className='mr-1 cursor-pointer'
                 id='agreement'
                 checked={agreement}
+                onChange={(e) => setAgreement(e.target.checked)}
               />
               <label htmlFor='agreement' className='text-xs cursor-pointer'>
                 I agree to get emails about cool stuff on Readit
