@@ -42,6 +42,7 @@ export default function Register() {
                 type='text'
                 placeholder='Email'
                 className='w-full p-3 px-3 py-2 transition duration-200 border border-gray-300 rounded outline-none bg-gray-50 focus:bg-white hover:bg-white'
+                value={email}
               />
             </div>
             <div className='mb-2'>
