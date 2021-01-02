@@ -49,6 +49,7 @@ const login = async (req: Request, res: Response) => {
     if (isEmpty(password)) errors.password = 'Password must not be empty';
     if (Object.keys(errors).length > 0) {
       let mappedErrors = {};
+      errors.forEach((err) => {});
       return res.status(400).json(errors);
     }
 
