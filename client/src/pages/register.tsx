@@ -8,6 +8,9 @@ export default function Register() {
   const [password, setPassword] = useState('');
   const [agreement, setAgreement] = useState(false);
   const [errors, setErrors] = useState<any>({});
+
+  const submitForm = () => {};
+
   return (
     <div className='flex'>
       <Head>
