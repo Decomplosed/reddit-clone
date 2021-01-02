@@ -43,6 +43,7 @@ export default function Register() {
                 placeholder='Email'
                 className='w-full p-3 px-3 py-2 transition duration-200 border border-gray-300 rounded outline-none bg-gray-50 focus:bg-white hover:bg-white'
                 value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className='mb-2'>
