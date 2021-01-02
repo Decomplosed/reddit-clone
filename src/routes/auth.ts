@@ -7,7 +7,12 @@ import cookie from 'cookie';
 import User from '../entities/User';
 import auth from '../middleware/auth';
 
-const mapErrors = (errors: Object[]) => {};
+const mapErrors = (errors: Object[]) => {
+  return errors.reduce((prev: any, err: any) => {
+    prev[err.property] = Object.entries(err.constraints[0][1]);
+    return prev;
+  }, {});
+};
 
 const register = async (req: Request, res: Response) => {
   const { email, username, password } = req.body;
