@@ -26,7 +26,7 @@ export default class User extends Entity {
   email: string;
 
   @Index()
-  @Length(3, 255, { message: 'Username must be at least 3 characters long' })
+  @Length(3, 255, { message: 'Must be at least 3 characters long' })
   @Column({ unique: true })
   username: string;
 
