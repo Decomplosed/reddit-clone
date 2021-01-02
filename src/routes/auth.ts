@@ -31,7 +31,7 @@ const register = async (req: Request, res: Response) => {
       let mappedErrors: any = {};
       errors.forEach((err: any) => {
         const key = err.property;
-        const value = Object.entries(err.constraints[0][1]);
+        const value = Object.entries(err.constraints)[0][1];
         mappedErrors[key] = value;
       });
       return res.status(400).json(mappedErrors);
