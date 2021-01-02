@@ -9,7 +9,9 @@ export default function Register() {
   const [agreement, setAgreement] = useState(false);
   const [errors, setErrors] = useState<any>({});
 
-  const submitForm = async (event: FormEvent) => {};
+  const submitForm = async (event: FormEvent) => {
+    event.preventDefault();
+  };
 
   return (
     <div className='flex'>
