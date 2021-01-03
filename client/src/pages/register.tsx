@@ -61,7 +61,10 @@ export default function Register() {
               <input
                 type='text'
                 placeholder='Email'
-                className='w-full p-3 px-3 py-2 transition duration-200 border border-gray-300 rounded outline-none bg-gray-50 focus:bg-white hover:bg-white'
+                className={classNames(
+                  'w-full p-3 px-3 py-2 transition duration-200 border border-gray-300 rounded outline-none bg-gray-50 focus:bg-white hover:bg-white',
+                  { 'border-red-500': errors.email },
+                )}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
