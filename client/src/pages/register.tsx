@@ -23,6 +23,7 @@ export default function Register() {
       console.log(res.data);
     } catch (error) {
       console.log(error);
+      setErrors(error.response.data);
     }
   };
 
