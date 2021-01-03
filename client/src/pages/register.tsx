@@ -1,7 +1,7 @@
 import { FormEvent, useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import axios from 'axios';
+import Axios from 'axios';
 
 export default function Register() {
   const [email, setEmail] = useState('');
