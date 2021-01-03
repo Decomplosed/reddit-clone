@@ -1,5 +1,7 @@
 import classNames from 'classnames';
 
+interface InputGroupProps {}
+
 const InputGroup: React.FC = () => {
   return (
     <div className='mb-2'>
