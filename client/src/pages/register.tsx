@@ -13,7 +13,11 @@ export default function Register() {
   const submitForm = async (event: FormEvent) => {
     event.preventDefault();
 
-    await Axios.post('/auth/register', {});
+    await Axios.post('/auth/register', {
+      email,
+      password,
+      username,
+    });
   };
 
   return (
