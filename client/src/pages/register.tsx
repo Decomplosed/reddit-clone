@@ -11,6 +11,8 @@ export default function Register() {
 
   const submitForm = async (event: FormEvent) => {
     event.preventDefault();
+
+    
   };
 
   return (
