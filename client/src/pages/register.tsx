@@ -21,7 +21,9 @@ export default function Register() {
       });
 
       console.log(res.data);
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
