@@ -1,1 +1,1 @@
-const InputGroup = () => {};
+const InputGroup: React.FC = () => {};
