@@ -68,7 +68,7 @@ export default function Register() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-              <small className='font-medium text-red-600'></small>
+              <small className='font-medium text-red-600'>{errors.email}</small>
             </div>
             <div className='mb-2'>
               <input
