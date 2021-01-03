@@ -14,15 +14,14 @@ export default function Register() {
     event.preventDefault();
 
     try {
+      const res = await Axios.post('/auth/register', {
+        email,
+        password,
+        username,
+      });
+
+      console.log(res.data);
     } catch (error) {}
-
-    const res = await Axios.post('/auth/register', {
-      email,
-      password,
-      username,
-    });
-
-    console.log(res.data);
   };
 
   return (
