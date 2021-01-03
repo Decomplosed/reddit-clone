@@ -13,6 +13,9 @@ export default function Register() {
   const submitForm = async (event: FormEvent) => {
     event.preventDefault();
 
+    try {
+    } catch (error) {}
+
     const res = await Axios.post('/auth/register', {
       email,
       password,
