@@ -17,3 +17,5 @@ const InputGroup: React.FC = () => {
     </div>
   );
 };
+
+export default InputGroup;
