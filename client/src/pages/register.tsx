@@ -58,7 +58,14 @@ export default function Register() {
                 I agree to get emails about cool stuff on Readit
               </label>
             </div>
-            <InputGroup />
+            <InputGroup
+              type='email'
+              className='mb-2'
+              value={email}
+              setValue={setEmail}
+              placeholder='Email'
+              error={errors.email}
+            />
             <div className='mb-2'>
               <input
                 type='text'
