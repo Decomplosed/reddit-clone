@@ -18,7 +18,7 @@ const InputGroup: React.FC<InputGroupProps> = ({
   setValue,
 }) => {
   return (
-    <div className='mb-2'>
+    <div className={className}>
       <input
         type={type}
         placeholder={placeholder}
