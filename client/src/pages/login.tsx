@@ -9,4 +9,5 @@ import InputGroup from '../components/InputGroup';
 export default function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [errors, setErrors] = useState<any>({});
 }
