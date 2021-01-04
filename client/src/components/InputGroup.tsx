@@ -20,7 +20,7 @@ const InputGroup: React.FC<InputGroupProps> = ({
   return (
     <div className='mb-2'>
       <input
-        type='text'
+        type={type}
         placeholder={placeholder}
         className={classNames(
           'w-full p-3 px-3 py-2 transition duration-200 border border-gray-300 rounded outline-none bg-gray-50 focus:bg-white hover:bg-white',
