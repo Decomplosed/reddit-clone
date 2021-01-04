@@ -21,7 +21,7 @@ const InputGroup: React.FC<InputGroupProps> = ({
     <div className='mb-2'>
       <input
         type='text'
-        placeholder='Email'
+        placeholder={placeholder}
         className={classNames(
           'w-full p-3 px-3 py-2 transition duration-200 border border-gray-300 rounded outline-none bg-gray-50 focus:bg-white hover:bg-white',
           { 'border-red-500': error },
