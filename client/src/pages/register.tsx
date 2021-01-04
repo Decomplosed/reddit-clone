@@ -24,17 +24,14 @@ export default function Register() {
     }
 
     try {
-      const res = await Axios.post('/auth/register', {
+      await Axios.post('/auth/register', {
         email,
         password,
         username,
       });
 
       router.push('/login');
-
-      console.log(res.data);
     } catch (error) {
-      console.log(error);
       setErrors(error.response.data);
     }
   };
