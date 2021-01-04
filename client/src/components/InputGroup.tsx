@@ -5,6 +5,7 @@ interface InputGroupProps {
   type: string;
   placeholder: string;
   value: string;
+  error: string | undefined;
 }
 
 const InputGroup: React.FC = () => {
