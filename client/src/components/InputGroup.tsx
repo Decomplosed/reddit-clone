@@ -4,6 +4,7 @@ interface InputGroupProps {
   className?: string;
   type: string;
   placeholder: string;
+  value: string;
 }
 
 const InputGroup: React.FC = () => {
