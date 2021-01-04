@@ -3,6 +3,7 @@ import classNames from 'classnames';
 interface InputGroupProps {
   className?: string;
   type: string;
+  placeholder: string;
 }
 
 const InputGroup: React.FC = () => {
