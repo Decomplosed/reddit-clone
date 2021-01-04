@@ -9,7 +9,7 @@ interface InputGroupProps {
   setValue: (str: string) => void;
 }
 
-const InputGroup: React.FC = () => {
+const InputGroup: React.FC<InputGroupProps> = () => {
   return (
     <div className='mb-2'>
       <input
