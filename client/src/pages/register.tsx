@@ -58,7 +58,7 @@ export default function Register() {
                 I agree to get emails about cool stuff on Readit
               </label>
             </div>
-
+            <InputGroup />
             <div className='mb-2'>
               <input
                 type='text'
