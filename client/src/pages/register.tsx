@@ -30,6 +30,8 @@ export default function Register() {
         username,
       });
 
+      router.push('/login');
+
       console.log(res.data);
     } catch (error) {
       console.log(error);
