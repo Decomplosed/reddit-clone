@@ -5,4 +5,6 @@ import { useRouter } from 'next/router';
 
 import InputGroup from '../components/InputGroup';
 
-export default function Login() {}
+export default function Login() {
+  const [username, setUsername] = useState('');
+}
