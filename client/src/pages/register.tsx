@@ -64,7 +64,7 @@ export default function Register() {
               <label htmlFor='agreement' className='text-xs cursor-pointer'>
                 I agree to get emails about cool stuff on Readit
               </label>
-              <small className='font-medium text-red-600'>
+              <small className='block font-medium text-red-600'>
                 {errors.agreement}
               </small>
             </div>
