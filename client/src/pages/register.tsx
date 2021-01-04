@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Axios from 'axios';
 import classNames from 'classnames';
+import InputGroup from '../components/InputGroup';
 
 export default function Register() {
   const [email, setEmail] = useState('');
