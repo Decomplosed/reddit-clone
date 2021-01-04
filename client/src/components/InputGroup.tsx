@@ -27,7 +27,7 @@ const InputGroup: React.FC<InputGroupProps> = ({
           { 'border-red-500': error },
         )}
         value={value}
-        onChange={(e) => setEmail(e.target.value)}
+        onChange={(e) => setValue(e.target.value)}
       />
       <small className='font-medium text-red-600'>{error}</small>
     </div>
