@@ -15,6 +15,11 @@ export default function Register() {
   const submitForm = async (event: FormEvent) => {
     event.preventDefault();
 
+    if (!agreement) {
+      setErrors({ ...errors, agreement: 'You must agree to T&Cs' });
+      return;
+    }
+
     try {
       const res = await Axios.post('/auth/register', {
         email,
