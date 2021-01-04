@@ -13,6 +13,8 @@ export default function Register() {
   const [agreement, setAgreement] = useState(false);
   const [errors, setErrors] = useState<any>({});
 
+  const router = useRouter();
+
   const submitForm = async (event: FormEvent) => {
     event.preventDefault();
 
