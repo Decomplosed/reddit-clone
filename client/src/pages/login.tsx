@@ -13,6 +13,8 @@ export default function Login() {
 
   const router = useRouter();
 
+  const submitForm = () => {};
+
   <div className='flex'>
     <Head>
       <title>Login</title>
