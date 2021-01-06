@@ -21,6 +21,8 @@ export default function Login() {
         username,
         password,
       });
+
+      router.push('/')
     } catch (error) {}
   };
 
