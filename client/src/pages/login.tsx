@@ -17,7 +17,10 @@ export default function Login() {
     event.preventDefault();
 
     try {
-      await Axios.post('/auth/login');
+      await Axios.post('/auth/login', , {
+        username,
+        password,
+      });
     } catch (error) {}
   };
 
