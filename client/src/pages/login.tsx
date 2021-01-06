@@ -15,6 +15,9 @@ export default function Login() {
 
   const submitForm = async (event: FormEvent) => {
     event.preventDefault();
+
+    try {
+    } catch (error) {}
   };
 
   <div className='flex'>
