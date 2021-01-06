@@ -43,7 +43,7 @@ export default function Login() {
         <p className='mb-10 text-xs'>
           By continuing, you agree to our User Agreement and Privacy Policy
         </p>
-        <form>
+        <form onSubmit={submitForm}>
           <InputGroup
             className='mb-2'
             type='text'
