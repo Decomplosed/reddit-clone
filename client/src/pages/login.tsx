@@ -23,7 +23,9 @@ export default function Login() {
       });
 
       router.push('/')
-    } catch (error) {}
+    } catch (error) {
+      setErrors(error.response.data)
+    }
   };
 
   <div className='flex'>
