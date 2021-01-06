@@ -17,6 +17,7 @@ export default function Login() {
     event.preventDefault();
 
     try {
+      await Axios.post();
     } catch (error) {}
   };
 
