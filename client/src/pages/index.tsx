@@ -23,6 +23,7 @@ export default function Home() {
           </span>
         </div>
         {/* Search Input */}
+        <div className='flex mx-auto border rounded item-center'></div>
         {/* Auth buttons */}
       </div>
     </div>
