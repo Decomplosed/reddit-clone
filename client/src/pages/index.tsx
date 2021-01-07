@@ -23,8 +23,8 @@ export default function Home() {
           </span>
         </div>
         {/* Search Input */}
-        <div className='flex mx-auto border rounded item-center'>
-          <i className='fas fa-search' />
+        <div className='flex items-center mx-auto border rounded'>
+          <i className='pl-4 pr-3 text-gray-500 fas fa-search' />
           <input type='text' className='py-1 pr-3 rounded' />
         </div>
         {/* Auth buttons */}
