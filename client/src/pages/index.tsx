@@ -25,6 +25,7 @@ export default function Home() {
         {/* Search Input */}
         <div className='flex mx-auto border rounded item-center'>
           <i className='fas fa-search' />
+          <input type='text' className='py-1 pr-3 rounded' />
         </div>
         {/* Auth buttons */}
       </div>
