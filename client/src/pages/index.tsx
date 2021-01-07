@@ -19,7 +19,7 @@ export default function Home() {
             </a>
           </Link>
           <span className='text-2xl font-semibold'>
-            <Link href='/'></Link>
+            <Link href='/'>readit</Link>
           </span>
         </div>
         {/* Search Input */}
