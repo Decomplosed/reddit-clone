@@ -18,6 +18,7 @@ export default function Home() {
               <RedditLogo className='w-8 h-8 mr-2' />
             </a>
           </Link>
+          <span className='text-2xl font-semibold'></span>
         </div>
         {/* Search Input */}
         {/* Auth buttons */}
