@@ -23,7 +23,7 @@ export default function Home() {
           </span>
         </div>
         {/* Search Input */}
-        <div className='flex items-center mx-auto bg-gray-100 border rounded'>
+        <div className='flex items-center mx-auto bg-gray-100 border rounded hover:border-blue-500 hover:bg-white'>
           <i className='pl-4 pr-3 text-gray-500 fas fa-search' />
           <input
             type='text'
