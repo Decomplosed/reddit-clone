@@ -23,7 +23,9 @@ export default function Home() {
           </span>
         </div>
         {/* Search Input */}
-        <div className='flex mx-auto border rounded item-center'></div>
+        <div className='flex mx-auto border rounded item-center'>
+          <i className='fas fa-search' />
+        </div>
         {/* Auth buttons */}
       </div>
     </div>
