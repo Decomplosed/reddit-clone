@@ -30,6 +30,7 @@ export default function Home() {
           />
         </div>
         {/* Auth buttons */}
+        <div className='flex'></div>
       </div>
     </div>
   );
