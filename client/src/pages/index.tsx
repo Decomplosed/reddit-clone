@@ -34,6 +34,9 @@ export default function Home() {
           <Link href='/login'>
             <a className='hollow blue button'>Log In</a>
           </Link>
+          <Link href='/register'>
+            <a className='blue button'>Log In</a>
+          </Link>
         </div>
       </div>
     </div>
