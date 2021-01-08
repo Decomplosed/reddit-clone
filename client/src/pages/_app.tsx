@@ -11,6 +11,7 @@ Axios.defaults.baseURL = 'http://localhost:5005/api';
 Axios.defaults.withCredentials = true;
 
 function App({ Component, pageProps }: AppProps) {
+  const { pathname } = useRouter();
   return (
     <Fragment>
       <Navbar />
