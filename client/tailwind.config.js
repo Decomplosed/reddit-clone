@@ -36,6 +36,7 @@ module.exports = {
           width: '100%',
           marginLeft: 'auto',
           marginRight: 'auto',
+          '@screen sm': { maxWidth: '640px' },
         },
       });
     },
