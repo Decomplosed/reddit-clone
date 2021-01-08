@@ -23,10 +23,11 @@ module.exports = {
         70: '17.5rem',
         160: '40rem',
       },
+      container: false,
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [function ({ addComponents }) {}],
 };
