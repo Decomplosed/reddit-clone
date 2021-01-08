@@ -6,6 +6,7 @@ export default function Home() {
       <Head>
         <title>Readit</title>
       </Head>
+      <div className='container'></div>
     </div>
   );
 }
