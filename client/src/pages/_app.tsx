@@ -10,7 +10,11 @@ Axios.defaults.baseURL = 'http://localhost:5005/api';
 Axios.defaults.withCredentials = true;
 
 function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <Fragment>
+      <Navbar />
+    </Fragment>
+  );
 }
 
 export default App;
