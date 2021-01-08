@@ -30,7 +30,11 @@ export default function Home() {
           />
         </div>
         {/* Auth buttons */}
-        <div className='flex'></div>
+        <div className='flex'>
+          <Link href='/login'>
+            <a className='hollow blue button'>Log In</a>
+          </Link>
+        </div>
       </div>
     </div>
   );
