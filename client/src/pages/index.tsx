@@ -33,10 +33,12 @@ export default function Home() {
         {/* Auth buttons */}
         <div className='flex'>
           <Link href='/login'>
-            <a className='w-32 py-1 mr-4 hollow blue button'>Log In</a>
+            <a className='w-32 py-1 mr-4 leading-5 hollow blue button'>
+              Log In
+            </a>
           </Link>
           <Link href='/register'>
-            <a className='w-32 py-1 blue button'>Register</a>
+            <a className='w-32 py-1 leading-5 blue button'>Register</a>
           </Link>
         </div>
       </div>
