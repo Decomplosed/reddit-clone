@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import { AppProps } from 'next/app';
 import Axios from 'axios';
+import { useRouter } from 'next/router';
 
 import '../styles/tailwind.css';
 
