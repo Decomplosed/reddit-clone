@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { Post } from '../types';
 
 export default function Home() {
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState<Post[]>([]);
 
   useEffect(() => {
     Axios.get('/posts')
