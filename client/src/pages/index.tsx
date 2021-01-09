@@ -23,7 +23,7 @@ export default function Home() {
           {posts.map((post) => (
             <div key={post.identifier} className='flex mb-4 bg-white roudned'>
               {/*Vote section*/}
-              <div className='w-10 text-center bg-gray-200 rounded-1'>
+              <div className='w-10 text-center bg-gray-200 rounded-l'>
                 <p>Votes</p>
               </div>
               {/*Post data section*/}
