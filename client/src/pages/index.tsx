@@ -17,7 +17,9 @@ export default function Home() {
         <title>Readit</title>
       </Head>
       <div className='container flex pr-4'>
-        <div className='w-160'></div>
+        <div className='w-160'>
+          {posts.map(post => ())}
+        </div>
       </div>
     </div>
   );
