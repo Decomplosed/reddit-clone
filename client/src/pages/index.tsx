@@ -36,6 +36,11 @@ export default function Home() {
                       className='w-6 h-6 mr-1'
                     />
                   </Link>
+                  <Link href={`r/${post.subName}`}>
+                    <a className='text-xs font-bold hover:underline'>
+                      /r/{post.subName}
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
