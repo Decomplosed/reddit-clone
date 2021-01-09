@@ -33,7 +33,7 @@ export default function Home() {
                   <Link href={`r/${post.subName}`}>
                     <img
                       src='https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y'
-                      className='w-6 h-6 mr-1 rounded-full'
+                      className='w-6 h-6 mr-1 rounded-full cursor-pointer'
                     />
                   </Link>
                   <Link href={`r/${post.subName}`}>
