@@ -18,7 +18,7 @@ export default function Home() {
       <Head>
         <title>Readit</title>
       </Head>
-      <div className='container flex pr-4'>
+      <div className='container flex pt-4'>
         <div className='w-160'>
           {posts.map((post) => (
             <div key={post.identifier} className='flex mb-4 bg-white roudned'>
