@@ -38,6 +38,7 @@ module.exports = {
           marginRight: 'auto',
           '@screen sm': { maxWidth: '640px' },
           '@screen md': { maxWidth: '768px' },
+          '@screen lg': { maxWidth: '975px' },
         },
       });
     },
