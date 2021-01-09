@@ -3,7 +3,9 @@ import Head from 'next/head';
 import { useEffect } from 'react';
 
 export default function Home() {
-  useEffect(() => {}, []);
+  useEffect(() => {
+    Axios.get('/posts').then((res) => {});
+  }, []);
 
   return (
     <div className='pt-12'>
