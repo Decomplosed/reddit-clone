@@ -41,6 +41,9 @@ export default function Home() {
                       </a>
                     </Fragment>
                   </Link>
+                  <p className='text-xs text-gray-500'>
+                    <span className='mx-1'>•</span>
+                  </p>
                 </div>
               </div>
             </div>
