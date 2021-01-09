@@ -3,6 +3,8 @@ import Head from 'next/head';
 import { useEffect } from 'react';
 
 export default function Home() {
+  const [posts, setPosts] = useState([]);
+
   useEffect(() => {
     Axios.get('/posts').then((res) => {});
   }, []);
