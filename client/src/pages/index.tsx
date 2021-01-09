@@ -28,7 +28,7 @@ export default function Home() {
               </div>
               {/*Post data section*/}
               <div className='w-full p-2'>
-                <p>{post.body}</p>
+                <div className='flex items-center'></div>
               </div>
             </div>
           ))}
