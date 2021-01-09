@@ -43,6 +43,7 @@ export default function Home() {
                   </Link>
                   <p className='text-xs text-gray-500'>
                     <span className='mx-1'>•</span>
+                    <Link></Link>
                   </p>
                 </div>
               </div>
