@@ -31,13 +31,15 @@ export default function Home() {
               <div className='w-full p-2'>
                 <div className='flex items-center'>
                   <Link href={`r/${post.subName}`}>
-                    <img
-                      src='https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y'
-                      className='w-6 h-6 mr-1 rounded-full cursor-pointer'
-                    />
-                    <a className='text-xs font-bold hover:underline'>
-                      /r/{post.subName}
-                    </a>
+                    <Fragment>
+                      <img
+                        src='https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y'
+                        className='w-6 h-6 mr-1 rounded-full cursor-pointer'
+                      />
+                      <a className='text-xs font-bold hover:underline'>
+                        /r/{post.subName}
+                      </a>
+                    </Fragment>
                   </Link>
                 </div>
               </div>
