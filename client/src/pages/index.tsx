@@ -27,7 +27,9 @@ export default function Home() {
                 <p>Votes</p>
               </div>
               {/*Post data section*/}
-              <div className='w-full p-2'></div>
+              <div className='w-full p-2'>
+                <p>{post.body}</p>
+              </div>
             </div>
           ))}
         </div>
