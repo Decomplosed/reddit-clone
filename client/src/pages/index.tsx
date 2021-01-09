@@ -6,7 +6,7 @@ export default function Home() {
       <Head>
         <title>Readit</title>
       </Head>
-      <div className='container'>
+      <div className='container flex pr-4'>
         <h1>Recent Posts</h1>
       </div>
     </div>
