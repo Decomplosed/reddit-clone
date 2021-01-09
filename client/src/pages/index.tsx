@@ -1,6 +1,6 @@
 import Axios from 'axios';
 import Head from 'next/head';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
