@@ -35,8 +35,6 @@ export default function Home() {
                       src='https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y'
                       className='w-6 h-6 mr-1 rounded-full cursor-pointer'
                     />
-                  </Link>
-                  <Link href={`r/${post.subName}`}>
                     <a className='text-xs font-bold hover:underline'>
                       /r/{post.subName}
                     </a>
