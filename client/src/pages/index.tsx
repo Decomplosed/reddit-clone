@@ -21,7 +21,10 @@ export default function Home() {
       <div className='container flex pr-4'>
         <div className='w-160'>
           {posts.map((post) => (
-            <div key={post.identifier}></div>
+            <div
+              key={post.identifier}
+              className='flex mb-4 bg-white roudned'
+            ></div>
           ))}
         </div>
       </div>
