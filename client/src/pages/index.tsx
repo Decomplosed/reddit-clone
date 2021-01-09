@@ -1,7 +1,7 @@
 import Axios from 'axios';
 import Head from 'next/head';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Fragment } from 'react';
 
 import { Post } from '../types';
 
