@@ -29,7 +29,14 @@ export default function Home() {
               </div>
               {/*Post data section*/}
               <div className='w-full p-2'>
-                <div className='flex items-center'></div>
+                <div className='flex items-center'>
+                  <Link href={`r/${post.subName}`}>
+                    <img
+                      src='https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y'
+                      className='w-6 h-6 mr-1'
+                    />
+                  </Link>
+                </div>
               </div>
             </div>
           ))}
