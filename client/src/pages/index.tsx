@@ -50,7 +50,9 @@ export default function Home() {
                     <Link href={`/u/user`}>
                       <a className='mx-1 hover:underline'>/u/user</a>
                     </Link>
-                    <Link href={`/r/${post.subName}`}></Link>
+                    <Link
+                      href={`/r/${post.subName}/${post.identifier}/${post.slug}`}
+                    ></Link>
                   </p>
                 </div>
               </div>
