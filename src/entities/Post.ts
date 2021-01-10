@@ -55,7 +55,9 @@ export default class Post extends Entity {
 
   protected url: string;
   @AfterLoad()
-  createFields() {}
+  createFields() {
+    this.url = `/r/${this.subName}/${this.identifier}/${this.slug}`;
+  }
 
   @BeforeInsert()
   makeIdAndSlug() {
