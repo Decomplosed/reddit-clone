@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useEffect, useState, Fragment } from 'react';
 import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime';
 
 import { Post } from '../types';
 
