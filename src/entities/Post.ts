@@ -6,6 +6,7 @@ import {
   JoinColumn,
   BeforeInsert,
   OneToMany,
+  AfterLoad,
 } from 'typeorm';
 import { slugify, makeId } from '../utils/helpers';
 import Comment from './Comment';
