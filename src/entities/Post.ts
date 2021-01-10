@@ -52,6 +52,8 @@ export default class Post extends Entity {
   @OneToMany(() => Comment, (comment) => comment.post)
   comments: Comment[];
 
+  protected url: string;
+
   @BeforeInsert()
   makeIdAndSlug() {
     this.identifier = makeId(7);
