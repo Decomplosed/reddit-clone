@@ -54,12 +54,8 @@ export default class Post extends Entity {
   @OneToMany(() => Comment, (comment) => comment.post)
   comments: Comment[];
 
-  @Expose()
-
-  protected url: string;
-  @AfterLoad()
-  createFields() {
-    this.url = `/r/${this.subName}/${this.identifier}/${this.slug}`;
+  @Expose() get url(): string {
+    return `/r/${this.subName}/${this.identifier}/${this.slug}`;
   }
 
   @BeforeInsert()
