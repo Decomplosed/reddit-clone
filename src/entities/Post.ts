@@ -54,8 +54,9 @@ export default class Post extends Entity {
   comments: Comment[];
 
   protected url: string;
-
+  @AfterLoad()
   @BeforeInsert()
+  
   makeIdAndSlug() {
     this.identifier = makeId(7);
     this.slug = slugify(this.title);
