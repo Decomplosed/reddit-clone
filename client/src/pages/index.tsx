@@ -57,6 +57,7 @@ export default function Home() {
                     </Link>
                   </p>
                 </div>
+                <Link href={post.url}></Link>
               </div>
             </div>
           ))}
