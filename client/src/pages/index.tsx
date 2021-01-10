@@ -6,6 +6,7 @@ import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 
 import { Post } from '../types';
+import { GetServerSideProps } from 'next';
 
 dayjs.extend(relativeTime);
 
