@@ -55,8 +55,9 @@ export default class Post extends Entity {
 
   protected url: string;
   @AfterLoad()
+  createFields() {}
+
   @BeforeInsert()
-  
   makeIdAndSlug() {
     this.identifier = makeId(7);
     this.slug = slugify(this.title);
