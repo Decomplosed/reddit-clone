@@ -6,4 +6,6 @@ export interface Post {
   subName: string;
   createdAt: string;
   updatedAt: string;
+  url: string;
+  username: string;
 }
