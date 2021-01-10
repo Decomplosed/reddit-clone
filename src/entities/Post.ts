@@ -54,6 +54,8 @@ export default class Post extends Entity {
   @OneToMany(() => Comment, (comment) => comment.post)
   comments: Comment[];
 
+  @Expose()
+
   protected url: string;
   @AfterLoad()
   createFields() {
