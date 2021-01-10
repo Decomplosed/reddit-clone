@@ -60,7 +60,7 @@ export default function Home() {
                 <Link href={post.url}>
                   <a className='my-1 text-lg font-medium'>{post.title}</a>
                 </Link>
-                {post.body && <p className='my-1 text-sm'></p>}
+                {post.body && <p className='my-1 text-sm'>{post.body}</p>}
               </div>
             </div>
           ))}
