@@ -64,8 +64,8 @@ export default function Home() {
                 <div className='flex'>
                   <Link href={post.url}>
                     <a>
-                      <div className='px-1 mr-2 text-xs text-gray-500 rounded cursor-pointer hover:bg-gray-200'>
-                        <i className='fas fa-comment-alt fa-xs' />
+                      <div className='px-1 py-1 mr-2 text-xs text-gray-400 rounded cursor-pointer hover:bg-gray-200'>
+                        <i className='mr-1 fas fa-comment-alt fa-xs' />
                         <span>20 Comments</span>
                       </div>
                     </a>
