@@ -53,7 +53,9 @@ export default function Home() {
                     <Link
                       href={`/r/${post.subName}/${post.identifier}/${post.slug}`}
                     >
-                      <a className='mx-1 hover:underline'></a>
+                      <a className='mx-1 hover:underline'>
+                        {dayjs(post.createdAt).fromNow()}
+                      </a>
                     </Link>
                   </p>
                 </div>
