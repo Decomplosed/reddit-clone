@@ -7,6 +7,8 @@ import relativeTime from 'dayjs/plugin/relativeTime';
 
 import { Post } from '../types';
 
+dayjs.extend(relativeTime);
+
 export default function Home() {
   const [posts, setPosts] = useState<Post[]>([]);
 
