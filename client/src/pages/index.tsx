@@ -61,7 +61,9 @@ export default function Home() {
                   <a className='my-1 text-lg font-medium'>{post.title}</a>
                 </Link>
                 {post.body && <p className='my-1 text-sm'>{post.body}</p>}
-                <div className='flex'></div>
+                <div className='flex'>
+                  <Link href={post.url}></Link>
+                </div>
               </div>
             </div>
           ))}
