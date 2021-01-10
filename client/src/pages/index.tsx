@@ -2,6 +2,7 @@ import Axios from 'axios';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useEffect, useState, Fragment } from 'react';
+import dayjs from 'dayjs';
 
 import { Post } from '../types';
 
