@@ -62,7 +62,11 @@ export default function Home() {
                 </Link>
                 {post.body && <p className='my-1 text-sm'>{post.body}</p>}
                 <div className='flex'>
-                  <Link href={post.url}></Link>
+                  <Link href={post.url}>
+                    <a>
+                      <div className='px-1 mr-2 text-gray-500 rounded cursor-pointer hover:bg-gray-200'></div>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
