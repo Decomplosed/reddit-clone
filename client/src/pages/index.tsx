@@ -47,12 +47,10 @@ export default function Home() {
                   </Link>
                   <p className='text-xs text-gray-500'>
                     <span className='mx-1'>•</span>
-                    <Link href={`/u/user`}>
-                      <a className='mx-1 hover:underline'>/u/user</a>
+                    <Link href={`/u/${post.username}`}>
+                      <a className='mx-1 hover:underline'>/u/{post.username}</a>
                     </Link>
-                    <Link
-                      href={``}
-                    >
+                    <Link href={``}>
                       <a className='mx-1 hover:underline'>
                         {dayjs(post.createdAt).fromNow()}
                       </a>
