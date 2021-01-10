@@ -43,7 +43,9 @@ export default function Home() {
                   </Link>
                   <p className='text-xs text-gray-500'>
                     <span className='mx-1'>•</span>
-                    <Link href={`/u/user`}></Link>
+                    <Link href={`/u/user`}>
+                      <a className='mx-1 hover:underline'>/u/user</a>
+                    </Link>
                   </p>
                 </div>
               </div>
