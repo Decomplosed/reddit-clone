@@ -39,6 +39,8 @@ export default class Comment extends Entity {
   post: Post;
 
   @OneToMany(() => Vote, (vote) => vote.comment)
+  votes: Vote[];
+
   @BeforeInsert()
   makeIdAndSlug() {
     this.identifier = makeId(8);
