@@ -37,6 +37,8 @@ export default class Comment extends Entity {
   @ManyToOne(() => Post, (post) => post.comments, { nullable: false })
   post: Post;
 
+  @OneToMany(() => Vote)
+  
   @BeforeInsert()
   makeIdAndSlug() {
     this.identifier = makeId(8);
