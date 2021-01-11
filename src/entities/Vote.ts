@@ -2,10 +2,10 @@ import { Entity as TOEntity } from 'typeorm';
 
 import Entity from './Entity';
 
-@TOEntity('users')
-export default class User extends Entity {
-  constructor(user: Partial<User>) {
+@TOEntity('votes')
+export default class Vote extends Entity {
+  constructor(vote: Partial<Vote>) {
     super();
-    Object.assign(this, user);
+    Object.assign(this, vote);
   }
 }
