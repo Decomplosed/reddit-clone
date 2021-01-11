@@ -14,6 +14,7 @@ import Comment from './Comment';
 import Entity from './Entity';
 import Sub from './Sub';
 import User from './User';
+import Vote from './Vote';
 
 @TOEntity('posts')
 export default class Post extends Entity {
