@@ -91,5 +91,6 @@ export default function Home() {
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   try {
+    return { props: {} };
   } catch (error) {}
 };
