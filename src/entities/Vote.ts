@@ -11,6 +11,7 @@ export default class Vote extends Entity {
     @Column()
     value: number
 
-    @ManyToOne()
+    @ManyToOne(() => User)
+
   }
 }
