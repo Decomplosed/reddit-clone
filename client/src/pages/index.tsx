@@ -94,5 +94,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     const res = await Axios.get('/posts');
 
     return { props: { posts: res.data } };
-  } catch (error) {}
+  } catch (error) {
+    return { props: { error: 'Something went wrong' } };
+  }
 };
