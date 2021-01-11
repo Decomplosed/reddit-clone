@@ -14,6 +14,6 @@ export default class Vote extends Entity {
 
     @ManyToOne(() => User)
     @JoinColumn({name: 'username', referencedColumnName: 'username'})
-
+    user: User
   }
 }
