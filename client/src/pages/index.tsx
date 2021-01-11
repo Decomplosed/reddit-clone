@@ -91,6 +91,7 @@ export default function Home() {
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   try {
+    const res = await Axios.get('/posts');
     return { props: {} };
   } catch (error) {}
 };
