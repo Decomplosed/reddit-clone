@@ -11,6 +11,7 @@ import {
 import Entity from './Entity';
 import Post from './Post';
 import User from './User';
+import Vote from './Vote';
 
 import { makeId } from '../utils/helpers';
 @TOEntity('comments')
