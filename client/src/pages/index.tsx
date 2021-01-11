@@ -10,15 +10,7 @@ import { GetServerSideProps } from 'next';
 
 dayjs.extend(relativeTime);
 
-export default function Home() {
-  const [posts, setPosts] = useState<Post[]>([]);
-
-  useEffect(() => {
-    Axios.get('/posts')
-      .then((res) => setPosts(res.data))
-      .catch((err) => console.log(err));
-  }, []);
-
+export default function Home({ posts }) {
   return (
     <div className='pt-12'>
       <Head>
