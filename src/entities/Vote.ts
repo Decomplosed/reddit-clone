@@ -10,18 +10,18 @@ export default class Vote extends Entity {
   constructor(vote: Partial<Vote>) {
     super();
     Object.assign(this, vote);
-
-    @Column()
-    value: number;
-
-    @ManyToOne(() => User)
-    @JoinColumn({name: 'username', referencedColumnName: 'username'})
-    user: User
-
-    @Column()
-    username: string
-
-    @ManyToOne(() => Post)
-    comment: Comment
   }
+
+  @Column()
+  value: number;
+
+  @ManyToOne(() => User)
+  @JoinColumn({ name: 'username', referencedColumnName: 'username' })
+  user: User;
+
+  @Column()
+  username: string;
+
+  @ManyToOne(() => Post)
+  comment: Comment;
 }
