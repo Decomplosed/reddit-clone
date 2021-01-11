@@ -10,10 +10,13 @@ export default class Vote extends Entity {
     Object.assign(this, vote);
 
     @Column()
-    value: number
+    value: number;
 
     @ManyToOne(() => User)
     @JoinColumn({name: 'username', referencedColumnName: 'username'})
     user: User
+
+    @Column()
+    username: string
   }
 }
