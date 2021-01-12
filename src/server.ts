@@ -34,6 +34,7 @@ app.get('/', (_, res) => res.send('Hello there!'));
 app.use('/api/auth', authRoutes);
 app.use('/api/posts', postRoutes);
 app.use('/api/subs', subRoutes);
+app.use('/api/misc', miscRoutes);
 
 app.listen(PORT, async () => {
   console.log(`Server running at http://localhost:${PORT}`);
