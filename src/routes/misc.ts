@@ -18,7 +18,7 @@ const vote = async (req: Request, res: Response) => {
     const user: User = res.locals.user;
     let post = await Post.findOneOrFail({ identifier, slug });
     let vote: Vote | undefined;
-    let comment;
+    let comment: Comment | undefined;
   } catch (error) {
     console.log(error);
     return res.status(500).json({ error: 'Something went wrong' });
