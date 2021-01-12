@@ -11,7 +11,9 @@ const vote = (req: Request, res: Response) => {
   }
 
   try {
-  } catch (error) {}
+  } catch (error) {
+    return res.status(500).json({ error: 'Something went wrong' });
+  }
 };
 
 router.post('/vote', auth, vote);
