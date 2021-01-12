@@ -3,7 +3,7 @@ import auth from '../middleware/auth';
 
 const router = Router();
 
-const vote = () => {};
+const vote = (req: Request, res: Response) => {};
 
 router.post('/vote', auth, vote);
 
