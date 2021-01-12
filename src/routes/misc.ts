@@ -11,6 +11,7 @@ const vote = (req: Request, res: Response) => {
   }
 
   try {
+    const user = res.locals.user;
   } catch (error) {
     console.log(error);
     return res.status(500).json({ error: 'Something went wrong' });
