@@ -9,6 +9,9 @@ const vote = (req: Request, res: Response) => {
   if (![-1, 0, 1].includes(value)) {
     return res.status(400).json({ value: 'Value must be -1, 0 or 1' });
   }
+
+  try {
+  } catch (error) {}
 };
 
 router.post('/vote', auth, vote);
