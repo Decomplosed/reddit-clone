@@ -1,4 +1,5 @@
 import { Router, Request, Response } from 'express';
+import User from '../entities/User';
 import auth from '../middleware/auth';
 
 const router = Router();
