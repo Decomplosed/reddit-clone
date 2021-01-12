@@ -4,7 +4,7 @@ import auth from '../middleware/auth';
 
 const router = Router();
 
-const vote = (req: Request, res: Response) => {
+const vote = async (req: Request, res: Response) => {
   const { identifier, slug, commentIdentifier, value } = req.body;
 
   if (![-1, 0, 1].includes(value)) {
