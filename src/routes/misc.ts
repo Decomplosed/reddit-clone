@@ -19,6 +19,11 @@ const vote = async (req: Request, res: Response) => {
     let post = await Post.findOneOrFail({ identifier, slug });
     let vote: Vote | undefined;
     let comment: Comment | undefined;
+
+    if(commentIdentifier) {
+
+    } else {}
+
   } catch (error) {
     console.log(error);
     return res.status(500).json({ error: 'Something went wrong' });
