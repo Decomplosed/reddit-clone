@@ -22,6 +22,7 @@ const vote = async (req: Request, res: Response) => {
 
     if (commentIdentifier) {
       comment = await Comment.findOneOrFail({ identifier: commentIdentifier });
+      vote = await Vote.findOne({ user, comment });
     } else {
     }
   } catch (error) {
