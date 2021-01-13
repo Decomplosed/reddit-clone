@@ -28,6 +28,7 @@ const vote = async (req: Request, res: Response) => {
     }
 
     if (!vote && value === 0) {
+      return res.status(404).json({ error: 'Vote not found' });
     }
   } catch (error) {
     console.log(error);
