@@ -47,6 +47,8 @@ const vote = async (req: Request, res: Response) => {
       { identifier, slug },
       { relations: ['sub', 'comments', 'votes'] },
     );
+
+    return res.json(post);
   } catch (error) {
     console.log(error);
     return res.status(500).json({ error: 'Something went wrong' });
