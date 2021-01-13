@@ -36,8 +36,9 @@ const vote = async (req: Request, res: Response) => {
       } else vote.post = post;
 
       await vote.save();
-    } else if(value === 0) {
-      await vote.remove()
+    } else if (value === 0) {
+      await vote.remove();
+    } else if (vote.value !== value) {
     }
   } catch (error) {
     console.log(error);
