@@ -26,6 +26,9 @@ const vote = async (req: Request, res: Response) => {
     } else {
       vote = await Vote.findOne({ user, post });
     }
+
+    if (!vote && value === 0) {
+    }
   } catch (error) {
     console.log(error);
     return res.status(500).json({ error: 'Something went wrong' });
