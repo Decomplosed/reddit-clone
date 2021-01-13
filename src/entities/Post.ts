@@ -61,7 +61,9 @@ export default class Post extends Entity {
     return `/r/${this.subName}/${this.identifier}/${this.slug}`;
   }
 
-  @Expose() get commentCount(): number {}
+  @Expose() get commentCount(): number {
+    return this.comments?.length;
+  }
 
   @BeforeInsert()
   makeIdAndSlug() {
