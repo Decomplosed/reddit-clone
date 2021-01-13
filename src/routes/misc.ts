@@ -43,7 +43,7 @@ const vote = async (req: Request, res: Response) => {
       await vote.save();
     }
 
-    post = await Post.findOne(
+    post = await Post.findOneOrFail(
       { identifier, slug },
       { relations: ['sub', 'comments', 'votes'] },
     );
