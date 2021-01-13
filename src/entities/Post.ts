@@ -65,7 +65,9 @@ export default class Post extends Entity {
     return this.comments?.length;
   }
 
-  @Expose() get voteScore(): number {}
+  @Expose() get voteScore(): number {
+    return this.votes?.reduce((prev, curr) => prev + (curr.value || 0), 0);
+  }
 
   @BeforeInsert()
   makeIdAndSlug() {
