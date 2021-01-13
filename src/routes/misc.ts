@@ -24,6 +24,7 @@ const vote = async (req: Request, res: Response) => {
       comment = await Comment.findOneOrFail({ identifier: commentIdentifier });
       vote = await Vote.findOne({ user, comment });
     } else {
+      vote = await Vote.findOne({ user, post });
     }
   } catch (error) {
     console.log(error);
