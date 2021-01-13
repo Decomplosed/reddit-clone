@@ -61,6 +61,7 @@ export default class Post extends Entity {
     return `/r/${this.subName}/${this.identifier}/${this.slug}`;
   }
 
+  @Expose()
   @BeforeInsert()
   makeIdAndSlug() {
     this.identifier = makeId(7);
