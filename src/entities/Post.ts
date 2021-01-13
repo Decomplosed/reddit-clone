@@ -70,7 +70,9 @@ export default class Post extends Entity {
   }
 
   protected userVote: number;
-  setUserVote(user: User) {}
+  setUserVote(user: User) {
+    
+  }
 
   @BeforeInsert()
   makeIdAndSlug() {
