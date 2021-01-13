@@ -71,7 +71,7 @@ export default class Post extends Entity {
 
   protected userVote: number;
   setUserVote(user: User) {
-    
+    const index = this.votes?.findIndex((v) => v.username === user.username);
   }
 
   @BeforeInsert()
