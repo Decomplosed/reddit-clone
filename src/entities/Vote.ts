@@ -24,4 +24,7 @@ export default class Vote extends Entity {
 
   @ManyToOne(() => Post)
   post: Post;
+
+  @ManyToOne(() => Comment)
+  comment: Comment;
 }
