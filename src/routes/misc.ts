@@ -20,10 +20,10 @@ const vote = async (req: Request, res: Response) => {
     let vote: Vote | undefined;
     let comment: Comment | undefined;
 
-    if(commentIdentifier) {
-
-    } else {}
-
+    if (commentIdentifier) {
+      comment = await Comment.findOneOrFail({ identifier: commentIdentifier });
+    } else {
+    }
   } catch (error) {
     console.log(error);
     return res.status(500).json({ error: 'Something went wrong' });
