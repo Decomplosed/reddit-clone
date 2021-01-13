@@ -42,6 +42,8 @@ const vote = async (req: Request, res: Response) => {
       vote.value = value;
       await vote.save();
     }
+
+    post = await Post.findOne({ identifier, slug });
   } catch (error) {
     console.log(error);
     return res.status(500).json({ error: 'Something went wrong' });
