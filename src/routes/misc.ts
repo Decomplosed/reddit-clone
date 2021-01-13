@@ -40,6 +40,7 @@ const vote = async (req: Request, res: Response) => {
       await vote.remove();
     } else if (vote.value !== value) {
       vote.value = value;
+      await vote.save();
     }
   } catch (error) {
     console.log(error);
