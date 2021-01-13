@@ -43,7 +43,10 @@ const vote = async (req: Request, res: Response) => {
       await vote.save();
     }
 
-    post = await Post.findOne({ identifier, slug });
+    post = await Post.findOne(
+      { identifier, slug },
+      { relations: ['sub', 'comments', 'votes'] },
+    );
   } catch (error) {
     console.log(error);
     return res.status(500).json({ error: 'Something went wrong' });
