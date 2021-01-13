@@ -65,6 +65,8 @@ export default class Post extends Entity {
     return this.comments?.length;
   }
 
+  @Expose()
+
   @BeforeInsert()
   makeIdAndSlug() {
     this.identifier = makeId(7);
