@@ -5,8 +5,6 @@ import dayjs from 'dayjs';
 
 import { Post } from '../types';
 
-dayjs.extend(relativeTime);
-
 export default function Home() {
   const [posts, setPosts] = useState<Post[]>([]);
 

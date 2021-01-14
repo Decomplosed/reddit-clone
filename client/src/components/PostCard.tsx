@@ -8,6 +8,8 @@ interface PostCardProps {
   post: Post;
 }
 
+dayjs.extend(relativeTime);
+
 export default function PostCard({ post }) {
   return (
     <div key={post.identifier} className='flex mb-4 bg-white roudned'>
