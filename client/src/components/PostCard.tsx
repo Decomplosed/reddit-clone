@@ -2,7 +2,7 @@ import dayjs from 'dayjs';
 import Link from 'next/link';
 import React, { Fragment } from 'react';
 
-export default function PostCard() {
+export default function PostCard({ post }) {
   return (
     <div key={post.identifier} className='flex mb-4 bg-white roudned'>
       {/*Vote section*/}
