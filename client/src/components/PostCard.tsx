@@ -10,7 +10,9 @@ interface PostCardProps {
 
 dayjs.extend(relativeTime);
 
-const ActionButton = () => {};
+const ActionButton = ({ children }) => {
+  return;
+};
 
 export default function PostCard({ post }) {
   return (
