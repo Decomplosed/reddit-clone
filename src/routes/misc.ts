@@ -49,6 +49,7 @@ const vote = async (req: Request, res: Response) => {
     );
 
     post.setUserVote(user);
+    post.comments.forEach();
 
     return res.json(post);
   } catch (error) {
