@@ -45,7 +45,7 @@ const vote = async (req: Request, res: Response) => {
 
     post = await Post.findOneOrFail(
       { identifier, slug },
-      { relations: ['sub', 'comments', 'votes'] },
+      { relations: ['sub', 'comments.votes', 'comments', 'votes'] },
     );
 
     post.setUserVote(user);
