@@ -23,7 +23,9 @@ export default function PostCard({ post }) {
     <div key={post.identifier} className='flex mb-4 bg-white roudned'>
       {/*Vote section*/}
       <div className='w-10 text-center bg-gray-200 rounded-l'>
-        <div className='w-6 mx-auto text-gray-400 rounded cursor-pointer hover:bg-gray-300'></div>
+        <div className='w-6 mx-auto text-gray-400 rounded cursor-pointer hover:bg-gray-300'>
+          <i className='icon-arrow-up'></i>
+        </div>
         <div className='w-6 mx-auto text-gray-400 rounded cursor-pointer hover:bg-gray-300 hover:text-red-500'></div>
       </div>
       {/*Post data section*/}
