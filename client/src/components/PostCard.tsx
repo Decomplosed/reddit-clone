@@ -10,6 +10,8 @@ interface PostCardProps {
 
 dayjs.extend(relativeTime);
 
+const ActionButton = () => {};
+
 export default function PostCard({ post }) {
   return (
     <div key={post.identifier} className='flex mb-4 bg-white roudned'>
