@@ -48,6 +48,8 @@ const vote = async (req: Request, res: Response) => {
       { relations: ['sub', 'comments', 'votes'] },
     );
 
+    post.setUserVote(user);
+
     return res.json(post);
   } catch (error) {
     console.log(error);
