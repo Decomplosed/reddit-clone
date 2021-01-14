@@ -2,7 +2,6 @@ import Axios from 'axios';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
-import relativeTime from 'dayjs/plugin/relativeTime';
 
 import { Post } from '../types';
 
