@@ -14,6 +14,7 @@ import User from './User';
 import Vote from './Vote';
 
 import { makeId } from '../utils/helpers';
+import { Exclude } from 'class-transformer';
 @TOEntity('comments')
 export default class Comment extends Entity {
   constructor(comment: Partial<Comment>) {
