@@ -39,6 +39,7 @@ export default class Comment extends Entity {
   @ManyToOne(() => Post, (post) => post.comments, { nullable: false })
   post: Post;
 
+  @Exclude()
   @OneToMany(() => Vote, (vote) => vote.comment)
   votes: Vote[];
 
