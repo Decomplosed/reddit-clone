@@ -22,7 +22,7 @@ export default function Home() {
       <div className='container flex pt-4'>
         <div className='w-160'>
           {posts.map((post) => (
-
+            <PostCard />
           ))}
         </div>
       </div>
