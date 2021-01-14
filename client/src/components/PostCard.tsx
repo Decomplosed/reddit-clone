@@ -26,7 +26,9 @@ export default function PostCard({ post }) {
         <div className='w-6 mx-auto text-gray-400 rounded cursor-pointer hover:bg-gray-300'>
           <i className='icon-arrow-up'></i>
         </div>
-        <div className='w-6 mx-auto text-gray-400 rounded cursor-pointer hover:bg-gray-300 hover:text-red-500'></div>
+        <div className='w-6 mx-auto text-gray-400 rounded cursor-pointer hover:bg-gray-300 hover:text-red-500'>
+          <i className='icon-arrow-down'></i>
+        </div>
       </div>
       {/*Post data section*/}
       <div className='w-full p-2'>
