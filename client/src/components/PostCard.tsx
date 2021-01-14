@@ -1,6 +1,7 @@
 import dayjs from 'dayjs';
 import Link from 'next/link';
 import React, { Fragment } from 'react';
+import { Post } from '../types';
 
 export default function PostCard({ post }) {
   return (
