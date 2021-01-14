@@ -3,6 +3,10 @@ import Link from 'next/link';
 import React, { Fragment } from 'react';
 import { Post } from '../types';
 
+interface PostCardProps {
+  post: Post;
+}
+
 export default function PostCard({ post }) {
   return (
     <div key={post.identifier} className='flex mb-4 bg-white roudned'>
