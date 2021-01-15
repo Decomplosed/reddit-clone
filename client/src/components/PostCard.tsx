@@ -37,7 +37,7 @@ export default function PostCard({
   const vote = async (value) => {
     try {
       const res = Axios.post('/misc/vote', {
-        identifier: post.identifier,
+        identifier: identifier,
       });
     } catch (error) {
       console.log(error);
