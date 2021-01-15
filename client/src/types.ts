@@ -10,4 +10,5 @@ export interface Post {
   username: string;
   voteScore?: number;
   commentCount?: number;
+  userVote?: number;
 }
