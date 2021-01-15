@@ -1,9 +1,10 @@
 import { Router, Request, Response } from 'express';
 import Comment from '../entities/Comment';
-
 import Post from '../entities/Post';
 import Sub from '../entities/Sub';
+
 import auth from '../middleware/auth';
+import user from '../middleware/user';
 
 const createPost = async (req: Request, res: Response) => {
   const { title, body, sub } = req.body;
