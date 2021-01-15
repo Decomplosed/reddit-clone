@@ -19,6 +19,8 @@ const ActionButton = ({ children }) => {
 };
 
 export default function PostCard({ post }: PostCardProps) {
+  const vote = () => {};
+
   return (
     <div key={post.identifier} className='flex mb-4 bg-white roudned'>
       {/*Vote section*/}
