@@ -19,7 +19,21 @@ const ActionButton = ({ children }) => {
   );
 };
 
-export default function PostCard({ post }: PostCardProps) {
+export default function PostCard({
+  post: {
+    identifier,
+    slug,
+    title,
+    body,
+    subName,
+    createdAt,
+    voteScore,
+    userVote,
+    commentCount,
+    url,
+    username,
+  },
+}: PostCardProps) {
   const vote = async (value) => {
     try {
       const res = Axios.post('/misc/vote', {
