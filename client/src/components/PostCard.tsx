@@ -58,7 +58,10 @@ export default function PostCard({
         >
           <i className='icon-arrow-up'></i>
         </div>
-        <div className='w-6 mx-auto text-gray-400 rounded cursor-pointer hover:bg-gray-300 hover:text-blue-600'>
+        <div
+          className='w-6 mx-auto text-gray-400 rounded cursor-pointer hover:bg-gray-300 hover:text-blue-600'
+          onClick={}
+        >
           <i className='icon-arrow-down'></i>
         </div>
         <p className='text-xs font-bold'>{voteScore}</p>
