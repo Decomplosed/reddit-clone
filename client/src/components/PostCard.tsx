@@ -19,7 +19,10 @@ const ActionButton = ({ children }) => {
 };
 
 export default function PostCard({ post }: PostCardProps) {
-  const vote = async (value) => {};
+  const vote = async (value) => {
+    try {
+    } catch (error) {}
+  };
 
   return (
     <div key={post.identifier} className='flex mb-4 bg-white roudned'>
