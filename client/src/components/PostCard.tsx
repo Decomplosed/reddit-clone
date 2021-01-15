@@ -41,6 +41,8 @@ export default function PostCard({
         slug,
         value,
       });
+
+      console.log(res.data);
     } catch (error) {
       console.log(error);
     }
