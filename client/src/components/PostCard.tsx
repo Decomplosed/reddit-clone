@@ -22,6 +22,7 @@ const ActionButton = ({ children }) => {
 export default function PostCard({ post }: PostCardProps) {
   const vote = async (value) => {
     try {
+      const res = Axios.post();
     } catch (error) {
       console.log(error);
     }
