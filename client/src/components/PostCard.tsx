@@ -54,7 +54,7 @@ export default function PostCard({
       <div className='w-10 text-center bg-gray-200 rounded-l'>
         <div
           className='w-6 mx-auto text-gray-400 rounded cursor-pointer hover:bg-gray-300 hover:text-red-500'
-          onClick={}
+          onClick={() => vote(1)}
         >
           <i className='icon-arrow-up'></i>
         </div>
