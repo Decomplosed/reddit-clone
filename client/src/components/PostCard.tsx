@@ -66,7 +66,7 @@ export default function PostCard({ post }: PostCardProps) {
             <a>
               <ActionButton>
                 <i className='mr-1 fas fa-comment-alt fa-xs' />
-                <span className='font-bold'>20 Comments</span>
+                <span className='font-bold'>{post.commentCount} Comments</span>
               </ActionButton>
             </a>
           </Link>
