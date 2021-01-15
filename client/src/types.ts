@@ -8,4 +8,5 @@ export interface Post {
   updatedAt: string;
   url: string;
   username: string;
+  voteScore?: number;
 }
