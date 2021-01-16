@@ -28,5 +28,7 @@ const reducer = (state: State, { type, payload }: Action) => {
       };
     case 'LOGOUT':
       return { ...state, authenticated: false, user: null };
+    default:
+      throw new Error(`Unknown action type: ${type}`);
   }
 };
