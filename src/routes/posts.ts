@@ -33,6 +33,9 @@ const getPosts = async (_: Request, res: Response) => {
       relations: ['comments', 'votes', 'sub'],
     });
 
+    if (res.locals.user) {
+    }
+
     return res.json(posts);
   } catch (error) {
     console.log(error);
