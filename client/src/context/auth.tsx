@@ -6,4 +6,7 @@ interface State {
   user: User | undefined;
 }
 
-const StateContext = createContext<State>();
+const StateContext = createContext<State>({
+  authenticated: false,
+  user: null,
+});
