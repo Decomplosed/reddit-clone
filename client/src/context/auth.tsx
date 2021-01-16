@@ -6,7 +6,10 @@ interface State {
   user: User | undefined;
 }
 
-interface Action {}
+interface Action {
+  type: string;
+  payload: any;
+}
 
 const StateContext = createContext<State>({
   authenticated: false,
