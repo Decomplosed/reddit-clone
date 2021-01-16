@@ -34,7 +34,7 @@ const getPosts = async (_: Request, res: Response) => {
     });
 
     if (res.locals.user) {
-      posts.forEach((p) => setUserVote(res.locals.user));
+      posts.forEach((p) => p.setUserVote(res.locals.user));
     }
 
     return res.json(posts);
