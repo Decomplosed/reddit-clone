@@ -1,5 +1,8 @@
 import { createContext } from 'react';
 
-interface State {}
+interface State {
+  authenticated: boolean;
+  user: User;
+}
 
 const StateContext = createContext();
