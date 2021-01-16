@@ -80,7 +80,7 @@ const commentOnPost = async (req: Request, res: Response) => {
 
 const router = Router();
 
-router.post('/', auth, createPost);
+router.post('/', user, auth, createPost);
 router.get('/', user, getPosts);
 router.get('/:identifier/:slug', getPost);
 router.post('/:identifier/:slug/comments', user, auth, commentOnPost);
