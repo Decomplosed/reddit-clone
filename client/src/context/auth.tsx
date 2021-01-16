@@ -20,5 +20,11 @@ const DispatchContext = createContext(null);
 
 const reducer = (state: State, { type, payload }: Action) => {
   switch (type) {
+    case 'LOGIN':
+      return {
+        ...state,
+        authenticated: true,
+        user: payload,
+      };
   }
 };
