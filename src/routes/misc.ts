@@ -4,6 +4,7 @@ import Post from '../entities/Post';
 import User from '../entities/User';
 import Vote from '../entities/Vote';
 import auth from '../middleware/auth';
+import user from '../middleware/user';
 
 const router = Router();
 
