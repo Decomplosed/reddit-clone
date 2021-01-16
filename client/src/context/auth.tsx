@@ -33,4 +33,4 @@ const reducer = (state: State, { type, payload }: Action) => {
   }
 };
 
-export const AuthProvider = ({ children }) => {};
+export const AuthProvider = ({ children }: { children: React.ReactNode }) => {};
