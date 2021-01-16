@@ -12,3 +12,5 @@ const StateContext = createContext<State>({
 });
 
 const DispatchContext = createContext(null);
+
+const reducer = () => {};
