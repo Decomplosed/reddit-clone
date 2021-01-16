@@ -13,4 +13,4 @@ const StateContext = createContext<State>({
 
 const DispatchContext = createContext(null);
 
-const reducer = (state: State) => {};
+const reducer = (state: State, { type, payload }: Action) => {};
