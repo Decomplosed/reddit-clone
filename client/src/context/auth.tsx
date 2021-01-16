@@ -26,5 +26,7 @@ const reducer = (state: State, { type, payload }: Action) => {
         authenticated: true,
         user: payload,
       };
+    case 'LOGOUT':
+      return { ...state, authenticated: false, user: null };
   }
 };
