@@ -33,4 +33,4 @@ const reducer = (state: State, { type, payload }: Action) => {
   }
 };
 
-export const AuthProvider = () => {};
+export const AuthProvider = ({ children }) => {};
