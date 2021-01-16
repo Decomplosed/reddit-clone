@@ -6,4 +6,4 @@ interface State {
   user: User | undefined;
 }
 
-const StateContext = createContext();
+const StateContext = createContext<State>();
