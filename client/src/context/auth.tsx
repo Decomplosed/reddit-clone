@@ -10,3 +10,5 @@ const StateContext = createContext<State>({
   authenticated: false,
   user: null,
 });
+
+const DispatchContext = createContext(null);
