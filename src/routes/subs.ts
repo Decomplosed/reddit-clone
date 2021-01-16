@@ -5,6 +5,7 @@ import { getRepository } from 'typeorm';
 import User from '../entities/User';
 import Sub from '../entities/Sub';
 import auth from '../middleware/auth';
+import user from '../middleware/user';
 
 const createSub = async (req: Request, res: Response) => {
   const { name, title, description } = req.body;
