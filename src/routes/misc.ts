@@ -59,6 +59,6 @@ const vote = async (req: Request, res: Response) => {
   }
 };
 
-router.post('/vote', auth, vote);
+router.post('/vote', user, auth, vote);
 
 export default router;
