@@ -13,4 +13,9 @@ export interface Post {
   userVote?: number;
 }
 
-export interface User {}
+export interface User {
+  username: string;
+  email: string;
+  createdAt: string;
+  updatedAt: string;
+}
