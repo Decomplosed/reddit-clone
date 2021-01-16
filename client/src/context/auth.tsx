@@ -6,6 +6,8 @@ interface State {
   user: User | undefined;
 }
 
+interface Action {}
+
 const StateContext = createContext<State>({
   authenticated: false,
   user: null,
