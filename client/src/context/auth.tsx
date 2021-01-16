@@ -33,4 +33,6 @@ const reducer = (state: State, { type, payload }: Action) => {
   }
 };
 
-export const AuthProvider = ({ children }: { children: React.ReactNode }) => {};
+export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
+  const [state, dispatch] = useReducer();
+};
