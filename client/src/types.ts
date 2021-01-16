@@ -12,3 +12,5 @@ export interface Post {
   commentCount?: number;
   userVote?: number;
 }
+
+export interface User {}
