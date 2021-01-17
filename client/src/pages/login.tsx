@@ -26,6 +26,8 @@ export default function Login() {
         password,
       });
 
+      dispatch({ type: 'LOGIN', payload: res.data });
+
       router.push('/');
     } catch (error) {
       setErrors(error.response.data);
