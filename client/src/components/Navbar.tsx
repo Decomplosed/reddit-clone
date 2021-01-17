@@ -30,7 +30,12 @@ const Navbar: React.FC = () => {
       </div>
       <div className='flex'>
         {authenticated ? (
-          <button onClick={}>Logout</button>
+          <button
+            className='w-32 py-1 mr-4 leading-5 hollow blue button'
+            onClick={}
+          >
+            Logout
+          </button>
         ) : (
           <Fragment>
             <Link href='/login'>
