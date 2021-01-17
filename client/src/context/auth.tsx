@@ -34,5 +34,8 @@ const reducer = (state: State, { type, payload }: Action) => {
 };
 
 export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
-  const [state, dispatch] = useReducer();
+  const [state, dispatch] = useReducer(reducer, {
+    user: null,
+    authenticated: false,
+  });
 };
