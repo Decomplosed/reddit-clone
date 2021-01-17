@@ -38,4 +38,8 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     user: null,
     authenticated: false,
   });
+
+  return (
+    <DispatchContext.Provider></DispatchContext.Provider>
+  )
 };
