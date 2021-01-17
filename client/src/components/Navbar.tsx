@@ -5,6 +5,8 @@ import { useAuthState, useAuthDispatch } from '../context/auth';
 import RedditLogo from '../images/reddit.svg';
 
 const Navbar: React.FC = () => {
+  const { authenticated } = useAuthState();
+
   return (
     <div className='fixed inset-x-0 top-0 z-10 flex items-center justify-center h-12 px-5 bg-white'>
       <div className='flex items-center'>
