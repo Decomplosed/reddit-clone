@@ -11,10 +11,12 @@ const Navbar: React.FC = () => {
   const dispatch = useAuthDispatch();
 
   const logout = () => {
-    Axios.get('/auth/logout').then(() => {
-      dispatch({ type: 'LOGOUT' });
-      window.location.reload();
-    }).catch(err => console.log(err);)
+    Axios.get('/auth/logout')
+      .then(() => {
+        dispatch({ type: 'LOGOUT' });
+        window.location.reload();
+      })
+      .catch((err) => console.log(err));
   };
 
   return (
