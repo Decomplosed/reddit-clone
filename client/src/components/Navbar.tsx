@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
     Axios.get('/auth/logout').then(() => {
       dispatch({ type: 'LOGOUT' });
       window.location.reload();
-    });
+    }).catch(err => console.log(err);)
   };
 
   return (
