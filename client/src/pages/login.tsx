@@ -17,7 +17,7 @@ export default function Login() {
     event.preventDefault();
 
     try {
-      await Axios.post('/auth/login', {
+      const res = await Axios.post('/auth/login', {
         username,
         password,
       });
