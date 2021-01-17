@@ -8,6 +8,7 @@ import RedditLogo from '../images/reddit.svg';
 
 const Navbar: React.FC = () => {
   const { authenticated } = useAuthState();
+  const dispatch = useAuthDispatch();
 
   const logout = () => {
     Axios.get('/auth/logout').then(() => {});
