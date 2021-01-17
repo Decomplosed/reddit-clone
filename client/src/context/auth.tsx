@@ -1,3 +1,4 @@
+import Axios from 'axios';
 import { createContext, useContext, useReducer, useEffect } from 'react';
 import { User } from '../types';
 
