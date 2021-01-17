@@ -40,7 +40,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     authenticated: false,
   });
 
-  const dispatch = () => {};
+  const dispatch = (type: string, payload?: any) => {};
 
   useEffect(() => {});
 
