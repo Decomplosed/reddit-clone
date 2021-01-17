@@ -41,7 +41,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <DispatchContext.Provider value={dispatch}>
-      <StateContext.Provider></StateContext.Provider>
+      <StateContext.Provider value={state}></StateContext.Provider>
     </DispatchContext.Provider>
   );
 };
