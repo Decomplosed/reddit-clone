@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import Link from 'next/link';
+import Axios from 'axios';
 
 import { useAuthState, useAuthDispatch } from '../context/auth';
 
