@@ -13,6 +13,8 @@ export default function Login() {
   const [password, setPassword] = useState('');
   const [errors, setErrors] = useState<any>({});
 
+  const dispatch = useAuthDispatch();
+
   const router = useRouter();
 
   const submitForm = async (event: FormEvent) => {
