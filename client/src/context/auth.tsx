@@ -40,9 +40,9 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     authenticated: false,
   });
 
-  useEffect(() => {
-    Axios.get('/auth/me');
-  });
+  const dispatch = () => {};
+
+  useEffect(() => {});
 
   return (
     <DispatchContext.Provider value={dispatch}>
