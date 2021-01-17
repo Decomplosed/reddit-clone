@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
         {authenticated ? (
           <button
             className='w-32 py-1 mr-4 leading-5 hollow blue button'
-            onClick={}
+            onClick={logout}
           >
             Logout
           </button>
