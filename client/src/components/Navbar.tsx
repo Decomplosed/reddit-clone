@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import { useAuthState, useAuthDispatch } from '../context/auth';
+
 import RedditLogo from '../images/reddit.svg';
 
 const Navbar: React.FC = () => (
