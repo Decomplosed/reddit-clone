@@ -13,6 +13,7 @@ const Navbar: React.FC = () => {
   const logout = () => {
     Axios.get('/auth/logout').then(() => {
       dispatch({ type: 'LOGOUT' });
+      window.location.reload();
     });
   };
 
