@@ -39,7 +39,5 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     authenticated: false,
   });
 
-  return (
-    <DispatchContext.Provider></DispatchContext.Provider>
-  )
+  return <DispatchContext.Provider value={dispatch}></DispatchContext.Provider>;
 };
