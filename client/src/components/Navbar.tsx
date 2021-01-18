@@ -40,25 +40,26 @@ const Navbar: React.FC = () => {
         />
       </div>
       <div className='flex'>
-        {authenticated ? (
-          <button
-            className='w-32 py-1 mr-4 leading-5 hollow blue button'
-            onClick={logout}
-          >
-            Logout
-          </button>
-        ) : (
-          <Fragment>
-            <Link href='/login'>
-              <a className='w-32 py-1 mr-4 leading-5 hollow blue button'>
-                Log In
-              </a>
-            </Link>
-            <Link href='/register'>
-              <a className='w-32 py-1 leading-5 blue button'>Register</a>
-            </Link>
-          </Fragment>
-        )}
+        {!loading &&
+          (authenticated ? (
+            <button
+              className='w-32 py-1 mr-4 leading-5 hollow blue button'
+              onClick={logout}
+            >
+              Logout
+            </button>
+          ) : (
+            <Fragment>
+              <Link href='/login'>
+                <a className='w-32 py-1 mr-4 leading-5 hollow blue button'>
+                  Log In
+                </a>
+              </Link>
+              <Link href='/register'>
+                <a className='w-32 py-1 leading-5 blue button'>Register</a>
+              </Link>
+            </Fragment>
+          ))}
       </div>
     </div>
   );
