@@ -7,7 +7,7 @@ import { useAuthState, useAuthDispatch } from '../context/auth';
 import RedditLogo from '../images/reddit.svg';
 
 const Navbar: React.FC = () => {
-  const { authenticated } = useAuthState();
+  const { authenticated, loading } = useAuthState();
   const dispatch = useAuthDispatch();
 
   const logout = () => {
