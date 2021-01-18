@@ -36,6 +36,7 @@
     "server": "nodemon --exec ts-node src/server.ts",
     "client": "cd client && yarn dev",
     "typeorm": "ts-node ./node_modules/typeorm/cli.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\" -n server,client"
+    "dev": "concurrently \"npm run server\" \"npm run client\" -n server,client",
+    "seed": "ts-node ./node_modules/typeorm-seeding/dist/cli.js seed"
   }
 }
