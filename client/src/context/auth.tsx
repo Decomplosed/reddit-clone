@@ -44,7 +44,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     defaultDispatch({ type, payload });
 
   useEffect(() => {
-    Axios.get('/auth/me');
+    async function loadUser() {}
   });
 
   return (
