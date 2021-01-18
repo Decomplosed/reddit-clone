@@ -40,6 +40,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const [state, defaultDispatch] = useReducer(reducer, {
     user: null,
     authenticated: false,
+    loading: true,
   });
 
   const dispatch = (type: string, payload?: any) =>
