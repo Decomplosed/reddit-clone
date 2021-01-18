@@ -43,7 +43,9 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const dispatch = (type: string, payload?: any) =>
     defaultDispatch({ type, payload });
 
-  useEffect(() => {});
+  useEffect(() => {
+    Axios.get()
+  });
 
   return (
     <DispatchContext.Provider value={defaultDispatch}>
