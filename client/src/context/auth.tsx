@@ -31,6 +31,8 @@ const reducer = (state: State, { type, payload }: Action) => {
       };
     case 'LOGOUT':
       return { ...state, authenticated: false, user: null };
+    case 'STOP_LOADING':
+      return { ...state, loading: false };
     default:
       throw new Error(`Unknown action type: ${type}`);
   }
