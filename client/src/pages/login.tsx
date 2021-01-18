@@ -17,6 +17,7 @@ export default function Login() {
   const { authenticated } = useAuthState();
 
   const router = useRouter();
+  if (authenticated) 
 
   const submitForm = async (event: FormEvent) => {
     event.preventDefault();
