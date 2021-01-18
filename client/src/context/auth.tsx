@@ -44,7 +44,10 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     defaultDispatch({ type, payload });
 
   useEffect(() => {
-    async function loadUser() {}
+    async function loadUser() {
+      try {
+      } catch (error) {}
+    }
   });
 
   return (
