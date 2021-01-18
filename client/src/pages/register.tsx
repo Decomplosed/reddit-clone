@@ -4,6 +4,8 @@ import Link from 'next/link';
 import Axios from 'axios';
 import { useRouter } from 'next/router';
 
+import { useAuthState } from '../context/auth';
+
 import InputGroup from '../components/InputGroup';
 
 export default function Register() {
