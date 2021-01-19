@@ -19,10 +19,12 @@ function App({ Component, pageProps }: AppProps) {
   const authRoute = authRoutes.includes(pathname);
 
   return (
-    <AuthProvider>
-      {!authRoute && <Navbar />}
-      <Component {...pageProps} />
-    </AuthProvider>
+    <SWRConfig>
+      <AuthProvider>
+        {!authRoute && <Navbar />}
+        <Component {...pageProps} />
+      </AuthProvider>
+    </SWRConfig>
   );
 }
 
