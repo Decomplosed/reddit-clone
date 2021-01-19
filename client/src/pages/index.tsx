@@ -2,6 +2,7 @@ import Axios from 'axios';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import { Post } from '../types';
+import useSWR from 'swr';
 
 import PostCard from '../components/PostCard';
 
