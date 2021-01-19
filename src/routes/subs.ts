@@ -52,6 +52,8 @@ const getSub = async (req: Request, res: Response) => {
     relations: ['comments', 'votes'],
   });
 
+  sub.posts = posts;
+
   try {
   } catch (error) {}
 };
