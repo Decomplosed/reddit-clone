@@ -82,6 +82,11 @@ export default function PostCard({
               className='w-6 h-6 mr-1 rounded-full cursor-pointer'
             />
           </Link>
+          <Link href={`r/${subName}`}>
+            <a className='text-xs font-bold cursor-pointer hover:underline'>
+              /r/{subName}
+            </a>
+          </Link>
           <p className='text-xs text-gray-500'>
             <span className='mx-1'>•</span>
             <Link href={`/u/${username}`}>
