@@ -41,6 +41,8 @@ const createSub = async (req: Request, res: Response) => {
   }
 };
 
+const getSub = () => {};
+
 const router = Router();
 
 router.post('/', user, auth, createSub);
