@@ -7,14 +7,6 @@ import useSWR from 'swr';
 import PostCard from '../components/PostCard';
 
 export default function Home() {
-  // const [posts, setPosts] = useState<Post[]>([]);
-
-  // useEffect(() => {
-  //   Axios.get('/posts')
-  //     .then((res) => setPosts(res.data))
-  //     .catch((err) => console.log(err));
-  // }, []);
-
   const { data: posts } = useSWR('/posts');
 
   return (
@@ -32,13 +24,3 @@ export default function Home() {
     </div>
   );
 }
-
-// export const getServerSideProps: GetServerSideProps = async (context) => {
-//   try {
-//     const res = await Axios.get('/posts');
-
-//     return { props: { posts: res.data } };
-//   } catch (error) {
-//     return { props: { error: 'Something went wrong' } };
-//   }
-// };
