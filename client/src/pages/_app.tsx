@@ -19,7 +19,11 @@ function App({ Component, pageProps }: AppProps) {
   const authRoute = authRoutes.includes(pathname);
 
   return (
-    <SWRConfig>
+    <SWRConfig
+      value={{
+        fetcher: (url) => Axios.get(url),
+      }}
+    >
       <AuthProvider>
         {!authRoute && <Navbar />}
         <Component {...pageProps} />
