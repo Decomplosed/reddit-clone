@@ -1,6 +1,7 @@
 import { AppProps } from 'next/app';
 import Axios from 'axios';
 import { useRouter } from 'next/router';
+import { SWRConfig } from 'swr';
 
 import { AuthProvider } from '../context/auth';
 
