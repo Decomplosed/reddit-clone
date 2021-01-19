@@ -58,6 +58,8 @@ const getSub = async (req: Request, res: Response) => {
     if (res.locals.user) {
       sub.posts.forEach((post) => post.setUserVote(res.locals.user));
     }
+
+    return res.json(sub);
   } catch (error) {}
 };
 
