@@ -44,5 +44,6 @@ const createSub = async (req: Request, res: Response) => {
 const router = Router();
 
 router.post('/', user, auth, createSub);
+router.get('/:name', user, getSub);
 
 export default router;
