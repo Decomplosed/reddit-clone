@@ -54,6 +54,9 @@ const getSub = async (req: Request, res: Response) => {
     });
 
     sub.posts = posts;
+
+    if (res.locals.user) {
+    }
   } catch (error) {}
 };
 
