@@ -60,7 +60,9 @@ const getSub = async (req: Request, res: Response) => {
     }
 
     return res.json(sub);
-  } catch (error) {}
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 const router = Router();
