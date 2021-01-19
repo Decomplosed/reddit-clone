@@ -46,6 +46,7 @@ const getSub = async (req: Request, res: Response) => {
   const name = req.params.name;
 
   const sub = await Sub.findOneOrFail({ name });
+  const posts = await Post.find();
 
   try {
   } catch (error) {}
