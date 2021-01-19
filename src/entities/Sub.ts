@@ -1,14 +1,14 @@
 import {
-  Column,
   Entity as TOEntity,
+  Column,
   Index,
-  JoinColumn,
   ManyToOne,
+  JoinColumn,
   OneToMany,
 } from 'typeorm';
-import User from './User';
 
 import Entity from './Entity';
+import User from './User';
 import Post from './Post';
 
 @TOEntity('subs')

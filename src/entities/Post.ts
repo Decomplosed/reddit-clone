@@ -1,19 +1,19 @@
-import { Exclude, Expose } from 'class-transformer';
 import {
   Entity as TOEntity,
   Column,
   Index,
+  BeforeInsert,
   ManyToOne,
   JoinColumn,
-  BeforeInsert,
   OneToMany,
 } from 'typeorm';
-import { slugify, makeId } from '../utils/helpers';
-import Comment from './Comment';
+import { Exclude, Expose } from 'class-transformer';
 
 import Entity from './Entity';
-import Sub from './Sub';
 import User from './User';
+import { makeId, slugify } from '../utils/helpers';
+import Sub from './Sub';
+import Comment from './Comment';
 import Vote from './Vote';
 
 @TOEntity('posts')
@@ -25,7 +25,7 @@ export default class Post extends Entity {
 
   @Index()
   @Column()
-  identifier: string; // 7 character ID
+  identifier: string; // 7 Character Id
 
   @Column()
   title: string;
