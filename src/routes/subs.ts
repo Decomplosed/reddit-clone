@@ -41,7 +41,7 @@ const createSub = async (req: Request, res: Response) => {
   }
 };
 
-const getSub = () => {};
+const getSub = async () => {};
 
 const router = Router();
 
