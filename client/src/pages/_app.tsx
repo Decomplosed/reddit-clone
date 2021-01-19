@@ -22,6 +22,7 @@ function App({ Component, pageProps }: AppProps) {
     <SWRConfig
       value={{
         fetcher: (url) => Axios.get(url).then((res) => res.data),
+        dedupingInterval: 10000,
       }}
     >
       <AuthProvider>
