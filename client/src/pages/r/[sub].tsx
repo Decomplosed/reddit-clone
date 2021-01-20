@@ -14,7 +14,7 @@ export default function Sub() {
       {sub && (
         <div className='w-160'>
           {sub.posts.map((post) => (
-            <PostCard />
+            <PostCard key={post.id} post={post} />
           ))}
         </div>
       )}
