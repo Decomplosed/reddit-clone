@@ -15,7 +15,7 @@ Axios.defaults.withCredentials = true;
 
 const fetcher = async (url: string) => {
   try {
-    const res = Axios.get(url).then((res) => res.data);
+    const res = await Axios.get(url);
     return res.data;
   } catch (error) {
     throw error.response.data;
