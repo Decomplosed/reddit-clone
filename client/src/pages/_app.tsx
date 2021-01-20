@@ -30,7 +30,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <SWRConfig
       value={{
-        fetcher: (url) => fetcher,
+        fetcher,
         dedupingInterval: 10000,
       }}
     >
