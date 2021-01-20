@@ -13,7 +13,13 @@ import Navbar from '../components/Navbar';
 Axios.defaults.baseURL = 'http://localhost:5005/api';
 Axios.defaults.withCredentials = true;
 
-const fetcher = async (url: string) => {};
+const fetcher = async (url: string) => {
+  try {
+
+  } catch (error) {
+
+  }
+};
 
 function App({ Component, pageProps }: AppProps) {
   const { pathname } = useRouter();
