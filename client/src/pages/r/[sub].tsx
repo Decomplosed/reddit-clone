@@ -6,7 +6,7 @@ export default function Sub() {
 
   const subName = router.query.sub;
 
-  const { data: sub } = useSWR;
+  const { data: sub } = useSWR(`/subs/${subName}`);
 
   return <h1 className='text-5xl'>{router.query.sub}</h1>;
 }
