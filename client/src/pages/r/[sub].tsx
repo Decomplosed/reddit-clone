@@ -9,15 +9,11 @@ export default function Sub() {
 
   const { data: sub } = useSWR(subName ? `/subs/${subName}` : null);
 
+  let postsMarkup;
+
   return (
     <div className='container flex pt-5'>
-      {sub && (
-        <div className='w-160'>
-          {sub.posts.map((post) => (
-            <PostCard key={post.identifier} post={post} />
-          ))}
-        </div>
-      )}
+      {sub && <div className='w-160'>{}</div>}
     </div>
   );
 }
