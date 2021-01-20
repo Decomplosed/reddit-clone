@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Fragment } from 'react';
 import useSWR from 'swr';
 
 import PostCard from '../components/PostCard';
