@@ -8,5 +8,9 @@ export default function Sub() {
 
   const { data: sub } = useSWR(subName ? `/subs/${subName}` : null);
 
-  return <div className='container flex pt-5'></div>;
+  return (
+    <div className='container flex pt-5'>
+      {sub && <div className='w-160'></div>}
+    </div>
+  );
 }
