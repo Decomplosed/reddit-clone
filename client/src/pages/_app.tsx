@@ -23,7 +23,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <SWRConfig
       value={{
-        fetcher: (url) => Axios.get(url).then((res) => res.data),
+        fetcher: (url) => fetcher,
         dedupingInterval: 10000,
       }}
     >
