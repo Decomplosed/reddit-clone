@@ -7,7 +7,7 @@ export default function Sub() {
 
   const subName = router.query.sub;
 
-  const { data: sub } = useSWR(subName ? `/subs/${subName}` : null);
+  const { data: sub, error } = useSWR(subName ? `/subs/${subName}` : null);
 
   let postsMarkup;
   if (!sub) {
