@@ -8,5 +8,5 @@ export default function Sub() {
 
   const { data: sub } = useSWR(subName ? `/subs/${subName}` : null);
 
-  return <h1 className='text-5xl'>{router.query.sub}</h1>;
+  return <div className='container flex pt-5'></div>;
 }
