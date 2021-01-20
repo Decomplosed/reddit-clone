@@ -11,8 +11,10 @@ export default function Sub() {
 
   let postsMarkup;
   if (!sub) {
-    postsMarkup = <p className="text-lg text-center">Loading...</p>
-  } else if (sub.posts.length === 0) {}
+    postsMarkup = <p className='text-lg text-center'>Loading...</p>;
+  } else if (sub.posts.length === 0) {
+    postsMarkup = <p className='text-lg text-center'>No posts submitted yet</p>;
+  }
 
   return (
     <div className='container flex pt-5'>
