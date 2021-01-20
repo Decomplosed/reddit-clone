@@ -10,6 +10,8 @@ export default function Sub() {
   const { data: sub } = useSWR(subName ? `/subs/${subName}` : null);
 
   let postsMarkup;
+  if (!sub) {
+  }
 
   return (
     <div className='container flex pt-5'>
