@@ -10,7 +10,7 @@ export default function Sub() {
 
   return (
     <div className='container flex pt-5'>
-      {sub && <div className='w-160'></div>}
+      {sub && <div className='w-160'>{sub.posts.map()}</div>}
     </div>
   );
 }
