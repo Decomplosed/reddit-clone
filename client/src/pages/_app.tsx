@@ -17,7 +17,7 @@ const fetcher = async (url: string) => {
   try {
 
   } catch (error) {
-
+    throw error.response.data
   }
 };
 
