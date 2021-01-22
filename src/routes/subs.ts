@@ -67,6 +67,8 @@ const getSub = async (req: Request, res: Response) => {
   }
 };
 
+const upload = multer({})
+
 const uploadSubImage = async (req: Request, res: Response) => {};
 
 const router = Router();
