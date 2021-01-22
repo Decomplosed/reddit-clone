@@ -67,7 +67,11 @@ const getSub = async (req: Request, res: Response) => {
   }
 };
 
-const upload = multer({})
+const upload = multer({
+  storage: multer.diskStorage({
+    destination: 'public/images',
+  }),
+});
 
 const uploadSubImage = async (req: Request, res: Response) => {};
 
