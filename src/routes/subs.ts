@@ -72,7 +72,7 @@ const upload = multer({
   storage: multer.diskStorage({
     destination: 'public/images',
     filename: (req, file, callback) => {
-      const name = makeId()
+      const name = makeId(15);
     },
   }),
 });
