@@ -67,6 +67,8 @@ const getSub = async (req: Request, res: Response) => {
   }
 };
 
+const uploadSubImage = () => {};
+
 const router = Router();
 
 router.post('/', user, auth, createSub);
