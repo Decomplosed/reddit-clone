@@ -92,6 +92,6 @@ const router = Router();
 
 router.post('/', user, auth, createSub);
 router.get('/:name', user, getSub);
-router.post('/:name/image', user, auth, uploadSubImage);
+router.post('/:name/image', user, auth, upload.single('file'), uploadSubImage);
 
 export default router;
