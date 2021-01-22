@@ -69,7 +69,7 @@ const getSub = async (req: Request, res: Response) => {
   }
 };
 
-const ownSub = () => {}
+const ownSub = async () => {}
 
 const upload = multer({
   storage: multer.diskStorage({
