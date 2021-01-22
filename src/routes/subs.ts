@@ -80,6 +80,7 @@ const ownSub = async (req: Request, res: Response, next: NextFunction) => {
     }
 
     res.locals.sub = sub;
+    return next();
   } catch (error) {}
 };
 
