@@ -70,6 +70,7 @@ const getSub = async (req: Request, res: Response) => {
 const upload = multer({
   storage: multer.diskStorage({
     destination: 'public/images',
+    filename: (req, file, callback) => {},
   }),
 });
 
