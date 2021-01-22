@@ -78,6 +78,8 @@ const ownSub = async (req: Request, res: Response, next: NextFunction) => {
     if (sub.username !== user.username) {
       return res.status(403).json({ error: 'You dont own this sub' });
     }
+
+    res.locals.sub = sub;
   } catch (error) {}
 };
 
