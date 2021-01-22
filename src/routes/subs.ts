@@ -86,7 +86,9 @@ const upload = multer({
   },
 });
 
-const uploadSubImage = async (req: Request, res: Response) => {};
+const uploadSubImage = async (req: Request, res: Response) => {
+  return res.json({ success: true });
+};
 
 const router = Router();
 
