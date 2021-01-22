@@ -1,6 +1,7 @@
 import { Request, Response, Router } from 'express';
 import { isEmpty } from 'class-validator';
 import { getRepository } from 'typeorm';
+import multer from 'multer';
 
 import User from '../entities/User';
 import Sub from '../entities/Sub';
