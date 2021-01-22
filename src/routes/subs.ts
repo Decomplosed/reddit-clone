@@ -71,6 +71,9 @@ const getSub = async (req: Request, res: Response) => {
 
 const ownSub = async (req: Request, res: Response, next: NextFunction) => {
   const user: User = res.locals.user;
+
+  try {
+  } catch (error) {}
 };
 
 const upload = multer({
