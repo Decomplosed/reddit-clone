@@ -67,11 +67,14 @@ const getSub = async (req: Request, res: Response) => {
   }
 };
 
-const uploadSubImage = async (req: Request, res: Response) => {};
+const uploadSubImage = async (req: Request, res: Response) => {
+
+};
 
 const router = Router();
 
 router.post('/', user, auth, createSub);
 router.get('/:name', user, getSub);
+router.post()
 
 export default router;
