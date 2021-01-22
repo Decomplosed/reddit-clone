@@ -73,6 +73,7 @@ const ownSub = async (req: Request, res: Response, next: NextFunction) => {
   const user: User = res.locals.user;
 
   try {
+    const sub = await Sub.findOneOrFail({ where: { name: req.params.name } });
   } catch (error) {}
 };
 
