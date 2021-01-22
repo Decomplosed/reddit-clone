@@ -77,7 +77,11 @@ const upload = multer({
       callback(null, name + path.extname(file.originalname));
     },
   }),
-  fileFilter: (_, file: any, callback: FileFilterCallback) => {},
+  fileFilter: (_, file: any, callback: FileFilterCallback) => {
+    if (file.mimetype == 'image/jpeg' || file.mimetype == 'image/png') {
+      callback(null, true);
+    }
+  },
 });
 
 const uploadSubImage = async (req: Request, res: Response) => {};
