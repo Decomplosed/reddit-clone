@@ -74,6 +74,7 @@ const upload = multer({
     destination: 'public/images',
     filename: (req, file, callback) => {
       const name = makeId(15);
+      callback(null, name + path.extname(file.originalname));
     },
   }),
 });
