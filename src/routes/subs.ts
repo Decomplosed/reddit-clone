@@ -67,7 +67,7 @@ const getSub = async (req: Request, res: Response) => {
   }
 };
 
-const uploadSubImage = () => {};
+const uploadSubImage = async () => {};
 
 const router = Router();
 
