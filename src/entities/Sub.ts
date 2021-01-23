@@ -53,5 +53,5 @@ export default class Sub extends Entity {
   }
 
   @Expose()
-  get bannerUrl() {}
+  get bannerUrl(): string {}
 }
