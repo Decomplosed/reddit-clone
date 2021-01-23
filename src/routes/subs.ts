@@ -126,7 +126,7 @@ const uploadSubImage = async (req: Request, res: Response) => {
     await sub.save();
 
     if (oldImageUrn !== '') {
-      fs.unlinkSync(oldImageUrn);
+      fs.unlinkSync(`public\\images\\${oldImageUrn}`);
     }
 
     return res.json(sub);
