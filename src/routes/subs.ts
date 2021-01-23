@@ -112,7 +112,9 @@ const uploadSubImage = async (_: Request, res: Response) => {
       return res.status(400).json({ error: 'Invalid type' });
     }
 
-    const urn = req.file.filename;
+    if (type === 'image') {
+      sub.imageUrn = req.file.filename;
+    }
   } catch (error) {}
 
   return res.json({ success: true });
