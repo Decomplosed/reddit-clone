@@ -117,11 +117,10 @@ const uploadSubImage = async (req: Request, res: Response) => {
     } else if (type === 'banner') {
       sub.bannerUrn = req.file.fieldname;
     }
-
     await sub.save();
-  } catch (error) {}
 
-  return res.json({ success: true });
+    return res.json(sub);
+  } catch (error) {}
 };
 
 const router = Router();
