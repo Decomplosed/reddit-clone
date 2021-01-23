@@ -3,6 +3,7 @@ import { isEmpty } from 'class-validator';
 import { getRepository } from 'typeorm';
 import multer, { FileFilterCallback } from 'multer';
 import path from 'path';
+import fs from 'fs';
 
 import User from '../entities/User';
 import Sub from '../entities/Sub';
