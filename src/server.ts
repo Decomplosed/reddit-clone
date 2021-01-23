@@ -30,6 +30,8 @@ app.use(
   }),
 );
 
+app.use(express.static('public'));
+
 app.get('/', (_, res) => res.send('Hello there!'));
 app.use('/api/auth', authRoutes);
 app.use('/api/posts', postRoutes);
