@@ -46,4 +46,5 @@ export default class Sub extends Entity {
   posts: Post[];
 
   @Expose()
+  get imageUrl() {}
 }
