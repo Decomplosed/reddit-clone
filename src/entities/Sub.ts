@@ -53,5 +53,9 @@ export default class Sub extends Entity {
   }
 
   @Expose()
-  get bannerUrl(): string {}
+  get bannerUrl(): string | undefined {
+    return this.bannerUrn
+      ? `${process.env.APP_URL}/images/${this.bannerUrn}`
+      : undefined;
+  }
 }
