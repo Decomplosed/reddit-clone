@@ -46,5 +46,9 @@ export default class Sub extends Entity {
   posts: Post[];
 
   @Expose()
-  get imageUrl(): string {}
+  get imageUrl(): string {
+    return this.imageUrn
+      ? `${process.env.APP_URL}/images/${this.imageUrn}`
+      : 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y';
+  }
 }
