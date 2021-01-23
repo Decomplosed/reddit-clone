@@ -120,7 +120,9 @@ const uploadSubImage = async (req: Request, res: Response) => {
     await sub.save();
 
     return res.json(sub);
-  } catch (error) {}
+  } catch (error) {
+    return res.status(500).json({ error: 'Something went wrong' });
+  }
 };
 
 const router = Router();
