@@ -30,9 +30,11 @@ export default function Sub() {
         <title>{sub?.title}</title>
       </Head>
       {sub && (
-        <div className='container flex pt-5'>
-          <div className='w-160'>{postsMarkup}</div>
-        </div>
+        <Fragment>
+          <div className='container flex pt-5'>
+            <div className='w-160'>{postsMarkup}</div>
+          </div>
+        </Fragment>
       )}
     </div>
   );
