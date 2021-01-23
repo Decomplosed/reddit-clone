@@ -108,7 +108,9 @@ const uploadSubImage = async (_: Request, res: Response) => {
   try {
     const type = req.body.type;
 
-    if (type !== 'image' && type !== 'banner')
+    if (type !== 'image' && type !== 'banner') {
+      return res.status(400).json({ error: 'Invalid type' });
+    }
   } catch (error) {}
 
   return res.json({ success: true });
