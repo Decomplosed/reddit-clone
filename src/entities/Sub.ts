@@ -44,4 +44,6 @@ export default class Sub extends Entity {
 
   @OneToMany(() => Post, (post) => post.sub)
   posts: Post[];
+
+  @Expose()
 }
