@@ -104,6 +104,7 @@ const upload = multer({
 });
 
 const uploadSubImage = async (_: Request, res: Response) => {
+  const sub: Sub = res.locals.sub;
   return res.json({ success: true });
 };
 
