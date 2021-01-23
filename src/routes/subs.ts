@@ -125,6 +125,10 @@ const uploadSubImage = async (req: Request, res: Response) => {
     }
     await sub.save();
 
+    if (oldImageUrn !== '') {
+      fs.unlinkSync(oldImageUrn);
+    }
+
     return res.json(sub);
   } catch (error) {
     return res.status(500).json({ error: 'Something went wrong' });
