@@ -10,6 +10,7 @@ import {
 import Entity from './Entity';
 import User from './User';
 import Post from './Post';
+import { Expose } from 'class-transformer';
 
 @TOEntity('subs')
 export default class Sub extends Entity {
