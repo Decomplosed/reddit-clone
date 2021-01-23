@@ -118,6 +118,7 @@ const uploadSubImage = async (req: Request, res: Response) => {
 
     if (type === 'image') {
       sub.imageUrn = req.file.filename;
+      oldImageUrn = sub.imageUrn || '';
     } else if (type === 'banner') {
       sub.bannerUrn = req.file.fieldname;
     }
