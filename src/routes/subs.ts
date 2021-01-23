@@ -110,6 +110,7 @@ const uploadSubImage = async (req: Request, res: Response) => {
     const type = req.body.type;
 
     if (type !== 'image' && type !== 'banner') {
+      fs.unlinkSync(req.file.path);
       return res.status(400).json({ error: 'Invalid type' });
     }
 
