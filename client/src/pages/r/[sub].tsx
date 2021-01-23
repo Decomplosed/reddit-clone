@@ -25,7 +25,9 @@ export default function Sub() {
 
   return (
     <div>
-      <Head></Head>
+      <Head>
+        <title>{sub?.title}</title>
+      </Head>
       <div className='container flex pt-5'>
         {sub && <div className='w-160'>{postsMarkup}</div>}
       </div>
