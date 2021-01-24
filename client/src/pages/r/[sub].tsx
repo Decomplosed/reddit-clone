@@ -6,6 +6,7 @@ import PostCard from '../../components/PostCard';
 import Image from 'next/image';
 
 import { Sub } from '../../types';
+import { useAuthState } from '../../context/auth';
 
 export default function SubPage() {
   const router = useRouter();
