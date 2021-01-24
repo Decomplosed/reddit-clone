@@ -42,6 +42,7 @@ export default function Sub() {
                     backgroundImage: `url(${sub.bannerUrl})`,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
+                    backgroundPosition: 'center',
                   }}
                 ></div>
               ) : (
