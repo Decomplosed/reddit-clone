@@ -59,7 +59,9 @@ export default function SubPage() {
                   width={80}
                   height={80}
                 />
-                <div className='pt-2 pl-16'></div>
+                <div className='pt-2 pl-16'>
+                  <div className='flex items-center'></div>
+                </div>
               </div>
             </div>
           </div>
