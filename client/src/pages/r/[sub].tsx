@@ -61,7 +61,7 @@ export default function SubPage() {
                 />
                 <div className='pt-2 pl-16'>
                   <div className='flex items-center'>
-                    <h1 className='mb-1 text-2xl font-bold'></h1>
+                    <h1 className='mb-1 text-2xl font-bold'>{sub.title}</h1>
                   </div>
                 </div>
               </div>
