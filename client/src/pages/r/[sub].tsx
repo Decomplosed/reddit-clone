@@ -9,6 +9,7 @@ import { Sub } from '../../types';
 
 export default function SubPage() {
   const router = useRouter();
+  const fileInputRef = createRef()
 
   const subName = router.query.sub;
 
