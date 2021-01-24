@@ -49,7 +49,9 @@ export default function SubPage() {
                 <div className='h-20 bg-blue-500'></div>
               )}
             </div>
-            <div className='h-20 bg-white'></div>
+            <div className='h-20 bg-white'>
+              <div className='container flex'></div>
+            </div>
           </div>
           <div className='container flex pt-5'>
             <div className='w-160'>{postsMarkup}</div>
