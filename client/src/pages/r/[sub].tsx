@@ -34,6 +34,7 @@ export default function SubPage() {
       </Head>
       {sub && (
         <Fragment>
+          <input type='file' hidden={true} ref={fileInputRef} />
           <div>
             <div className='bg-blue-500'>
               {sub.bannerUrl ? (
