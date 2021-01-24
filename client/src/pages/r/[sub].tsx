@@ -52,13 +52,15 @@ export default function SubPage() {
             </div>
             <div className='h-20 bg-white'>
               <div className='container flex'>
-                <Image
-                  src={sub.imageUrl}
-                  alt='Sub'
-                  className='rounded-full'
-                  width={80}
-                  height={80}
-                />
+                <div className='absolute'>
+                  <Image
+                    src={sub.imageUrl}
+                    alt='Sub'
+                    className='rounded-full'
+                    width={80}
+                    height={80}
+                  />
+                </div>
                 <div className='pt-2 pl-16'>
                   <div className='flex items-center'>
                     <h1 className='mb-1 text-2xl font-bold'>{sub.title}</h1>
