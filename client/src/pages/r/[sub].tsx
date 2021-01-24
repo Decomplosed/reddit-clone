@@ -35,6 +35,7 @@ export default function Sub() {
         <Fragment>
           <div>
             <div className='bg-blue-500'>
+              {sub.bannerUrl ? <div className='h-56 bg-blue-500'></div> : ''}
             </div>
           </div>
           <div className='container flex pt-5'>
