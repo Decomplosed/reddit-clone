@@ -11,7 +11,7 @@ export default function Sub() {
 
   const subName = router.query.sub;
 
-  const { data: sub, error } = useSWR(subName ? `/subs/${subName}` : null);
+  const { data: sub, error } = useSWR<Sub>(subName ? `/subs/${subName}` : null);
 
   if (error) router.push('/');
 
