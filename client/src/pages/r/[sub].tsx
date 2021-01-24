@@ -52,7 +52,7 @@ export default function SubPage() {
             </div>
             <div className='h-20 bg-white'>
               <div className='container relative flex'>
-                <div className='absolute' style={{ top: '-15' }}>
+                <div className='absolute' style={{ top: -15 }}>
                   <Image
                     src={sub.imageUrl}
                     alt='Sub'
