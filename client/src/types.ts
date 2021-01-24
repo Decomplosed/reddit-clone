@@ -20,4 +20,16 @@ export interface User {
   updatedAt: string;
 }
 
-export interface Post {}
+export interface Sub {
+  createdAt: string;
+  updatedAt: string;
+  name: string;
+  title: string;
+  description: string;
+  imageUrn: string;
+  bannerUrn: string;
+  username: string;
+  posts: Post[];
+  imageUrl: string;
+  bannerUrl: string;
+}
