@@ -57,8 +57,8 @@ export default function SubPage() {
                     src={sub.imageUrl}
                     alt='Sub'
                     className='rounded-full'
-                    width={80}
-                    height={80}
+                    width={70}
+                    height={70}
                   />
                 </div>
                 <div className='pt-2 pl-16'>
