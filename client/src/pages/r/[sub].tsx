@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import { Fragment } from 'react';
 import useSWR from 'swr';
 import PostCard from '../../components/PostCard';
+import Image from 'next/image';
 
 import { Sub } from '../../types';
 
