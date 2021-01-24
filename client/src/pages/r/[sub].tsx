@@ -6,7 +6,7 @@ import PostCard from '../../components/PostCard';
 
 import { Sub } from '../../types';
 
-export default function Sub() {
+export default function SubPage() {
   const router = useRouter();
 
   const subName = router.query.sub;
