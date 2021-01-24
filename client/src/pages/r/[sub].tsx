@@ -51,7 +51,15 @@ export default function SubPage() {
               )}
             </div>
             <div className='h-20 bg-white'>
-              <div className='container flex'></div>
+              <div className='container flex'>
+                <Image
+                  src={sub.imageUrl}
+                  alt='Sub'
+                  className='rounded-full'
+                  width={80}
+                  height={80}
+                />
+              </div>
             </div>
           </div>
           <div className='container flex pt-5'>
