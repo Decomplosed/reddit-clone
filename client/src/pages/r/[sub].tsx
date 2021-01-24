@@ -38,7 +38,10 @@ export default function Sub() {
               {sub.bannerUrl ? (
                 <div
                   className='h-56 bg-blue-500'
-                  style={{ backgroundImage: `url(${sub.bannerUrl})` }}
+                  style={{
+                    backgroundImage: `url(${sub.bannerUrl})`,
+                    backgroundRepeat: 'no-repeat',
+                  }}
                 ></div>
               ) : (
                 ''
