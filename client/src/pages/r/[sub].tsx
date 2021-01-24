@@ -41,6 +41,7 @@ export default function Sub() {
                   style={{
                     backgroundImage: `url(${sub.bannerUrl})`,
                     backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover',
                   }}
                 ></div>
               ) : (
