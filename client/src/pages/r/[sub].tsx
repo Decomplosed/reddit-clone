@@ -26,7 +26,7 @@ export default function SubPage() {
     setOwnSub(authenticated && user.username === sub.username);
   }, [sub]);
 
-  const openFileInput = () => {};
+  const openFileInput = (type: string) => {};
 
   if (error) router.push('/');
 
