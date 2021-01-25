@@ -41,7 +41,11 @@ export default function SubPage() {
         <Fragment>
           <input type='file' hidden={true} ref={fileInputRef} />
           <div>
-            <div className='bg-blue-500'>
+            <div
+              className={classNames('bg-blue-500', {
+                'cursor-pointer': ownSub,
+              })}
+            >
               {sub.bannerUrl ? (
                 <div
                   className='h-56 bg-blue-500'
