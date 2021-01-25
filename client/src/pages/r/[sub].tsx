@@ -41,7 +41,7 @@ export default function SubPage() {
     formData.append('type', fileInputRef.current.name);
 
     try {
-      await Axios.post();
+      await Axios.post<Sub>();
     } catch (error) {}
   };
 
