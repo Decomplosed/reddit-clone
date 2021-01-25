@@ -10,7 +10,7 @@ import { Sub } from '../../types';
 import { useAuthState } from '../../context/auth';
 
 export default function SubPage() {
-  const [ownSub, setOwnSub] = useState()
+  const [ownSub, setOwnSub] = useState(false);
 
   const { authenticated, user } = useAuthState();
 
