@@ -52,7 +52,12 @@ export default function SubPage() {
       </Head>
       {sub && (
         <Fragment>
-          <input type='file' hidden={true} ref={fileInputRef} onChange={} />
+          <input
+            type='file'
+            hidden={true}
+            ref={fileInputRef}
+            onChange={uploadImage}
+          />
           <div>
             <div
               className={classNames('bg-blue-500', {
