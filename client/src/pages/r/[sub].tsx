@@ -32,6 +32,8 @@ export default function SubPage() {
     fileInputRef.current.click();
   };
 
+  const uploadImage = () => {};
+
   if (error) router.push('/');
 
   let postsMarkup;
