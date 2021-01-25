@@ -76,7 +76,7 @@ export default function SubPage() {
                     className={classNames('rounded-full', {
                       'cursor-pointer': ownSub,
                     })}
-                    onClick={}
+                    onClick={() => openFileInput()}
                     width={70}
                     height={70}
                   />
