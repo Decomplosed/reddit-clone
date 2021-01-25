@@ -28,6 +28,7 @@ export default function SubPage() {
 
   const openFileInput = (type: string) => {
     if (!ownSub) return;
+    fileInputRef.current.name = type;
   };
 
   if (error) router.push('/');
