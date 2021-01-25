@@ -8,6 +8,7 @@ import classNames from 'classnames';
 
 import { Sub } from '../../types';
 import { useAuthState } from '../../context/auth';
+import Axios from 'axios';
 
 export default function SubPage() {
   const [ownSub, setOwnSub] = useState(false);
