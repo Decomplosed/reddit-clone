@@ -34,7 +34,9 @@ export default function SubPage() {
 
   const uploadImage = async (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files[0];
+
     const formData = new FormData();
+    formData.append('file', file);
   };
 
   if (error) router.push('/');
