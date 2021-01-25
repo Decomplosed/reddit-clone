@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { createRef, Fragment, useState } from 'react';
+import { createRef, Fragment, useState, useEffect } from 'react';
 import useSWR from 'swr';
 import PostCard from '../../components/PostCard';
 import Image from 'next/image';
