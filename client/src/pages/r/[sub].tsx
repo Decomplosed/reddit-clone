@@ -32,7 +32,7 @@ export default function SubPage() {
     fileInputRef.current.click();
   };
 
-  const uploadImage = async () => {};
+  const uploadImage = async (event) => {};
 
   if (error) router.push('/');
 
