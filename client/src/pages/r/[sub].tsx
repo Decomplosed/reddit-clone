@@ -22,11 +22,9 @@ export default function SubPage() {
   const { data: sub, error } = useSWR<Sub>(subName ? `/subs/${subName}` : null);
 
   useEffect(() => {
-    effect;
-    return () => {
-      cleanup;
-    };
-  }, [input]);
+    if (!sub) return;
+    setOwnSub(authenticated && user.username === sub.username);
+  }, [sub]);
 
   if (error) router.push('/');
 
