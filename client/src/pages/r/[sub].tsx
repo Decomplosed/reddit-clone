@@ -32,7 +32,9 @@ export default function SubPage() {
     fileInputRef.current.click();
   };
 
-  const uploadImage = async (event: ChangeEvent<HTMLInputElement>) => {};
+  const uploadImage = async (event: ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files[0];
+  };
 
   if (error) router.push('/');
 
