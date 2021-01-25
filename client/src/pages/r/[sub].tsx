@@ -9,6 +9,8 @@ import { Sub } from '../../types';
 import { useAuthState } from '../../context/auth';
 
 export default function SubPage() {
+  const { authenticated, user } = useAuthState();
+
   const router = useRouter();
   const fileInputRef = createRef<HTMLInputElement>();
 
