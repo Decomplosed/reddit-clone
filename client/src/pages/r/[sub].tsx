@@ -52,6 +52,7 @@ export default function SubPage() {
               className={classNames('bg-blue-500', {
                 'cursor-pointer': ownSub,
               })}
+              onClick={}
             >
               {sub.bannerUrl ? (
                 <div
