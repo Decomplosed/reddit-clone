@@ -21,6 +21,13 @@ export default function SubPage() {
 
   const { data: sub, error } = useSWR<Sub>(subName ? `/subs/${subName}` : null);
 
+  useEffect(() => {
+    effect;
+    return () => {
+      cleanup;
+    };
+  }, [input]);
+
   if (error) router.push('/');
 
   let postsMarkup;
