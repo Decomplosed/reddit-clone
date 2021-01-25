@@ -73,7 +73,7 @@ export default function SubPage() {
                   <Image
                     src={sub.imageUrl}
                     alt='Sub'
-                    className={classNames('rounder-full', {
+                    className={classNames('rounded-full', {
                       'cursor-pointer': ownSub,
                     })}
                     width={70}
