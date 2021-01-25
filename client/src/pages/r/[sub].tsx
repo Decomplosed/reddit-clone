@@ -37,6 +37,7 @@ export default function SubPage() {
 
     const formData = new FormData();
     formData.append('file', file);
+    formData.append('type', fileInputRef.current.name);
   };
 
   if (error) router.push('/');
