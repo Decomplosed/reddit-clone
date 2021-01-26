@@ -20,7 +20,9 @@ export default function Home() {
         </div>
         <div className='ml-6 w-80'>
           <div className='bg-white rounded'>
-            <div className='p-4 border-b-2'></div>
+            <div className='p-4 border-b-2'>
+              <p className='text-lg font-semibold text-center'></p>
+            </div>
           </div>
         </div>
       </div>
