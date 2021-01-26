@@ -70,6 +70,7 @@ const topSubs = async (req: Request, res: Response) => {
       .from(Sub, 's')
       .leftJoin(Post, 'p', `s.name = p."subName"`)
       .groupBy('s.title, s.name, "imageUrl"')
+      .orderBy();
   } catch (error) {}
 };
 
