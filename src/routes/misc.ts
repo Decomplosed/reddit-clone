@@ -75,7 +75,9 @@ const topSubs = async (req: Request, res: Response) => {
       .execute();
 
     return res.json(subs);
-  } catch (error) {}
+  } catch (error) {
+    return res.status(500).json({ error: 'Something went wrong' });
+  }
 };
 
 const router = Router();
