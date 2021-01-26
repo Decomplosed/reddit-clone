@@ -6,6 +6,7 @@ import PostCard from '../components/PostCard';
 
 export default function Home() {
   const { data: posts } = useSWR('/posts');
+  const { data: topSubs } = useSWR('/misc/top-subs');
 
   return (
     <Fragment>
