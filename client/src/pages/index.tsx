@@ -28,7 +28,7 @@ export default function Home() {
               </p>
             </div>
             <div>
-              {topSubs?.map(sub => ())}
+              {topSubs?.map((sub: Sub) => ())}
             </div>
           </div>
         </div>
