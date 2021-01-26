@@ -3,6 +3,7 @@ import { Fragment } from 'react';
 import useSWR from 'swr';
 
 import PostCard from '../components/PostCard';
+import { Sub } from '../types';
 
 export default function Home() {
   const { data: posts } = useSWR('/posts');
