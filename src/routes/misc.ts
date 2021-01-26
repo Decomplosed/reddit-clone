@@ -67,7 +67,8 @@ const topSubs = async (req: Request, res: Response) => {
       .select(
         `s.title, s.name, ${imageUrlExp} as "imageUrl", count(p.id) as "postCount"`,
       )
-      .from(Sub, 's');
+      .from(Sub, 's')
+      .leftJoin();
   } catch (error) {}
 };
 
