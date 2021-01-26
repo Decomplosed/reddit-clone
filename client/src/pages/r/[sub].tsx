@@ -20,7 +20,9 @@ export default function SubPage() {
 
   const subName = router.query.sub;
 
-  const { data: sub, error } = useSWR<Sub>(subName ? `/subs/${subName}` : null);
+  const { data: sub, error, revalidate } = useSWR<Sub>(
+    subName ? `/subs/${subName}` : null,
+  );
 
   useEffect(() => {
     if (!sub) return;
