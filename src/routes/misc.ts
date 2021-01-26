@@ -57,7 +57,10 @@ const vote = async (req: Request, res: Response) => {
   }
 };
 
-const topSubs = async (req: Request, res: Response) => {};
+const topSubs = async (req: Request, res: Response) => {
+  try {
+  } catch (error) {}
+};
 
 const router = Router();
 router.post('/vote', user, auth, vote);
