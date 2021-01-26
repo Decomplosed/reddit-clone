@@ -82,5 +82,6 @@ const topSubs = async (req: Request, res: Response) => {
 
 const router = Router();
 router.post('/vote', user, auth, vote);
+router.get('/top-subs', topSubs);
 
 export default router;
