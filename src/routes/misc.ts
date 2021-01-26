@@ -59,6 +59,7 @@ const vote = async (req: Request, res: Response) => {
 
 const topSubs = async (req: Request, res: Response) => {
   try {
+    const imageUrlExp;
   } catch (error) {}
 };
 
