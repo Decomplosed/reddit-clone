@@ -46,6 +46,8 @@ export default function SubPage() {
       await Axios.post<Sub>(`/subs/${sub.name}/image`, formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
+
+      revalidate();
     } catch (error) {}
   };
 
