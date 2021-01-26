@@ -73,6 +73,8 @@ const topSubs = async (req: Request, res: Response) => {
       .orderBy(`"postCount"`, 'DESC')
       .limit(5)
       .execute();
+
+    return res.json(subs);
   } catch (error) {}
 };
 
