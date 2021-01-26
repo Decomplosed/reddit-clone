@@ -108,7 +108,6 @@ const uploadSubImage = async (req: Request, res: Response) => {
   const sub: Sub = res.locals.sub;
   try {
     const type = req.body.type;
-    console.log(req.file);
 
     if (type !== 'image' && type !== 'banner') {
       fs.unlinkSync(req.file.path);
@@ -116,12 +115,13 @@ const uploadSubImage = async (req: Request, res: Response) => {
     }
 
     let oldImageUrn: string = '';
+
     if (type === 'image') {
-      oldImageUrn = sub.imageUrn ?? '';
+      oldImageUrn = sub.imageUrn || '';
       sub.imageUrn = req.file.filename;
     } else if (type === 'banner') {
-      oldImageUrn = sub.bannerUrn ?? '';
-      sub.bannerUrn = req.file.filename;
+      oldImageUrn = sub.bannerUrn || '';
+      sub.bannerUrn = req.file.fieldname;
     }
     await sub.save();
 
@@ -130,8 +130,7 @@ const uploadSubImage = async (req: Request, res: Response) => {
     }
 
     return res.json(sub);
-  } catch (err) {
-    console.log(err);
+  } catch (error) {
     return res.status(500).json({ error: 'Something went wrong' });
   }
 };
