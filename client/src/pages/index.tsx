@@ -18,6 +18,7 @@ export default function Home() {
             <PostCard post={post} key={post.identifier} />
           ))}
         </div>
+        <div className='ml-6 w-80'>g</div>
       </div>
     </Fragment>
   );
