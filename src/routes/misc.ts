@@ -68,7 +68,7 @@ const topSubs = async (req: Request, res: Response) => {
         `s.title, s.name, ${imageUrlExp} as "imageUrl", count(p.id) as "postCount"`,
       )
       .from(Sub, 's')
-      .leftJoin();
+      .leftJoin(Post, 'p', `s.name = p."subName"`);
   } catch (error) {}
 };
 
