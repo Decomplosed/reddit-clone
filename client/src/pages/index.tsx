@@ -26,7 +26,9 @@ export default function Home() {
                 Top Communities
               </p>
             </div>
-            <div></div>
+            <div>
+              {topSubs?.map(sub => ())}
+            </div>
           </div>
         </div>
       </div>
