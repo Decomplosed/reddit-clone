@@ -19,7 +19,9 @@ export default function Home() {
           ))}
         </div>
         <div className='ml-6 w-80'>
-          <div className='bg-white rounded'></div>
+          <div className='bg-white rounded'>
+            <div className='p-4 border-b-2'></div>
+          </div>
         </div>
       </div>
     </Fragment>
