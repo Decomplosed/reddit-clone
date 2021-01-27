@@ -42,7 +42,9 @@ export default function Home() {
                       width={(6 * 16) / 4}
                       height={(6 * 16) / 4}
                     />
-                    <Link href={`/r/${sub.name}`}></Link>
+                    <Link href={`/r/${sub.name}`}>
+                      <a className='font-bold hover:cursor-pointer'></a>
+                    </Link>
                   </div>
                 </div>
               ))}
