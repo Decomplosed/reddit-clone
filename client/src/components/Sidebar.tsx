@@ -14,6 +14,10 @@ export default function Sidebar({ sub }: { sub: Sub }) {
               <p>5.2k</p>
               <p>Members</p>
             </div>
+            <div className='w-1/2'>
+              <p>150</p>
+              <p>Online</p>
+            </div>
           </div>
         </div>
       </div>
