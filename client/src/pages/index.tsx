@@ -46,6 +46,7 @@ export default function Home() {
                       <a className='font-bold hover:cursor-pointer'>
                         /r/{sub.name}
                       </a>
+                      <p className='ml-auto font-medium'>{sub.postCount}</p>
                     </Link>
                   </div>
                 </div>
