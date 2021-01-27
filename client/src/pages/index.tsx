@@ -34,7 +34,7 @@ export default function Home() {
                   key={sub.name}
                   className='flex items-center px-4 py-2 text-xs border-b'
                 >
-                  <Image />
+                  <Image src={sub.imageUrl} alt='Sub' />
                 </div>
               ))}
             </div>
