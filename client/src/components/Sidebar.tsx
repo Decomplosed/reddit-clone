@@ -9,7 +9,12 @@ export default function Sidebar({ sub }: { sub: Sub }) {
         </div>
         <div className='p-3'>
           <p className='mb-3 text-md'>{sub.description}</p>
-          <div className='flex mb-3 text-sm font-medium'></div>
+          <div className='flex mb-3 text-sm font-medium'>
+            <div className='w-1/2'>
+              <p>5.2k</p>
+              <p>Members</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
