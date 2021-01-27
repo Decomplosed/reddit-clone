@@ -1,5 +1,7 @@
 import dayjs from 'dayjs';
+
 import { Sub } from '../types';
+import { useAuthState } from '../context/auth';
 
 export default function Sidebar({ sub }: { sub: Sub }) {
   return (
