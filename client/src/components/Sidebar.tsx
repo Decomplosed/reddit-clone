@@ -1,4 +1,4 @@
-export default function Sidebar() {
+export default function Sidebar({ sub }) {
   return (
     <div className='ml-6 w-80'>
       <div className='bg-white rounded'>
