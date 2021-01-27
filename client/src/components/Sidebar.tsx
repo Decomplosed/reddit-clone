@@ -19,6 +19,9 @@ export default function Sidebar({ sub }: { sub: Sub }) {
               <p>Online</p>
             </div>
           </div>
+          <p className='my-3'>
+            <i className='mr-2 fas fa-birthday-cake' />
+          </p>
         </div>
       </div>
     </div>
