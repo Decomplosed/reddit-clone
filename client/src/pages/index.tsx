@@ -42,13 +42,13 @@ export default function Home() {
                       width={(6 * 16) / 4}
                       height={(6 * 16) / 4}
                     />
-                    <Link href={`/r/${sub.name}`}>
-                      <a className='font-bold hover:cursor-pointer'>
-                        /r/{sub.name}
-                      </a>
-                    </Link>
-                    <p className='ml-auto font-medium'>{sub.postCount}</p>
                   </div>
+                  <Link href={`/r/${sub.name}`}>
+                    <a className='font-bold hover:cursor-pointer'>
+                      /r/{sub.name}
+                    </a>
+                  </Link>
+                  <p className='ml-auto font-medium'>{sub.postCount}</p>
                 </div>
               ))}
             </div>
