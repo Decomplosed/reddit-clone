@@ -34,7 +34,7 @@ export default function Home() {
                   key={sub.name}
                   className='flex items-center px-4 py-2 text-xs border-b'
                 >
-                  <div className='rounded-full'>
+                  <div className='overflow-hidden rounded-full'>
                     <Image
                       src={sub.imageUrl}
                       alt='Sub'
