@@ -5,6 +5,9 @@ export default function Sidebar() {
         <div className='p-3 bg-blue-500 rounded-t'>
           <p className='font-semibold text-white'>About Community</p>
         </div>
+        <div className='p-3'>
+          <p className='mb-3 text-md'>{sub.description}</p>
+        </div>
       </div>
     </div>
   );
