@@ -34,7 +34,12 @@ export default function Home() {
                   key={sub.name}
                   className='flex items-center px-4 py-2 text-xs border-b'
                 >
-                  <Image src={sub.imageUrl} alt='Sub' />
+                  <Image
+                    src={sub.imageUrl}
+                    alt='Sub'
+                    width={(6 * 16) / 4}
+                    height={(6 * 16) / 4}
+                  />
                 </div>
               ))}
             </div>
