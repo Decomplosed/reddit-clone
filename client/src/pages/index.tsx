@@ -29,7 +29,10 @@ export default function Home() {
             </div>
             <div>
               {topSubs?.map((sub: Sub) => (
-                <div key={sub.name}></div>
+                <div
+                  key={sub.name}
+                  className='flex items-center px-4 py-2 text-xs border-b'
+                ></div>
               ))}
             </div>
           </div>
