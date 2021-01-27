@@ -42,7 +42,7 @@ export default function Home() {
                       width={(6 * 16) / 4}
                       height={(6 * 16) / 4}
                     />
-                    <Link></Link>
+                    <Link href={`/r/${sub.name}`}></Link>
                   </div>
                 </div>
               ))}
