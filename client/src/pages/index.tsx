@@ -33,7 +33,9 @@ export default function Home() {
                 <div
                   key={sub.name}
                   className='flex items-center px-4 py-2 text-xs border-b'
-                ></div>
+                >
+                  <Image />
+                </div>
               ))}
             </div>
           </div>
