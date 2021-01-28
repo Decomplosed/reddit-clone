@@ -6,6 +6,8 @@ export default function PostPage() {
   const router = useRouter();
   const { identifier, sub, slug } = router.query;
 
+  const { data: post } = useSWR(`/posts/${identifier}/${slug}`);
+
   return (
     <>
       <Head>
