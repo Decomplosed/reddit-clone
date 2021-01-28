@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import useSWR from 'swr';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Post } from '../../../../types';
 
 export default function PostPage() {
   const router = useRouter();
