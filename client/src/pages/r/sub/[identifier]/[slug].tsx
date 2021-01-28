@@ -10,6 +10,8 @@ export default function PostPage() {
     identifier && slug ? `/posts/${identifier}/${slug}` : null,
   );
 
+  if (error) router.push('/');
+
   return (
     <>
       <Head>
