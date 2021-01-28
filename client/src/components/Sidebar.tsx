@@ -28,7 +28,11 @@ export default function Sidebar({ sub }: { sub: Sub }) {
             <i className='mr-2 fas fa-birthday-cake' />
             Created {dayjs(sub.createdAt).format('D MMM YYYY')}
           </p>
-          {authenticated && <Link href={`/r/${sub.name}/submit`}></Link>}
+          {authenticated && (
+            <Link href={`/r/${sub.name}/submit`}>
+              <a className='w-full py-1 text-sm blue button'>Create Post</a>
+            </Link>
+          )}
         </div>
       </div>
     </div>
