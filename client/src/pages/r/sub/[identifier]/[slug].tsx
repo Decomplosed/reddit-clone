@@ -20,7 +20,9 @@ export default function PostPage() {
       </Head>
       <Link href={`/r/${sub}`}>
         <a>
-          <div className='flex items-center w-full h-20 p-8 bg-blue-500'>{post && ()}</div>
+          <div className='flex items-center w-full h-20 p-8 bg-blue-500'>
+            {post && <div className='rounded-full.mr-2'></div>}
+          </div>
         </a>
       </Link>
     </>
