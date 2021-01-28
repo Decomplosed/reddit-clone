@@ -28,6 +28,7 @@ export default function Sidebar({ sub }: { sub: Sub }) {
             <i className='mr-2 fas fa-birthday-cake' />
             Created {dayjs(sub.createdAt).format('D MMM YYYY')}
           </p>
+          {authenticated && ()}
         </div>
       </div>
     </div>
