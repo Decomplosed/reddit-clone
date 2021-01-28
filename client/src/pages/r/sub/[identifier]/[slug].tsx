@@ -17,6 +17,7 @@ export default function PostPage() {
       <Head>
         <title>{post?.title}</title>
       </Head>
+      <Link href={`/r/${sub}`}></Link>
     </>
   );
 }
