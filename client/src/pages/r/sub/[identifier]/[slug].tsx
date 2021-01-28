@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import useSWR from 'swr';
+import Link from 'next/link';
 
 export default function PostPage() {
   const router = useRouter();
