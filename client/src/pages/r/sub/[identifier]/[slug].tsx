@@ -1,5 +1,11 @@
 import Head from 'next/head';
 
 export default function PostPage() {
-  return;
+  return (
+    <>
+      <Head>
+        <title></title>
+      </Head>
+    </>
+  );
 }
