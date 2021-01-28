@@ -6,7 +6,7 @@ export default function PostPage() {
   const router = useRouter();
   const { identifier, sub, slug } = router.query;
 
-  const { data: post } = useSWR(
+  const { data: post, error } = useSWR(
     identifier && slug ? `/posts/${identifier}/${slug}` : null,
   );
 
