@@ -1,4 +1,5 @@
 import dayjs from 'dayjs';
+import Link from 'next/link';
 
 import { Sub } from '../types';
 import { useAuthState } from '../context/auth';
