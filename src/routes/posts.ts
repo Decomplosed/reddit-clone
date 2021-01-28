@@ -53,6 +53,10 @@ const getPost = async (req: Request, res: Response) => {
       { relations: ['sub', 'votes'] },
     );
 
+    if (res.locals.user) {
+      post.setUserVote(res.locals.user);
+    }
+
     return res.json(post);
   } catch (error) {
     console.log(error);
