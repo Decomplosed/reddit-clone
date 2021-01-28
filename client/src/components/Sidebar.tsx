@@ -4,6 +4,8 @@ import { Sub } from '../types';
 import { useAuthState } from '../context/auth';
 
 export default function Sidebar({ sub }: { sub: Sub }) {
+  const { authenticated } = useAuthState();
+
   return (
     <div className='ml-6 w-80'>
       <div className='bg-white rounded'>
