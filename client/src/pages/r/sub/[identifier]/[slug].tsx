@@ -18,7 +18,11 @@ export default function PostPage() {
       <Head>
         <title>{post?.title}</title>
       </Head>
-      <Link href={`/r/${sub}`}></Link>
+      <Link href={`/r/${sub}`}>
+        <a>
+          <div className='flex items-center w-full h-20 p-8 bg-blue-500'></div>
+        </a>
+      </Link>
     </>
   );
 }
