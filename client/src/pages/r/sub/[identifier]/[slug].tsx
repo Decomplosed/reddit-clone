@@ -15,7 +15,7 @@ export default function PostPage() {
   return (
     <>
       <Head>
-        <title></title>
+        <title>{post?.title}</title>
       </Head>
     </>
   );
