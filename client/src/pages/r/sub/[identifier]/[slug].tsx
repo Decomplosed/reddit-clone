@@ -21,6 +21,8 @@ export default function PostPage() {
   if (error) router.push('/');
 
   const vote = async (value: number) => {
+    if (!authenticated) router.push('/login');
+
     try {
       const res = Axios.post('/misc/vote', {
         identifier,
