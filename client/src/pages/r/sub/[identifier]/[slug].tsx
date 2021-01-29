@@ -18,6 +18,18 @@ export default function PostPage() {
 
   if (error) router.push('/');
 
+  const vote = async (value) => {
+    try {
+      const res = Axios.post('/misc/vote', {
+        identifier,
+        slug,
+        value,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <>
       <Head>
