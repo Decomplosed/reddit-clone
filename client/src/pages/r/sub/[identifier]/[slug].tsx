@@ -10,6 +10,7 @@ import Axios from 'axios';
 import { useAuthState } from '../../../../context/auth';
 
 export default function PostPage() {
+  const { authenticated } = useAuthState();
   const router = useRouter();
   const { identifier, sub, slug } = router.query;
 
