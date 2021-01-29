@@ -63,18 +63,18 @@ export default function PostPage() {
                   >
                     <i
                       className={classNames('icon-arrow-up', {
-                        'text-red-500': userVote === 1,
+                        'text-red-500': post.userVote === 1,
                       })}
                     />
                   </div>
-                  <p className='text-xs font-bold'>{voteScore}</p>
+                  <p className='text-xs font-bold'>{post.voteScore}</p>
                   <div
                     className='w-6 mx-auto text-gray-400 rounded cursor-pointer hover:bg-gray-300 hover:text-blue-600'
                     onClick={() => vote(-1)}
                   >
                     <i
                       className={classNames('icon-arrow-down', {
-                        'text-blue-600': userVote === -1,
+                        'text-blue-600': post.userVote === -1,
                       })}
                     />
                   </div>
