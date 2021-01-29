@@ -35,7 +35,7 @@ export default function PostCard({
     username,
   },
 }: PostCardProps) {
-  const vote = async (value) => {
+  const vote = async (value: number) => {
     try {
       const res = Axios.post('/misc/vote', {
         identifier,
