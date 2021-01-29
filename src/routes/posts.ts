@@ -46,11 +46,10 @@ const getPosts = async (_: Request, res: Response) => {
 
 const getPost = async (req: Request, res: Response) => {
   const { identifier, slug } = req.params;
-
   try {
     const post = await Post.findOneOrFail(
       { identifier, slug },
-      { relations: ['sub', 'votes'] },
+      { relations: ['sub', 'votes', 'comments'] },
     );
 
     if (res.locals.user) {
