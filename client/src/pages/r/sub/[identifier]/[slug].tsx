@@ -24,7 +24,7 @@ export default function PostPage() {
         <a>
           <div className='flex items-center w-full h-20 p-8 bg-blue-500'>
             {post && (
-              <div className='rounded-full.mr-2'>
+              <div className='mr-2 overflow-hidden rounded-full'>
                 <Image
                   src={post.sub.imageUrl}
                   height={(8 * 16) / 2}
