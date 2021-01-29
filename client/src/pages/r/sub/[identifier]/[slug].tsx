@@ -25,12 +25,16 @@ export default function PostPage() {
           <div className='flex items-center w-full h-20 p-8 bg-blue-500'>
             {post && (
               <div className='rounded-full.mr-2'>
-                <Image src={post.sub.imageUrl} />
+                <Image
+                  src={post.sub.imageUrl}
+                  height={(8 * 16) / 2}
+                  width={(8 * 16) / 2}
+                />
               </div>
             )}
           </div>
         </a>
       </Link>
-    </Post>
+    </>
   );
 }
