@@ -32,7 +32,7 @@ export default function PostPage() {
                 />
               </div>
             )}
-            <p className='text-xl font-semibold text-white'></p>
+            <p className='text-xl font-semibold text-white'>/r/{sub}</p>
           </div>
         </a>
       </Link>
