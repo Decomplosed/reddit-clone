@@ -37,7 +37,9 @@ export default function PostPage() {
           </div>
         </a>
       </Link>
-      <div className='container pt-5 xlex'>{post.sub && <Sidebar />}</div>
+      <div className='container pt-5 xlex'>
+        {post.sub && <Sidebar sub={post.sub} />}
+      </div>
     </>
   );
 }
