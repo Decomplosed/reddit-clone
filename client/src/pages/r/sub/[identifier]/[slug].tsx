@@ -27,8 +27,8 @@ export default function PostPage() {
               <div className='mr-2 overflow-hidden rounded-full'>
                 <Image
                   src={post.sub.imageUrl}
-                  height={(8 * 16) / 2}
-                  width={(8 * 16) / 2}
+                  height={(8 * 16) / 4}
+                  width={(8 * 16) / 4}
                 />
               </div>
             )}
