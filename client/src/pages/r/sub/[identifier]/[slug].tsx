@@ -40,7 +40,33 @@ export default function PostPage() {
       <div className='container pt-5 xlex'>
         <div className='w-160'>
           <div className='bg-white-rounder'>
-            {post && <div className='flex'></div>}
+            {post && (
+              <div className='flex'>
+                <div className='w-10 py-3 text-center bg-gray-200 rounded-l'>
+                  <div
+                    className='w-6 mx-auto text-gray-400 rounded cursor-pointer hover:bg-gray-300 hover:text-red-500'
+                    onClick={() => vote(1)}
+                  >
+                    <i
+                      className={classNames('icon-arrow-up', {
+                        'text-red-500': userVote === 1,
+                      })}
+                    />
+                  </div>
+                  <p className='text-xs font-bold'>{voteScore}</p>
+                  <div
+                    className='w-6 mx-auto text-gray-400 rounded cursor-pointer hover:bg-gray-300 hover:text-blue-600'
+                    onClick={() => vote(-1)}
+                  >
+                    <i
+                      className={classNames('icon-arrow-down', {
+                        'text-blue-600': userVote === -1,
+                      })}
+                    />
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
         {post.sub && <Sidebar sub={post.sub} />}
