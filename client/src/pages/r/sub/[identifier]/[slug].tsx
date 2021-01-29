@@ -7,7 +7,7 @@ import { Post } from '../../../../types';
 import Sidebar from '../../../../components/Sidebar';
 import classNames from 'classnames';
 import Axios from 'axios';
-import { authState } from '../../../../context/auth';
+import { useAuthState } from '../../../../context/auth';
 
 export default function PostPage() {
   const router = useRouter();
