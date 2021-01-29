@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { Post } from '../../../../types';
 import Sidebar from '../../../../components/Sidebar';
 import classNames from 'classnames';
+import Axios from 'axios';
 
 export default function PostPage() {
   const router = useRouter();
