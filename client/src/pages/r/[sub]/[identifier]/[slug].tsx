@@ -21,6 +21,10 @@ export default function PostPage() {
     identifier && slug ? `/posts/${identifier}/${slug}` : null,
   );
 
+  const { data: comments } = useSWR<Comment[]>(
+    identifier && slug ? `/posts/${identifier}/${slug}` : null,
+  );
+
   if (error) router.push('/');
 
   const vote = async (value: number) => {
