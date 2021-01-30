@@ -19,6 +19,18 @@ export default function PostPage() {
     identifier && slug ? `/posts/${identifier}/${slug}` : null,
   );
 
+  const {
+    title,
+    body,
+    subName,
+    createdAt,
+    voteScore,
+    userVote,
+    commentCount,
+    url,
+    username,
+  } = post;
+
   if (error) router.push('/');
 
   const vote = async (value: number) => {
