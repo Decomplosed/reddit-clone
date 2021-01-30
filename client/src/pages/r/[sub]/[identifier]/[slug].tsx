@@ -42,7 +42,7 @@ export default function PostPage() {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{post.title}</title>
       </Head>
       <Link href={`/r/${sub}`}>
         <a>
@@ -74,11 +74,11 @@ export default function PostPage() {
                   >
                     <i
                       className={classNames('icon-arrow-up', {
-                        'text-red-500': userVote === 1,
+                        'text-red-500': post.userVote === 1,
                       })}
                     ></i>
                   </div>
-                  <p className='text-xs font-bold'>{voteScore}</p>
+                  <p className='text-xs font-bold'>{post.voteScore}</p>
                   {/* Downvote */}
                   <div
                     className='w-6 mx-auto text-gray-400 rounded cursor-pointer hover:bg-gray-300 hover:text-blue-600'
@@ -86,7 +86,7 @@ export default function PostPage() {
                   >
                     <i
                       className={classNames('icon-arrow-down', {
-                        'text-blue-600': userVote === -1,
+                        'text-blue-600': post.userVote === -1,
                       })}
                     ></i>
                   </div>
@@ -95,25 +95,27 @@ export default function PostPage() {
                   <div className='flex items-center'>
                     <p className='text-xs text-gray-500'>
                       Posted by
-                      <Link href={`/u/${username}`}>
-                        <a className='mx-1 hover:underline'>/u/{username}</a>
-                      </Link>
-                      <Link href={url}>
+                      <Link href={`/u/${post.username}`}>
                         <a className='mx-1 hover:underline'>
-                          {dayjs(createdAt).fromNow()}
+                          /u/{post.username}
+                        </a>
+                      </Link>
+                      <Link href={post.url}>
+                        <a className='mx-1 hover:underline'>
+                          {dayjs(post.createdAt).fromNow()}
                         </a>
                       </Link>
                     </p>
                   </div>
-                  <h1 className='my-1 text-xl font-medium'>{title}</h1>
-                  <p className='my-3 text-sm'>{body}</p>
+                  <h1 className='my-1 text-xl font-medium'>{post.title}</h1>
+                  <p className='my-3 text-sm'>{post.body}</p>
                   <div className='flex'>
-                    <Link href={url}>
+                    <Link href={post.url}>
                       <a>
                         <ActionButton>
                           <i className='mr-1 fas fa-comment-alt fa-xs' />
                           <span className='font-bold'>
-                            {commentCount} Comments
+                            {post.commentCount} Comments
                           </span>
                         </ActionButton>
                       </a>
