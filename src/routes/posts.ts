@@ -8,20 +8,23 @@ import user from '../middleware/user';
 
 const createPost = async (req: Request, res: Response) => {
   const { title, body, sub } = req.body;
+
   const user = res.locals.user;
 
-  if (title.trim() === '')
+  if (title.trim() === '') {
     return res.status(400).json({ title: 'Title must not be empty' });
+  }
 
   try {
+    // find sub
     const subRecord = await Sub.findOneOrFail({ name: sub });
 
     const post = new Post({ title, body, user, sub: subRecord });
     await post.save();
 
     return res.json(post);
-  } catch (error) {
-    console.log(error);
+  } catch (err) {
+    console.log(err);
     return res.status(500).json({ error: 'Something went wrong' });
   }
 };
@@ -38,8 +41,8 @@ const getPosts = async (_: Request, res: Response) => {
     }
 
     return res.json(posts);
-  } catch (error) {
-    console.log(error);
+  } catch (err) {
+    console.log(err);
     return res.status(500).json({ error: 'Something went wrong' });
   }
 };
@@ -57,8 +60,8 @@ const getPost = async (req: Request, res: Response) => {
     }
 
     return res.json(post);
-  } catch (error) {
-    console.log(error);
+  } catch (err) {
+    console.log(err);
     return res.status(404).json({ error: 'Post not found' });
   }
 };
@@ -79,8 +82,8 @@ const commentOnPost = async (req: Request, res: Response) => {
     await comment.save();
 
     return res.json(comment);
-  } catch (error) {
-    console.log(error);
+  } catch (err) {
+    console.log(err);
     return res.status(404).json({ error: 'Post not found' });
   }
 };
