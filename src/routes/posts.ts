@@ -106,7 +106,8 @@ const getPostComments = async (req: Request, res: Response) => {
 
     return res.json(comments);
   } catch (err) {
-    console.log(err)
+    console.log(err);
+    return res.status(500).json({ error: 'Something went wrong' });
   }
 };
 
