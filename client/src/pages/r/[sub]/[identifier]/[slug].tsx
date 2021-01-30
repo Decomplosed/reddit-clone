@@ -116,6 +116,7 @@ export default function PostPage() {
                     </p>
                   </div>
                   <h1 className='my-1 text-xl font-medium'>{title}</h1>
+                  <p className='my-3 text-sm'>{body}</p>
                 </div>
               </div>
             )}
