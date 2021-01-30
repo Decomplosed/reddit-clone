@@ -105,7 +105,9 @@ const getPostComments = async (req: Request, res: Response) => {
     }
 
     return res.json(comments);
-  } catch (error) {}
+  } catch (err) {
+    console.log(err)
+  }
 };
 
 const router = Router();
