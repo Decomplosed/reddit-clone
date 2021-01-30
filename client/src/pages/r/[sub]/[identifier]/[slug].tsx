@@ -60,7 +60,7 @@ export default function PostPage() {
             {post && (
               <div className='w-8 h-8 mr-2 overflow-hidden rounded-full'>
                 <Image
-                  src={sub.imageUrl}
+                  src={post.sub.imageUrl}
                   height={(8 * 16) / 4}
                   width={(8 * 16) / 4}
                 />
@@ -145,7 +145,7 @@ export default function PostPage() {
             )}
           </div>
         </div>
-        {sub && <Sidebar sub={sub} />}
+        {sub && <Sidebar sub={post.sub} />}
       </div>
     </>
   );
