@@ -90,6 +90,9 @@ const commentOnPost = async (req: Request, res: Response) => {
 
 const getPostComments = async (req: Request, res: Response) => {
   const { identifier, slug } = req.params;
+
+  try {
+  } catch (error) {}
 };
 
 const router = Router();
