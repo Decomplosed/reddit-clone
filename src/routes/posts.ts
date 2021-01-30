@@ -99,6 +99,9 @@ const getPostComments = async (req: Request, res: Response) => {
       order: { createdAt: 'DESC' },
       relations: ['votes'],
     });
+
+    if (res.locals.user) {
+    }
   } catch (error) {}
 };
 
