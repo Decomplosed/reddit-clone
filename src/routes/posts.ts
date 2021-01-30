@@ -103,6 +103,8 @@ const getPostComments = async (req: Request, res: Response) => {
     if (res.locals.user) {
       comments.forEach((c) => c.setUserVote(res.locals.user));
     }
+
+    return res.json(comments);
   } catch (error) {}
 };
 
