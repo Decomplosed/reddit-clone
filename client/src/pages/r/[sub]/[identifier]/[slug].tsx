@@ -1,14 +1,16 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import useSWR from 'swr';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Post } from '../../../../types';
-import Sidebar from '../../../../components/Sidebar';
+import useSWR from 'swr';
 import classNames from 'classnames';
 import Axios from 'axios';
-import { useAuthState } from '../../../../context/auth';
 import dayjs from 'dayjs';
+
+import ActionButton from '../../../../components/ActionButton';
+import Sidebar from '../../../../components/Sidebar';
+import { useAuthState } from '../../../../context/auth';
+import { Post } from '../../../../types';
 
 export default function PostPage() {
   const { authenticated } = useAuthState();
