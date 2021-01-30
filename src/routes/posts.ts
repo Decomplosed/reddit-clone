@@ -93,6 +93,8 @@ const getPostComments = async (req: Request, res: Response) => {
 
   try {
     const post = await Post.findOneOrFail({ identifier, slug });
+
+    const comments = await Comment.find()
   } catch (error) {}
 };
 
