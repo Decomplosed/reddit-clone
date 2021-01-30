@@ -35,3 +35,5 @@ export interface Sub {
   bannerUrl: string;
   postCount?: number;
 }
+
+export interface Comment {}
