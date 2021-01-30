@@ -97,6 +97,7 @@ const getPostComments = async (req: Request, res: Response) => {
     const comments = await Comment.find({
       where: { post },
       order: { createdAt: 'DESC' },
+      relations: ['votes'],
     });
   } catch (error) {}
 };
