@@ -44,6 +44,10 @@ export default class Comment extends Entity {
   @OneToMany(() => Vote, (vote) => vote.comment)
   votes: Vote[];
 
+  @Expose() get voteScore(): number {
+    return this.votes?.reduce((prev, curr) => prev + (curr.value || 0), 0);
+  }
+
   protected userVote: number;
   setUserVote(user: User) {
     const index = this.votes?.findIndex((v) => v.username === user.username);
