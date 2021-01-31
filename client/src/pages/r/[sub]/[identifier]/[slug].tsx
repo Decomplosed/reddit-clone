@@ -6,6 +6,7 @@ import useSWR from 'swr';
 import classNames from 'classnames';
 import Axios from 'axios';
 import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime';
 
 import ActionButton from '../../../../components/ActionButton';
 import Sidebar from '../../../../components/Sidebar';
