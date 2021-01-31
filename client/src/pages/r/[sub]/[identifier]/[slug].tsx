@@ -12,6 +12,8 @@ import Sidebar from '../../../../components/Sidebar';
 import { useAuthState } from '../../../../context/auth';
 import { Post, Comment } from '../../../../types';
 
+dayjs.extend(relativeTime);
+
 export default function PostPage() {
   const { authenticated } = useAuthState();
 
