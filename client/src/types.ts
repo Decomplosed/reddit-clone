@@ -42,4 +42,6 @@ export interface Comment {
   username: string;
   createdAt: string;
   updatedAt: string;
+  userVote: number;
+  voteScore: number;
 }
