@@ -144,7 +144,7 @@ export default function PostPage() {
             )}
           </div>
         </div>
-        {sub && <Sidebar sub={post.sub} />}
+        {post && <Sidebar sub={post.sub} />}
       </div>
     </>
   );
