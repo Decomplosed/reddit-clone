@@ -147,7 +147,7 @@ export default function PostPage() {
                 </div>
                 {comments?.map((comment) => (
                   <div className='flex' key={comment.identifier}>
-                    <div className='w-10 py-3 text-center rounded-l'>
+                    <div className='w-10 py-2 text-center rounded-l'>
                       {/* Upvote */}
                       <div
                         className='w-6 mx-auto text-gray-400 rounded cursor-pointer hover:bg-gray-300 hover:text-red-500'
@@ -172,7 +172,7 @@ export default function PostPage() {
                         ></i>
                       </div>
                     </div>
-                    <div className='p-2'>
+                    <div className='py-2 pr-2'>
                       <p className='mb-1 text-xs leading-none'>
                         <Link href={`/u/${comment.username}`}>
                           <a className='mr-1 font-bold hover:underline'>
