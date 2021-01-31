@@ -141,7 +141,33 @@ export default function PostPage() {
                   </div>
                 </div>
                 {comments?.map((comment) => (
-                  <div className='flex' key={comment.identifier}></div>
+                  <div className='flex' key={comment.identifier}>
+                    <div className='w-10 py-3 text-center rounded-l'>
+                      {/* Upvote */}
+                      <div
+                        className='w-6 mx-auto rounded cursor-pointer hover:bg-gray-300 hover:text-red-500'
+                        onClick={() => vote(1)}
+                      >
+                        <i
+                          className={classNames('icon-arrow-up', {
+                            'text-red-500': comment.userVote === 1,
+                          })}
+                        ></i>
+                      </div>
+                      <p className='text-xs font-bold'>{comment.voteScore}</p>
+                      {/* Downvote */}
+                      <div
+                        className='w-6 mx-auto text-gray-400 rounded cursor-pointer hover:bg-gray-300 hover:text-blue-600'
+                        onClick={() => vote(-1)}
+                      >
+                        <i
+                          className={classNames('icon-arrow-down', {
+                            'text-blue-600': comment.userVote === -1,
+                          })}
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
                 ))}
               </>
             )}
