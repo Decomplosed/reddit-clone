@@ -174,7 +174,11 @@ export default function PostPage() {
                     </div>
                     <div className='p-2'>
                       <p className='mb-1 text-xs leading-none'>
-                        <Link href={`/u/${comment.username}`}></Link>
+                        <Link href={`/u/${comment.username}`}>
+                          <a className='mr-1 font-bold hover:underline'>
+                            {comment.username}
+                          </a>
+                        </Link>
                       </p>
                     </div>
                   </div>
