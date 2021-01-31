@@ -34,7 +34,7 @@ export default function PostPage() {
   const vote = async (value: number, comment?: Comment) => {
     if (!authenticated) router.push('/login');
 
-    if (value === post.userVote) value = 0;
+    if (!comment && value === post.userVote) value = 0;
 
     try {
       const res = Axios.post('/misc/vote', {
