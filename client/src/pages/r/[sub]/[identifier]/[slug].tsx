@@ -136,7 +136,9 @@ export default function PostPage() {
                     </div>
                   </div>
                 </div>
-                {comments?.map()}
+                {comments?.map((comment) => (
+                  <div className='flex'></div>
+                ))}
               </>
             )}
           </div>
