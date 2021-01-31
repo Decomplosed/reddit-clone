@@ -173,7 +173,9 @@ export default function PostPage() {
                       </div>
                     </div>
                     <div className='p-2'>
-                      <p className='mb-1 text-xs leading-none'></p>
+                      <p className='mb-1 text-xs leading-none'>
+                        <Link href={`/u/${comment.username}`}></Link>
+                      </p>
                     </div>
                   </div>
                 ))}
