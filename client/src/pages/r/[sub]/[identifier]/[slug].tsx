@@ -68,9 +68,9 @@ export default function PostPage() {
           </div>
         </a>
       </Link>
-      <div className='container pt-5 xlex'>
+      <div className='container flex pt-5'>
         <div className='w-160'>
-          <div className='bg-white-rounded'>
+          <div className='bg-white rounded'>
             {post && (
               <>
                 <div className='flex'>
