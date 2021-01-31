@@ -179,7 +179,13 @@ export default function PostPage() {
                             {comment.username}
                           </a>
                         </Link>
-                        <span className='text-gray-600'></span>
+                        <span className='text-gray-600'>
+                          {`
+                            ${comment.voteScore}
+                            points •
+                            ${dayjs(comment.createdAt).fromNow()}
+                          `}
+                        </span>
                       </p>
                     </div>
                   </div>
