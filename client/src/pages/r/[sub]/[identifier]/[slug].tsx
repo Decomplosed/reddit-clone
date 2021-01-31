@@ -172,6 +172,9 @@ export default function PostPage() {
                         ></i>
                       </div>
                     </div>
+                    <div className="p-2">
+                      
+                    </div>
                   </div>
                 ))}
               </>
