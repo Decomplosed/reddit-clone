@@ -136,6 +136,7 @@ export default function PostPage() {
                     </div>
                   </div>
                 </div>
+                {comments?.map()}
               </>
             )}
           </div>
