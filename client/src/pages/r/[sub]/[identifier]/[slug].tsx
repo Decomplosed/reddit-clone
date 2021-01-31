@@ -44,6 +44,7 @@ export default function PostPage() {
       const res = Axios.post('/misc/vote', {
         identifier,
         slug,
+        commentIdentifier: comment?.identifier,
         value,
       });
     } catch (error) {
