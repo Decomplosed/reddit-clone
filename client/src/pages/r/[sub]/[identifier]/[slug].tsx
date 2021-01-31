@@ -172,8 +172,8 @@ export default function PostPage() {
                         ></i>
                       </div>
                     </div>
-                    <div className="p-2">
-                      
+                    <div className='p-2'>
+                      <p className='mb-1 text-xs leading-none'></p>
                     </div>
                   </div>
                 ))}
