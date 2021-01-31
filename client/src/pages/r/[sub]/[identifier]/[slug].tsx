@@ -80,7 +80,7 @@ export default function PostPage() {
               <>
                 <div className='flex'>
                   {/* Vote section */}
-                  <div className='w-10 py-3 text-center rounded-l'>
+                  <div className='flex-shrink-0 w-10 py-3 text-center rounded-l'>
                     {/* Upvote */}
                     <div
                       className='w-6 mx-auto text-gray-400 rounded cursor-pointer hover:bg-gray-300 hover:text-red-500'
