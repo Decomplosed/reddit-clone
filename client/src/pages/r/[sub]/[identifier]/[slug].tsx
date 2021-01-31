@@ -179,6 +179,7 @@ export default function PostPage() {
                             {comment.username}
                           </a>
                         </Link>
+                        <span className='text-gray-600'></span>
                       </p>
                     </div>
                   </div>
