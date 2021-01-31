@@ -22,7 +22,7 @@ export default function PostPage() {
   );
 
   const { data: comments } = useSWR<Comment[]>(
-    identifier && slug ? `/posts/${identifier}/${slug}` : null,
+    identifier && slug ? `/posts/${identifier}/${slug}/comments` : null,
   );
 
   if (error) router.push('/');
