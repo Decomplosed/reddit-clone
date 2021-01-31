@@ -14,6 +14,7 @@ import { Post, Comment } from '../../../../types';
 
 export default function PostPage() {
   const { authenticated } = useAuthState();
+
   const router = useRouter();
   const { identifier, sub, slug } = router.query;
 
