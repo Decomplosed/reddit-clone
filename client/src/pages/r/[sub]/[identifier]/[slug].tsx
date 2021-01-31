@@ -137,7 +137,7 @@ export default function PostPage() {
                   </div>
                 </div>
                 {comments?.map((comment) => (
-                  <div className='flex'></div>
+                  <div className='flex' key={comment.identifier}></div>
                 ))}
               </>
             )}
