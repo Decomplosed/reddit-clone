@@ -68,73 +68,75 @@ export default function PostPage() {
         <div className='w-160'>
           <div className='bg-white-rounder'>
             {post && (
-              <div className='flex'>
-                {/* Vote section */}
-                <div className='w-10 py-3 text-center rounded-l'>
-                  {/* Upvote */}
-                  <div
-                    className='w-6 mx-auto rounded cursor-pointer hover:bg-gray-300 hover:text-red-500'
-                    onClick={() => vote(1)}
-                  >
-                    <i
-                      className={classNames('icon-arrow-up', {
-                        'text-red-500': post.userVote === 1,
-                      })}
-                    ></i>
+              <>
+                <div className='flex'>
+                  {/* Vote section */}
+                  <div className='w-10 py-3 text-center rounded-l'>
+                    {/* Upvote */}
+                    <div
+                      className='w-6 mx-auto rounded cursor-pointer hover:bg-gray-300 hover:text-red-500'
+                      onClick={() => vote(1)}
+                    >
+                      <i
+                        className={classNames('icon-arrow-up', {
+                          'text-red-500': post.userVote === 1,
+                        })}
+                      ></i>
+                    </div>
+                    <p className='text-xs font-bold'>{post.voteScore}</p>
+                    {/* Downvote */}
+                    <div
+                      className='w-6 mx-auto text-gray-400 rounded cursor-pointer hover:bg-gray-300 hover:text-blue-600'
+                      onClick={() => vote(-1)}
+                    >
+                      <i
+                        className={classNames('icon-arrow-down', {
+                          'text-blue-600': post.userVote === -1,
+                        })}
+                      ></i>
+                    </div>
                   </div>
-                  <p className='text-xs font-bold'>{post.voteScore}</p>
-                  {/* Downvote */}
-                  <div
-                    className='w-6 mx-auto text-gray-400 rounded cursor-pointer hover:bg-gray-300 hover:text-blue-600'
-                    onClick={() => vote(-1)}
-                  >
-                    <i
-                      className={classNames('icon-arrow-down', {
-                        'text-blue-600': post.userVote === -1,
-                      })}
-                    ></i>
-                  </div>
-                </div>
-                <div className='p-2'>
-                  <div className='flex items-center'>
-                    <p className='text-xs text-gray-500'>
-                      Posted by
-                      <Link href={`/u/${post.username}`}>
-                        <a className='mx-1 hover:underline'>
-                          /u/{post.username}
-                        </a>
-                      </Link>
+                  <div className='p-2'>
+                    <div className='flex items-center'>
+                      <p className='text-xs text-gray-500'>
+                        Posted by
+                        <Link href={`/u/${post.username}`}>
+                          <a className='mx-1 hover:underline'>
+                            /u/{post.username}
+                          </a>
+                        </Link>
+                        <Link href={post.url}>
+                          <a className='mx-1 hover:underline'>
+                            {dayjs(post.createdAt).fromNow()}
+                          </a>
+                        </Link>
+                      </p>
+                    </div>
+                    <h1 className='my-1 text-xl font-medium'>{post.title}</h1>
+                    <p className='my-3 text-sm'>{post.body}</p>
+                    <div className='flex'>
                       <Link href={post.url}>
-                        <a className='mx-1 hover:underline'>
-                          {dayjs(post.createdAt).fromNow()}
+                        <a>
+                          <ActionButton>
+                            <i className='mr-1 fas fa-comment-alt fa-xs' />
+                            <span className='font-bold'>
+                              {post.commentCount} Comments
+                            </span>
+                          </ActionButton>
                         </a>
                       </Link>
-                    </p>
-                  </div>
-                  <h1 className='my-1 text-xl font-medium'>{post.title}</h1>
-                  <p className='my-3 text-sm'>{post.body}</p>
-                  <div className='flex'>
-                    <Link href={post.url}>
-                      <a>
-                        <ActionButton>
-                          <i className='mr-1 fas fa-comment-alt fa-xs' />
-                          <span className='font-bold'>
-                            {post.commentCount} Comments
-                          </span>
-                        </ActionButton>
-                      </a>
-                    </Link>
-                    <ActionButton>
-                      <i className='mr-1 fas fa-share fa-xs' />
-                      <span className='font-bold'>Share</span>
-                    </ActionButton>
-                    <ActionButton>
-                      <i className='mr-1 fas fa-bookmark fa-xs' />
-                      <span className='font-bold'>Save</span>
-                    </ActionButton>
+                      <ActionButton>
+                        <i className='mr-1 fas fa-share fa-xs' />
+                        <span className='font-bold'>Share</span>
+                      </ActionButton>
+                      <ActionButton>
+                        <i className='mr-1 fas fa-bookmark fa-xs' />
+                        <span className='font-bold'>Save</span>
+                      </ActionButton>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </>
             )}
           </div>
         </div>
