@@ -25,7 +25,7 @@ export default function PostPage() {
     identifier && slug ? `/posts/${identifier}/${slug}` : null,
   );
 
-  const { data: comments } = useSWR<Comment[]>(
+  const { data: comments, revalidate } = useSWR<Comment[]>(
     identifier && slug ? `/posts/${identifier}/${slug}/comments` : null,
   );
 
