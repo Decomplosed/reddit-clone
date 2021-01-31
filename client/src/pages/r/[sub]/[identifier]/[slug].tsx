@@ -47,6 +47,8 @@ export default function PostPage() {
         commentIdentifier: comment?.identifier,
         value,
       });
+
+      revalidate();
     } catch (error) {
       console.log(error);
     }
