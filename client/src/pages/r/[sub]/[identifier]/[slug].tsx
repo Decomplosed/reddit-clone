@@ -187,6 +187,7 @@ export default function PostPage() {
                           `}
                         </span>
                       </p>
+                      <p>{comment.body}</p>
                     </div>
                   </div>
                 ))}
