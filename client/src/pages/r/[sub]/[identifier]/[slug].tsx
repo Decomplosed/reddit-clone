@@ -160,7 +160,10 @@ export default function PostPage() {
                         </Link>
                       </p>
                       <form onSubmit={submitComment}>
-                        <textarea className='w-full p-3 border border-gray-300 focus:outline-none focus:border-gray-600'></textarea>
+                        <textarea
+                          className='w-full p-3 border border-gray-300 focus:outline-none focus:border-gray-600'
+                          onChange={}
+                        ></textarea>
                       </form>
                     </div>
                   ) : (
