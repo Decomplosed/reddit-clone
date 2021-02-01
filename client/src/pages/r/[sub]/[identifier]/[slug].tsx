@@ -149,7 +149,11 @@ export default function PostPage() {
                 </div>
                 {/* {Comment input area} */}
                 <div className='pl-10 pr-6 mb-4'>
-                  {authenticated ? () : ()}
+                  {authenticated ? (
+                    <p>Comment input</p>
+                  ) : (
+                    <div className='flex items-center px-2 py-4 border-gray-500'></div>
+                  )}
                 </div>
                 <hr />
                 {/* {Comments feed} */}
