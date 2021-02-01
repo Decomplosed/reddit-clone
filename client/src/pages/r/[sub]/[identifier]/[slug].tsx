@@ -57,6 +57,8 @@ export default function PostPage() {
     }
   };
 
+  const submitComment = () => {};
+
   return (
     <>
       <Head>
