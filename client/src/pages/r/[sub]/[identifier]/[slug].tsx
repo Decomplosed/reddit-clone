@@ -147,7 +147,9 @@ export default function PostPage() {
                     </div>
                   </div>
                 </div>
+                {/* {Comment input area} */}
                 <hr />
+                {/* {Comments feed} */}
                 {comments?.map((comment) => (
                   <div className='flex' key={comment.identifier}>
                     <div className='flex-shrink-0 w-10 py-2 text-center rounded-l'>
