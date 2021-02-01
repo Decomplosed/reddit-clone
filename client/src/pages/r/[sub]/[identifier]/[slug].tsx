@@ -57,7 +57,7 @@ export default function PostPage() {
     }
   };
 
-  const submitComment = async () => {};
+  const submitComment = async (event: FormEvent) => {};
 
   return (
     <>
