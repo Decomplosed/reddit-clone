@@ -148,6 +148,7 @@ export default function PostPage() {
                   </div>
                 </div>
                 {/* {Comment input area} */}
+                <div className='pl-10 pr-6 mb-4'></div>
                 <hr />
                 {/* {Comments feed} */}
                 {comments?.map((comment) => (
