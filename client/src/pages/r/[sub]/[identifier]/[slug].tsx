@@ -59,6 +59,8 @@ export default function PostPage() {
 
   const submitComment = async (event: FormEvent) => {
     event.preventDefault();
+
+    if (newComment.trim() === '') return;
   };
 
   return (
