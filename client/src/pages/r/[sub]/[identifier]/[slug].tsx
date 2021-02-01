@@ -16,7 +16,7 @@ import { Post, Comment } from '../../../../types';
 dayjs.extend(relativeTime);
 
 export default function PostPage() {
-  const { authenticated } = useAuthState();
+  const { authenticated, user } = useAuthState();
 
   const router = useRouter();
   const { identifier, sub, slug } = router.query;
