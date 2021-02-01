@@ -159,6 +159,7 @@ export default function PostPage() {
                           </a>
                         </Link>
                       </p>
+                      <form onSubmit={submitComment}></form>
                     </div>
                   ) : (
                     <div className='flex items-center justify-between px-2 py-4 border border-gray-200 rounded'>
