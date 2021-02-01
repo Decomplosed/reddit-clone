@@ -161,6 +161,11 @@ export default function PostPage() {
                           <a className='px-4 py-1 hollow blue button'>Login</a>
                         </Link>
                       </div>
+                      <div>
+                        <Link href='/register'>
+                          <a className='px-4 py-1 blue button'>Sign Up</a>
+                        </Link>
+                      </div>
                     </div>
                   )}
                 </div>
