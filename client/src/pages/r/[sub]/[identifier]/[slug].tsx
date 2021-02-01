@@ -152,6 +152,7 @@ export default function PostPage() {
                   {authenticated ? (
                     <div>
                       <p className='mb-1 text-xs'>Comment as </p>
+                      <Link href={`/u/${user.username}`}></Link>
                     </div>
                   ) : (
                     <div className='flex items-center justify-between px-2 py-4 border border-gray-200 rounded'>
