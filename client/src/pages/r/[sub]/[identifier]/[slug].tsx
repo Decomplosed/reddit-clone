@@ -152,9 +152,9 @@ export default function PostPage() {
                   {authenticated ? (
                     <p>Comment input</p>
                   ) : (
-                    <div className='flex items-center justify-between px-2 py-4 border border-gray-500'>
-                      <p className='text-gray-700'>
-                        Log in or Sign up to leave a comment
+                    <div className='flex items-center justify-between px-2 py-4 border border-gray-200 rounded'>
+                      <p className='font-semibold text-gray-500'>
+                        Log in or sign up to leave a comment
                       </p>
                       <div>
                         <Link href='/login'>
