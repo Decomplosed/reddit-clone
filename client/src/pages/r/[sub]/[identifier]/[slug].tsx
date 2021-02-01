@@ -12,6 +12,7 @@ import ActionButton from '../../../../components/ActionButton';
 import Sidebar from '../../../../components/Sidebar';
 import { useAuthState } from '../../../../context/auth';
 import { Post, Comment } from '../../../../types';
+import { useState } from 'react';
 
 dayjs.extend(relativeTime);
 
