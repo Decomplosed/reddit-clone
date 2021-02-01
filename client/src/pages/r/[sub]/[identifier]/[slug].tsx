@@ -61,6 +61,9 @@ export default function PostPage() {
     event.preventDefault();
 
     if (newComment.trim() === '') return;
+
+    try {
+    } catch (error) {}
   };
 
   return (
