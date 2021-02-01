@@ -63,6 +63,9 @@ export default function PostPage() {
     if (newComment.trim() === '') return;
 
     try {
+      await Axios.post(`/posts/${post.identifier}/${post.slug}/comments`, {
+        body: newComment,
+      });
     } catch (error) {}
   };
 
