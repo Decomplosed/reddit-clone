@@ -66,7 +66,9 @@ export default function PostPage() {
       await Axios.post(`/posts/${post.identifier}/${post.slug}/comments`, {
         body: newComment,
       });
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
