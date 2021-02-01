@@ -156,6 +156,11 @@ export default function PostPage() {
                       <p className='text-gray-700'>
                         Log in or Sign up to leave a comment
                       </p>
+                      <div>
+                        <Link href='/login'>
+                          <a className='px-4 py-1 hollow blue button'>Login</a>
+                        </Link>
+                      </div>
                     </div>
                   )}
                 </div>
