@@ -150,7 +150,9 @@ export default function PostPage() {
                 {/* {Comment input area} */}
                 <div className='pl-10 pr-6 mb-4'>
                   {authenticated ? (
-                    <div></div>
+                    <div>
+                      <p className='mb-1 text-xs'>Comment as </p>
+                    </div>
                   ) : (
                     <div className='flex items-center justify-between px-2 py-4 border border-gray-200 rounded'>
                       <p className='font-semibold text-gray-500'>
