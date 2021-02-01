@@ -165,7 +165,7 @@ export default function PostPage() {
                       <form onSubmit={submitComment}>
                         <textarea
                           className='w-full p-3 border border-gray-300 focus:outline-none focus:border-gray-600'
-                          onChange={}
+                          onChange={(e) => setNewComment(e.target.value)}
                         ></textarea>
                       </form>
                     </div>
