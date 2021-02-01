@@ -151,12 +151,14 @@ export default function PostPage() {
                 <div className='pl-10 pr-6 mb-4'>
                   {authenticated ? (
                     <div>
-                      <p className='mb-1 text-xs'>Comment as </p>
-                      <Link href={`/u/${user.username}`}>
-                        <a className='font-semibold text-blue-500'>
-                          {user.username}
-                        </a>
-                      </Link>
+                      <p className='mb-1 text-xs'>
+                        Comment as{' '}
+                        <Link href={`/u/${user.username}`}>
+                          <a className='font-semibold text-blue-500'>
+                            {user.username}
+                          </a>
+                        </Link>
+                      </p>
                     </div>
                   ) : (
                     <div className='flex items-center justify-between px-2 py-4 border border-gray-200 rounded'>
