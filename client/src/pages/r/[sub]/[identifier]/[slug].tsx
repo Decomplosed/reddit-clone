@@ -17,6 +17,8 @@ import { useState } from 'react';
 dayjs.extend(relativeTime);
 
 export default function PostPage() {
+  const [newComment, setNewComment] = useState('');
+
   const { authenticated, user } = useAuthState();
 
   const router = useRouter();
