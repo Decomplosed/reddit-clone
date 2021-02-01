@@ -152,13 +152,15 @@ export default function PostPage() {
                   {authenticated ? (
                     <p>Comment input</p>
                   ) : (
-                    <div className='flex items-center justify-between px-2 py-4 border-gray-500'>
+                    <div className='flex items-center justify-between px-2 py-4 border border-gray-500'>
                       <p className='text-gray-700'>
                         Log in or Sign up to leave a comment
                       </p>
                       <div>
                         <Link href='/login'>
-                          <a className='px-4 py-1 hollow blue button'>Login</a>
+                          <a className='px-4 py-1 mr-4 hollow blue button'>
+                            Login
+                          </a>
                         </Link>
                         <Link href='/register'>
                           <a className='px-4 py-1 blue button'>Sign Up</a>
