@@ -9,6 +9,8 @@ export default function Submit() {
 
   const { data: sub, error } = useSWR<Sub>(subName ? `/subs/${subName}` : null);
 
+  if (error) router.push('/');
+
   return (
     <div className='container flex pt-5'>
       <div className='w-160'></div>
