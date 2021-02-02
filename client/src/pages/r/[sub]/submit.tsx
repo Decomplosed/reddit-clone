@@ -15,6 +15,8 @@ export default function Submit() {
 
   if (error) router.push('/');
 
+  const submitPost = () => {};
+
   return (
     <div className='container flex pt-5'>
       <Head>
