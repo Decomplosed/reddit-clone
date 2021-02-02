@@ -3,6 +3,8 @@ import useSWR from 'swr';
 import Sidebar from '../../../components/Sidebar';
 
 export default function Submit() {
+  const router = useRouter();
+
   const { data: sub, error } = useSWR();
 
   return (
