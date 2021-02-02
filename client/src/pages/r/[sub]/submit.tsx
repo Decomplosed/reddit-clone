@@ -18,7 +18,9 @@ export default function Submit() {
         <title>Submit to Readit</title>
       </Head>
       <div className='w-160'>
-        <div className='p-4 bg-white rounded'></div>
+        <div className='p-4 bg-white rounded'>
+          <h1 className='mb-3 text-lg'>Submit a post to /r/{subName}</h1>
+        </div>
       </div>
       <Sidebar sub={sub} />
     </div>
