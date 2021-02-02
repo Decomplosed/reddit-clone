@@ -13,6 +13,9 @@ export default function Submit() {
 
   return (
     <div className='container flex pt-5'>
+      <Head>
+        <title>Submit to Readit</title>
+      </Head>
       <div className='w-160'></div>
       <Sidebar sub={sub} />
     </div>
