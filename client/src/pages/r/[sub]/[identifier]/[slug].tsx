@@ -183,7 +183,10 @@ export default function PostPage() {
                           value={newComment}
                         ></textarea>
                         <div className='flex justify-end'>
-                          <button className='px-3 py-1 blue button'>
+                          <button
+                            className='px-3 py-1 blue button'
+                            disabled={newComment.trim() === ''}
+                          >
                             Comment
                           </button>
                         </div>
