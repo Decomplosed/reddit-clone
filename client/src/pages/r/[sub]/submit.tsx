@@ -33,6 +33,7 @@ export default function Submit() {
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
               />
+              <div className='absolute mb-2 text-sm text-gray-500 select-none'></div>
             </div>
           </form>
         </div>
