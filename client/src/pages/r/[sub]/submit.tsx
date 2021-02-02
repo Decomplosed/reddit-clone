@@ -17,7 +17,9 @@ export default function Submit() {
       <Head>
         <title>Submit to Readit</title>
       </Head>
-      <div className='w-160'></div>
+      <div className='w-160'>
+        <div className='p-4 bg-white rounded'></div>
+      </div>
       <Sidebar sub={sub} />
     </div>
   );
