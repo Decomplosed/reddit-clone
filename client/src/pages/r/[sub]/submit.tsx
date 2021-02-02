@@ -1,3 +1,4 @@
+import useSWR from 'swr';
 import Sidebar from '../../../components/Sidebar';
 
 export default function Submit() {
