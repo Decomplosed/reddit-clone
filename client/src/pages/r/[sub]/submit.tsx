@@ -21,11 +21,12 @@ export default function Submit() {
         <div className='p-4 bg-white rounded'>
           <h1 className='mb-3 text-lg'>Submit a post to /r/{subName}</h1>
           <form onSubmit={submitPost}>
-            <div className='absolute mb-2'>
+            <div className='relative mb-2'>
               <input
                 type='text'
                 className='w-full px-3 py-2 border border-gray-300 rounded focus:outline-none'
                 placeholder='Title'
+                maxLength={300}
               />
             </div>
           </form>
