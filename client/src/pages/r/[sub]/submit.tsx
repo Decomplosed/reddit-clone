@@ -6,6 +6,8 @@ import Sidebar from '../../../components/Sidebar';
 import { Sub } from '../../../types';
 
 export default function Submit() {
+  const [title, setTitle] = useState('');
+
   const router = useRouter();
   const { sub: subName } = router.query;
 
