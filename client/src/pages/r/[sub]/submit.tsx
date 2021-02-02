@@ -4,6 +4,7 @@ import Sidebar from '../../../components/Sidebar';
 
 export default function Submit() {
   const router = useRouter();
+  const { sub: subName } = router.query;
 
   const { data: sub, error } = useSWR();
 
