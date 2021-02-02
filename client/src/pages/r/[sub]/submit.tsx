@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import useSWR from 'swr';
 import Sidebar from '../../../components/Sidebar';
+import { Sub } from '../../../types';
 
 export default function Submit() {
   const router = useRouter();
