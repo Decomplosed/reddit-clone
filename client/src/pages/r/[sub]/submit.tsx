@@ -28,6 +28,7 @@ export default function Submit() {
                 placeholder='Title'
                 maxLength={300}
                 value={title}
+                onChange={(e) => setTitle(e.target.value)}
               />
             </div>
           </form>
