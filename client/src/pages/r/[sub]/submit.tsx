@@ -7,7 +7,7 @@ export default function Submit() {
   const router = useRouter();
   const { sub: subName } = router.query;
 
-  const { data: sub, error } = useSWR(subName ? `/subs/${subName}` : null);
+  const { data: sub, error } = useSWR<Sub>(subName ? `/subs/${subName}` : null);
 
   return (
     <div className='container flex pt-5'>
