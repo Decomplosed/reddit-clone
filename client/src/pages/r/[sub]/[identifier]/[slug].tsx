@@ -68,6 +68,8 @@ export default function PostPage() {
       });
 
       setNewComment('');
+
+      revalidate();
     } catch (error) {
       console.log(error);
     }
