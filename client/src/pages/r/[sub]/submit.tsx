@@ -53,6 +53,7 @@ export default function Submit() {
               className='w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-gray-600'
               value={body}
               placeholder='Text (optional)'
+              rows={4}
             ></textarea>
           </form>
         </div>
