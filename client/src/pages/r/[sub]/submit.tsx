@@ -22,6 +22,7 @@ export default function Submit() {
     if (title.trim() === '') return;
 
     try {
+      await Axios.post();
     } catch (error) {}
   };
 
