@@ -17,6 +17,8 @@ export default function Submit() {
 
   const submitPost = async (event: FormEvent) => {
     event.preventDefault();
+
+    if (title.trim() === '') return;
   };
 
   return (
