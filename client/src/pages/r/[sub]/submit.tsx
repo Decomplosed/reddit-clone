@@ -15,7 +15,9 @@ export default function Submit() {
 
   if (error) router.push('/');
 
-  const submitPost = async (event: FormEvent) => {};
+  const submitPost = async (event: FormEvent) => {
+    event.preventDefault();
+  };
 
   return (
     <div className='container flex pt-5'>
