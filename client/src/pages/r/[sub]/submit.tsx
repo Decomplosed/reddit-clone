@@ -28,6 +28,8 @@ export default function Submit() {
         body,
         sub: subName,
       });
+
+      router.push(`/r/${sub.name}/${post.identifier}/${post.slug}`);
     } catch (error) {}
   };
 
