@@ -22,7 +22,7 @@ export default function Submit() {
     if (title.trim() === '') return;
 
     try {
-      await Axios.post();
+      await Axios.post('/posts', { title: title.trim(), body, sub: subName });
     } catch (error) {}
   };
 
