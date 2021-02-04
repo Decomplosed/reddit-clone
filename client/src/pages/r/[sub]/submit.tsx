@@ -30,7 +30,9 @@ export default function Submit() {
       });
 
       router.push(`/r/${sub.name}/${post.identifier}/${post.slug}`);
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
