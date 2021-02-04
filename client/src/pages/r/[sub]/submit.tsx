@@ -47,7 +47,7 @@ export default function Submit() {
               />
               <div
                 className='absolute mb-2 text-sm text-gray-500 select-none'
-                style={{ top: 10, right: 10 }}
+                style={{ top: 11, right: 10 }}
               >
                 {title.trim().length}/300
               </div>
