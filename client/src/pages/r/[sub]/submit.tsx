@@ -55,7 +55,7 @@ export default function Submit() {
               placeholder='Text (optional)'
               rows={4}
             ></textarea>
-            <div className='flex-justify-end'>
+            <div className='flex justify-end'>
               <button
                 className='px-3 py-1 blue button'
                 type='submit'
