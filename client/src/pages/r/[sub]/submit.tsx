@@ -52,6 +52,7 @@ export default function Submit() {
             <textarea
               className='w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-gray-600'
               value={body}
+              placeholder='Text (optional)'
             ></textarea>
           </form>
         </div>
