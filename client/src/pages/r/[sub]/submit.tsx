@@ -23,7 +23,7 @@ export default function Submit() {
     if (title.trim() === '') return;
 
     try {
-      const { data: post } = await Axios.post('/posts', {
+      const { data: post } = await Axios.post<Post>('/posts', {
         title: title.trim(),
         body,
         sub: subName,
