@@ -67,7 +67,7 @@ export default function Submit() {
           </form>
         </div>
       </div>
-      <Sidebar sub={sub} />
+      {sub && <Sidebar sub={sub} />}
     </div>
   );
 }
