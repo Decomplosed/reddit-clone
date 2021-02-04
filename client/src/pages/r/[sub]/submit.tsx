@@ -8,6 +8,7 @@ import { Sub } from '../../../types';
 
 export default function Submit() {
   const [title, setTitle] = useState('');
+  const [body, setBody] = useState('');
 
   const router = useRouter();
   const { sub: subName } = router.query;
