@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { FormEvent, useState } from 'react';
 import useSWR from 'swr';
 import Sidebar from '../../../components/Sidebar';
-import { Sub } from '../../../types';
+import { Post, Sub } from '../../../types';
 
 export default function Submit() {
   const [title, setTitle] = useState('');
