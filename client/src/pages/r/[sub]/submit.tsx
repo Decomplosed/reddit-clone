@@ -49,7 +49,10 @@ export default function Submit() {
                 {title.trim().length}/300
               </div>
             </div>
-            <textarea className='w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-gray-600'></textarea>
+            <textarea
+              className='w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-gray-600'
+              value={body}
+            ></textarea>
           </form>
         </div>
       </div>
