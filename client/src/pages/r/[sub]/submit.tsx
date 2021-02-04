@@ -19,6 +19,9 @@ export default function Submit() {
     event.preventDefault();
 
     if (title.trim() === '') return;
+
+    try {
+    } catch (error) {}
   };
 
   return (
