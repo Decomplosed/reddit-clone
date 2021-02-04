@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import useSWR from 'swr';
 import Sidebar from '../../../components/Sidebar';
 import { Sub } from '../../../types';
