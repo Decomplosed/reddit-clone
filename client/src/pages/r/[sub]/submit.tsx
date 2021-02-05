@@ -65,6 +65,7 @@ export default function Submit() {
               value={body}
               placeholder='Text (optional)'
               rows={4}
+              onChange={(e) => setBody(e.target.value)}
             ></textarea>
             <div className='flex justify-end'>
               <button
