@@ -9,6 +9,8 @@ const getUserSubmissions = async (req: Request, res: Response) => {
       where: { username: req.params.username },
       select: ['username', 'createdAt'],
     });
+
+    const posts = await Post.find();
   } catch (error) {}
 };
 
