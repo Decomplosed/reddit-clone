@@ -25,6 +25,8 @@ const getUserSubmissions = async (req: Request, res: Response) => {
       posts.forEach((p) => p.setUserVote(res.locals.user));
       comments.forEach((c) => c.setUserVote(res.locals.user));
     }
+
+    let submissions: any[] = [];
   } catch (error) {}
 };
 
