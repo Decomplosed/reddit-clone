@@ -1,4 +1,5 @@
 import { Response, Request, Router } from 'express';
+import User from '../entities/User';
 import user from '../middleware/user';
 
 const getUserSubmissions = async (req: Request, res: Response) => {
