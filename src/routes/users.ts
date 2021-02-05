@@ -1,4 +1,4 @@
-import { Response } from 'express';
+import { Response, Request, Router } from 'express';
 
 const getUserSubmissions = async (req: Request, res: Response) => {
   try {
