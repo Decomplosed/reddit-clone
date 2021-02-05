@@ -31,6 +31,12 @@ const getUserSubmissions = async (req: Request, res: Response) => {
     comments.forEach((c) =>
       submissions.push({ type: 'Comment', ...c.toJSON() }),
     );
+
+    submissions.sort((a, b) => {
+      if (b.createdAt > a.createdAt) return 1;
+      if (b.createdAt < a.createdAt) return -1;
+      return 0;
+    });
   } catch (error) {}
 };
 
