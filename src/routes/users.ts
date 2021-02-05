@@ -1,1 +1,1 @@
-const getUserSubmissions = () => {};
+const getUserSubmissions = async () => {};
