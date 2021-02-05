@@ -1,1 +1,3 @@
-const getUserSubmissions = async () => {};
+import { Response } from 'express';
+
+const getUserSubmissions = async (req: Request, res: Response) => {};
