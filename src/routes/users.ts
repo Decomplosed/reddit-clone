@@ -4,7 +4,9 @@ import user from '../middleware/user';
 
 const getUserSubmissions = async (req: Request, res: Response) => {
   try {
-    const user = await User.findOneOrFail()
+    const user = await User.findOneOrFail({
+      where: { username: req.params.username },
+    });
   } catch (error) {}
 };
 
