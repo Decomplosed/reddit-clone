@@ -4,3 +4,5 @@ const getUserSubmissions = async (req: Request, res: Response) => {
   try {
   } catch (error) {}
 };
+
+const router = Router();
