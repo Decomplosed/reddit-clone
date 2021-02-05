@@ -39,7 +39,9 @@ const getUserSubmissions = async (req: Request, res: Response) => {
     });
 
     return res.json({ user, submissions });
-  } catch (error) {}
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 const router = Router();
