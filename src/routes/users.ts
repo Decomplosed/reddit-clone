@@ -27,6 +27,7 @@ const getUserSubmissions = async (req: Request, res: Response) => {
     }
 
     let submissions: any[] = [];
+    posts.forEach((p) => submissions.push({}));
   } catch (error) {}
 };
 
