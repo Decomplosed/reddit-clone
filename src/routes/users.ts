@@ -1,4 +1,5 @@
 import { Response, Request, Router } from 'express';
+import user from '../middleware/user';
 
 const getUserSubmissions = async (req: Request, res: Response) => {
   try {
