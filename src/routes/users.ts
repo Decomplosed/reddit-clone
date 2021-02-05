@@ -7,4 +7,4 @@ const getUserSubmissions = async (req: Request, res: Response) => {
 
 const router = Router();
 
-router.get('/:username', getUserSubmissions);
+router.get('/:username', user, getUserSubmissions);
