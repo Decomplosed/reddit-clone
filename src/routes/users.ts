@@ -37,6 +37,8 @@ const getUserSubmissions = async (req: Request, res: Response) => {
       if (b.createdAt < a.createdAt) return -1;
       return 0;
     });
+
+    return res.json({ user, submissions });
   } catch (error) {}
 };
 
