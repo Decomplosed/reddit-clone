@@ -20,6 +20,10 @@ const getUserSubmissions = async (req: Request, res: Response) => {
       where: { user },
       relations: ['post'],
     });
+
+    if (res.locals.user) {
+      posts.forEach((p) => p.setUserVote(res.locals.user));
+    }
   } catch (error) {}
 };
 
