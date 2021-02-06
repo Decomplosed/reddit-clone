@@ -18,7 +18,7 @@ export default function User() {
       {data && (
         <div className='container flex pt-5'>
           <div className='w-160'>
-            {data.submissions.map((submission) => {})}
+            {data.submissions.map((submission: any) => {})}
           </div>
         </div>
       )}
