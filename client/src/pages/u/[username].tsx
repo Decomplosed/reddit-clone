@@ -9,5 +9,5 @@ export default function User() {
 
   if (error) router.push('/');
 
-  return <div></div>;
+  return <></>;
 }
