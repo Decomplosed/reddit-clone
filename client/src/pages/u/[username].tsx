@@ -25,7 +25,7 @@ export default function User() {
                 const post: Post = submission;
                 return <PostCard key={post.identifier} post={post} />;
               } else {
-                const comment = submission;
+                const comment: Comment = submission;
               }
             })}
           </div>
