@@ -60,6 +60,7 @@ export default function User() {
               }
             })}
           </div>
+          <div className="ml-6 w-80"></div>
         </div>
       )}
     </>
