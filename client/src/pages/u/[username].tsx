@@ -21,7 +21,9 @@ export default function User() {
           <div className='w-160'>
             {data.submissions.map((submission: any) => {
               if (submission.type === 'Post') {
-                return <PostCard key={submission.identifier} />;
+                return (
+                  <PostCard key={submission.identifier} post={submission} />
+                );
               }
             })}
           </div>
