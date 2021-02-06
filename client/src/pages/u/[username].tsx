@@ -26,7 +26,12 @@ export default function User() {
                 return <PostCard key={post.identifier} post={post} />;
               } else {
                 const comment: Comment = submission;
-                return <div key={comment.identifier}></div>;
+                return (
+                  <div
+                    key={comment.identifier}
+                    className='flex my-4 bg-white rounded'
+                  ></div>
+                );
               }
             })}
           </div>
