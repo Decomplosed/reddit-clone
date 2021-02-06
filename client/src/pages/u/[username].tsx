@@ -7,5 +7,7 @@ export default function User() {
 
   const { data, error } = useSWR<any>(username ? `/users/${username}` : null);
 
+  if (error) router.push('/');
+
   return <div></div>;
 }
