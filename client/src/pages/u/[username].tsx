@@ -46,6 +46,7 @@ export default function User() {
                           </a>
                         </Link>
                         <span className='mx-1'>•</span>
+                        <Link href={`/r/${comment.post.subName}`}></Link>
                       </p>
                     </div>
                   </div>
