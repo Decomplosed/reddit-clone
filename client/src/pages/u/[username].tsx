@@ -31,7 +31,9 @@ export default function User() {
                     key={comment.identifier}
                     className='flex my-4 bg-white rounded'
                   >
-                    <div className='flex-shrink-0 w-10 py-4 text-center rounded-l'></div>
+                    <div className='flex-shrink-0 w-10 py-4 text-center rounded-l'>
+                      <i className='mr-1 text-gray-500 fas fa-comment-alt fa-xs'></i>
+                    </div>
                   </div>
                 );
               }
