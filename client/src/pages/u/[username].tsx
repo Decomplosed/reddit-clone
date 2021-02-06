@@ -53,6 +53,7 @@ export default function User() {
                         </Link>
                       </p>
                       <hr />
+                      <p>{comment.body}</p>
                     </div>
                   </div>
                 );
