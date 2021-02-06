@@ -40,7 +40,11 @@ export default function User() {
                         {comment.username}
 
                         <span> commented on </span>
-                        <Link></Link>
+                        <Link href={comment.post.url}>
+                          <a className='font-semibold cursor-pointer hover:underline'>
+                            {comment.post.title}
+                          </a>
+                        </Link>
                       </p>
                     </div>
                   </div>
