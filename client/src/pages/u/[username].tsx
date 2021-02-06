@@ -30,7 +30,9 @@ export default function User() {
                   <div
                     key={comment.identifier}
                     className='flex my-4 bg-white rounded'
-                  ></div>
+                  >
+                    <div className='flex-shrink-0 w-10 py-4 text-center rounded-l'></div>
+                  </div>
                 );
               }
             })}
