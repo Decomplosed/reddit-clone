@@ -46,7 +46,11 @@ export default function User() {
                           </a>
                         </Link>
                         <span className='mx-1'>•</span>
-                        <Link href={`/r/${comment.post.subName}`}></Link>
+                        <Link href={`/r/${comment.post.subName}`}>
+                          <a className="text-black cursor-pointer hover:underline">
+                            /r/{comment.post.subName}
+                          </a>
+                        </Link>
                       </p>
                     </div>
                   </div>
