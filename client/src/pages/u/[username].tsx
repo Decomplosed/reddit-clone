@@ -10,5 +10,9 @@ export default function User() {
 
   if (error) router.push('/');
 
-  return <></>;
+  return (
+    <>
+      <Head></Head>
+    </>
+  );
 }
