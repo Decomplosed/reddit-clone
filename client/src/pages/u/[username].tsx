@@ -35,7 +35,11 @@ export default function User() {
                       <i className='mr-1 text-gray-500 fas fa-comment-alt fa-xs'></i>
                     </div>
                     <div className='w-full p-2'>
-                      <p className='mb-2 text-xs text-gray-500'></p>
+                      <p className='mb-2 text-xs text-gray-500'>
+                        {comment.username}
+
+                        <span> commented on </span>
+                      </p>
                     </div>
                   </div>
                 );
