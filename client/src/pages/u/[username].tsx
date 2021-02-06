@@ -22,7 +22,7 @@ export default function User() {
           <div className='w-160'>
             {data.submissions.map((submission: any) => {
               if (submission.type === 'Post') {
-                const post = submission;
+                const post: Post = submission;
                 return <PostCard key={post.identifier} post={post} />;
               }
             })}
