@@ -18,7 +18,11 @@ export default function User() {
       {data && (
         <div className='container flex pt-5'>
           <div className='w-160'>
-            {data.submissions.map((submission: any) => {})}
+            {data.submissions.map((submission: any) => {
+              if (submission.type === 'Post') {
+                return;
+              }
+            })}
           </div>
         </div>
       )}
