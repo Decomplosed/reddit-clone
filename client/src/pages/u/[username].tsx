@@ -22,9 +22,7 @@ export default function User() {
             {data.submissions.map((submission: any) => {
               if (submission.type === 'Post') {
                 const post = submission;
-                return (
-                  <PostCard key={submission.identifier} post={submission} />
-                );
+                return <PostCard key={post.identifier} post={post} />;
               }
             })}
           </div>
