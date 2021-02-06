@@ -45,6 +45,7 @@ export default function User() {
                             {comment.post.title}
                           </a>
                         </Link>
+                        <span className='mx-1'>•</span>
                       </p>
                     </div>
                   </div>
