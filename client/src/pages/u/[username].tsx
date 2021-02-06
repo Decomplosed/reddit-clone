@@ -40,6 +40,7 @@ export default function User() {
                         {comment.username}
 
                         <span> commented on </span>
+                        <Link></Link>
                       </p>
                     </div>
                   </div>
