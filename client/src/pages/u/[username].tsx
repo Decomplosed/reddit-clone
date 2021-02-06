@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import useSWR from 'swr';
+import PostCard from '../../components/PostCard';
 
 export default function User() {
   const router = useRouter();
