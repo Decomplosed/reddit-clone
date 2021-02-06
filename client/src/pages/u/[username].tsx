@@ -21,7 +21,7 @@ export default function User() {
           <div className='w-160'>
             {data.submissions.map((submission: any) => {
               if (submission.type === 'Post') {
-                return;
+                return <PostCard />;
               }
             })}
           </div>
