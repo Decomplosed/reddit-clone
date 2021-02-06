@@ -12,7 +12,9 @@ export default function User() {
 
   return (
     <>
-      <Head></Head>
+      <Head>
+        <title>{data?.user.username}</title>
+      </Head>
     </>
   );
 }
