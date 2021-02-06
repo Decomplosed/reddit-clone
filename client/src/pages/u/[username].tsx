@@ -26,6 +26,7 @@ export default function User() {
                 return <PostCard key={post.identifier} post={post} />;
               } else {
                 const comment: Comment = submission;
+                return <div key={comment.identifier}></div>;
               }
             })}
           </div>
