@@ -60,7 +60,9 @@ export default function User() {
               }
             })}
           </div>
-          <div className="ml-6 w-80"></div>
+          <div className='ml-6 w-80'>
+            <div className='bg-white rounded'></div>
+          </div>
         </div>
       )}
     </>
