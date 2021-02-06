@@ -15,6 +15,7 @@ export default function User() {
       <Head>
         <title>{data?.user.username}</title>
       </Head>
+      {data && <div className='container flex pt-5'></div>}
     </>
   );
 }
