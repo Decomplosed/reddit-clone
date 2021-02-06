@@ -15,7 +15,11 @@ export default function User() {
       <Head>
         <title>{data?.user.username}</title>
       </Head>
-      {data && <div className='container flex pt-5'></div>}
+      {data && (
+        <div className='container flex pt-5'>
+          <div className='w-160'></div>
+        </div>
+      )}
     </>
   );
 }
