@@ -69,6 +69,7 @@ export default function User() {
                   className='w-16 h-16 mx-auto border-2 border-white rounded-full'
                 />
               </div>
+              <div className="p-3 text-center"></div>
             </div>
           </div>
         </div>
