@@ -135,6 +135,8 @@ const uploadSubImage = async (req: Request, res: Response) => {
   }
 };
 
+const searchSubs = () => {};
+
 const router = Router();
 
 router.post('/', user, auth, createSub);
