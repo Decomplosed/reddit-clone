@@ -85,7 +85,7 @@ export default function Submit() {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async ({
-  req,
-  res,
-}) => {};
+export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
+  try {
+  } catch (error) {}
+};
