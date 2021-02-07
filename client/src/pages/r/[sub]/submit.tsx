@@ -83,3 +83,5 @@ export default function Submit() {
     </div>
   );
 }
+
+export const getServerSideProps = () => {};
