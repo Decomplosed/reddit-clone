@@ -71,6 +71,7 @@ export default function User() {
               </div>
               <div className='p-3 text-center'>
                 <h1 className='p-3 text-xl'>{data.user.username}</h1>
+                <hr />
               </div>
             </div>
           </div>
