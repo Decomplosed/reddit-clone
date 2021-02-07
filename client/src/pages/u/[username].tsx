@@ -69,7 +69,9 @@ export default function User() {
                   className='w-16 h-16 mx-auto border-2 border-white rounded-full'
                 />
               </div>
-              <div className="p-3 text-center"></div>
+              <div className='p-3 text-center'>
+                <h1 className='p-3 text-xl'>{data.user.username}</h1>
+              </div>
             </div>
           </div>
         </div>
