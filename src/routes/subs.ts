@@ -149,6 +149,8 @@ const searchSubs = async (req: Request, res: Response) => {
         name: `%${name.toLowerCase().trim()}%`,
       })
       .getMany();
+
+    return res.json(subs);
   } catch (error) {}
 };
 
