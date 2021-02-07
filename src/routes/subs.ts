@@ -151,7 +151,9 @@ const searchSubs = async (req: Request, res: Response) => {
       .getMany();
 
     return res.json(subs);
-  } catch (error) {}
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 const router = Router();
