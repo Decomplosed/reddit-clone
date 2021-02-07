@@ -89,5 +89,7 @@ export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
   try {
     const cookie = req.headers.cookie;
     if (!cookie) throw new Error('Missing auth token cookie');
-  } catch (error) {}
+  } catch (error) {
+    res.writeHead(307, { Location: '/login' });
+  }
 };
