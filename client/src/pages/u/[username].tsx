@@ -4,6 +4,7 @@ import Link from 'next/link';
 import useSWR from 'swr';
 import PostCard from '../../components/PostCard';
 import { Post, Comment } from '../../types';
+import dayjs from 'dayjs';
 
 export default function User() {
   const router = useRouter();
