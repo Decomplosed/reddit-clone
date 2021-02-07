@@ -138,6 +138,10 @@ const uploadSubImage = async (req: Request, res: Response) => {
 const searchSubs = async (req: Request, res: Response) => {
   try {
     const name = req.params.name;
+
+    if (isEmpty(name)) {
+      res.status(400).json({ error: 'Name must not be empty' });
+    }
   } catch (error) {}
 };
 
