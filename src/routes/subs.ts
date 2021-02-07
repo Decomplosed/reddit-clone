@@ -135,7 +135,7 @@ const uploadSubImage = async (req: Request, res: Response) => {
   }
 };
 
-const searchSubs = () => {};
+const searchSubs = async () => {};
 
 const router = Router();
 
