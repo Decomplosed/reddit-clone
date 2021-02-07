@@ -153,6 +153,7 @@ const searchSubs = async (req: Request, res: Response) => {
     return res.json(subs);
   } catch (error) {
     console.log(error);
+    return res.status(500).json({ error: 'Something went wrong' });
   }
 };
 
