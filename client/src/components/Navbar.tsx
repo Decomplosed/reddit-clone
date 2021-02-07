@@ -38,6 +38,7 @@ const Navbar: React.FC = () => {
           type='text'
           className='py-1 pr-3 bg-transparent rounded focus:outline-none w-160'
           placeholder='Search'
+          value={name}
         />
       </div>
       <div className='flex'>
