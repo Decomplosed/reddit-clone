@@ -137,6 +137,7 @@ const uploadSubImage = async (req: Request, res: Response) => {
 
 const searchSubs = async (req: Request, res: Response) => {
   try {
+    const name = req.params.name;
   } catch (error) {}
 };
 
