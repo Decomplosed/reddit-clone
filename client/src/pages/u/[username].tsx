@@ -34,7 +34,7 @@ export default function User() {
                     className='flex my-4 bg-white rounded'
                   >
                     <div className='flex-shrink-0 w-10 py-4 text-center bg-gray-200 rounded-l'>
-                      <i className='text-gray-600 fas fa-comment-alt fa-xs'></i>
+                      <i className='text-gray-500 fas fa-comment-alt fa-xs'></i>
                     </div>
                     <div className='w-full p-2'>
                       <p className='mb-2 text-xs text-gray-500'>
