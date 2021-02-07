@@ -143,7 +143,9 @@ const searchSubs = async (req: Request, res: Response) => {
       res.status(400).json({ error: 'Name must not be empty' });
     }
 
-    const subs = await getRepository(Sub).createQueryBuilder();
+    const subs = await getRepository(Sub)
+      .createQueryBuilder()
+      .where('LOWER(name) LIKE :name', { name: name.toLowerCase().trim() });
   } catch (error) {}
 };
 
