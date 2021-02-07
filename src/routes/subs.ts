@@ -145,7 +145,9 @@ const searchSubs = async (req: Request, res: Response) => {
 
     const subs = await getRepository(Sub)
       .createQueryBuilder()
-      .where('LOWER(name) LIKE :name', { name: name.toLowerCase().trim() });
+      .where('LOWER(name) LIKE :name', {
+        name: `%${name.toLowerCase().trim()}%`,
+      });
   } catch (error) {}
 };
 
