@@ -144,6 +144,7 @@ const router = Router();
 
 router.post('/', user, auth, createSub);
 router.get('/:name', user, getSub);
+router.get('/search/:name', searchSubs);
 router.post(
   '/:name/image',
   user,
