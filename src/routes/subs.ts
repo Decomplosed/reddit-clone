@@ -142,6 +142,8 @@ const searchSubs = async (req: Request, res: Response) => {
     if (isEmpty(name)) {
       res.status(400).json({ error: 'Name must not be empty' });
     }
+
+    const subs = await getRepository(Sub);
   } catch (error) {}
 };
 
