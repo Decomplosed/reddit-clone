@@ -73,7 +73,9 @@ export default function User() {
               <div className='p-3 text-center'>
                 <h1 className='p-3 text-xl'>{data.user.username}</h1>
                 <hr />
-                <p className='mt-3'></p>
+                <p className='mt-3'>
+                  Joined {dayjs(data.user.createdAt).format('MMM YYYY')}
+                </p>
               </div>
             </div>
           </div>
