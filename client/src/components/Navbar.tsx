@@ -11,6 +11,7 @@ import { Sub } from '../types';
 const Navbar: React.FC = () => {
   const [name, setName] = useState('');
   const [subs, setSubs] = useState<Sub[]>([]);
+  const [timer, setTimer] = useState(null);
 
   const { authenticated, loading } = useAuthState();
   const dispatch = useAuthDispatch();
