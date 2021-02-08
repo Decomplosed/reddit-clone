@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Fragment, useState } from 'react';
 import Link from 'next/link';
 import Axios from 'axios';
