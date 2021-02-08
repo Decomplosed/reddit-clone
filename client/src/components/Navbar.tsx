@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
       .catch((err) => console.log(err));
   };
 
-  const searchSubs = () => {};
+  const searchSubs = async () => {};
 
   return (
     <div className='fixed inset-x-0 top-0 z-10 flex items-center justify-center h-12 px-5 bg-white'>
