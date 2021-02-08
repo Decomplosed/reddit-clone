@@ -72,6 +72,7 @@ const Navbar: React.FC = () => {
                 height={(8 * 16) / 4}
                 width={(8 * 16) / 4}
               />
+              <div className="text-sm"></div>
             </div>
           ))}
         </div>
