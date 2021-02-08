@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
           className='py-1 pr-3 bg-transparent rounded focus:outline-none w-160'
           placeholder='Search'
           value={name}
-          onChange={(e) => searchSubs(e.target.value)}
+          onChange={(e) => setName(e.target.value)}
         />
         <div
           className='absolute left-0 right-0 bg-white'
