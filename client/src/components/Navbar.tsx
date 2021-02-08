@@ -20,8 +20,8 @@ const Navbar: React.FC = () => {
       .catch((err) => console.log(err));
   };
 
-  const searchSubs = async (name: string) => {
-    setName(name);
+  const searchSubs = async (subName: string) => {
+    setName(subName);
   };
 
   return (
