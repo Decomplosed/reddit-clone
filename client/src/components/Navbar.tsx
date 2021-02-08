@@ -8,6 +8,8 @@ import RedditLogo from '../images/reddit.svg';
 
 const Navbar: React.FC = () => {
   const [name, setName] = useState('');
+  const [subs, setSubs] = useState([]);
+
   const { authenticated, loading } = useAuthState();
   const dispatch = useAuthDispatch();
 
