@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
         } catch (error) {
           console.log(error);
         }
-      }, 500),
+      }, 250),
     );
   };
 
