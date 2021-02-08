@@ -35,6 +35,7 @@ const Navbar: React.FC = () => {
   }, [name]);
 
   const searchSubs = async () => {
+    clearTimeout(timer);
     setTimer(
       setTimeout(async () => {
         try {
