@@ -61,7 +61,10 @@ const Navbar: React.FC = () => {
           style={{ top: '100%' }}
         >
           {subs?.map((sub) => (
-            <div className='flex items-center px-4 py-3 cursor-pointer hover:bg-gray-200'>
+            <div
+              key={sub.name}
+              className='flex items-center px-4 py-3 cursor-pointer hover:bg-gray-200'
+            >
               <Image
                 src={sub.imageUrl}
                 className='rounded-full'
