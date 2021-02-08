@@ -27,7 +27,8 @@ const Navbar: React.FC = () => {
     setName(subName);
 
     try {
-      const { data: subs } = await Axios.get(`/subs/search/${subName}`);
+      const { data } = await Axios.get(`/subs/search/${subName}`);
+      setSubs(data);
     } catch (error) {}
   };
 
