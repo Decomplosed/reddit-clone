@@ -72,7 +72,7 @@ const Navbar: React.FC = () => {
                 height={(8 * 16) / 4}
                 width={(8 * 16) / 4}
               />
-              <div className='text-sm'>
+              <div className='ml-4 text-sm'>
                 <p className='font-medium'>{sub.name}</p>
                 <p className='text-gray-600'>{sub.title}</p>
               </div>
