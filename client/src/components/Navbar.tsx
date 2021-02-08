@@ -35,14 +35,16 @@ const Navbar: React.FC = () => {
   }, [name]);
 
   const searchSubs = async () => {
-    setTimer(setTimeout(async () => {}, 500));
-
-    try {
-      const { data } = await Axios.get(`/subs/search/${name}`);
-      setSubs(data);
-    } catch (error) {
-      console.log(error);
-    }
+    setTimer(
+      setTimeout(async () => {
+        try {
+          const { data } = await Axios.get(`/subs/search/${name}`);
+          setSubs(data);
+        } catch (error) {
+          console.log(error);
+        }
+      }, 500),
+    );
   };
 
   return (
