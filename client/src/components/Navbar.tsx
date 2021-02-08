@@ -25,7 +25,12 @@ const Navbar: React.FC = () => {
       .catch((err) => console.log(err));
   };
 
-  useEffect(() => {}, [name]);
+  useEffect(() => {
+    if (name.trim() === '') {
+      setSubs([]);
+      return;
+    }
+  }, [name]);
 
   const searchSubs = async (subName: string) => {
     setName(subName);
