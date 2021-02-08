@@ -9,7 +9,7 @@ import { Sub } from '../types';
 
 const Navbar: React.FC = () => {
   const [name, setName] = useState('');
-  const [subs, setSubs] = useState([]);
+  const [subs, setSubs] = useState<Sub[]>([]);
 
   const { authenticated, loading } = useAuthState();
   const dispatch = useAuthDispatch();
