@@ -74,6 +74,7 @@ const Navbar: React.FC = () => {
               />
               <div className='text-sm'>
                 <p className='font-medium'>{sub.name}</p>
+                <p className='text-gray-600'>{sub.title}</p>
               </div>
             </div>
           ))}
