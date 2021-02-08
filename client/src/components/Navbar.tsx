@@ -63,7 +63,12 @@ const Navbar: React.FC = () => {
           {subs?.map((sub) => (
             <div className='flex items-center px-4 py-3 cursor-pointer hover:bg-gray-200'>
               <div className='mr-4 overflow-hidden rounded-full'>
-                <Image />
+                <Image
+                  src={sub.imageUrl}
+                  alt='Sub'
+                  height={(8 * 16) / 4}
+                  width={(8 * 16) / 4}
+                />
               </div>
             </div>
           ))}
