@@ -55,6 +55,7 @@ const Navbar: React.FC = () => {
           value={name}
           onChange={(e) => searchSubs(e.target.value)}
         />
+        <div className='absolute left-0 right-0'></div>
       </div>
       <div className='flex'>
         {!loading &&
