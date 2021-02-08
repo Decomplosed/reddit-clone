@@ -58,7 +58,11 @@ const Navbar: React.FC = () => {
         <div
           className='absolute left-0 right-0 bg-white'
           style={{ top: '100%' }}
-        ></div>
+        >
+          {subs?.map((sub) => (
+            <div className='flex items-center px-4 py-3 cursor-pointer hover:bg-gray-200'></div>
+          ))}
+        </div>
       </div>
       <div className='flex'>
         {!loading &&
