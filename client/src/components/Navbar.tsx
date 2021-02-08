@@ -5,6 +5,7 @@ import Axios from 'axios';
 import { useAuthState, useAuthDispatch } from '../context/auth';
 
 import RedditLogo from '../images/reddit.svg';
+import { Sub } from '../types';
 
 const Navbar: React.FC = () => {
   const [name, setName] = useState('');
