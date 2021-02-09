@@ -9,7 +9,7 @@ import { Sub } from '../types';
 
 export default function Home() {
   const { data: posts } = useSWR('/posts');
-  const { data: topSubs } = useSWR('/misc/top-subs');
+  const { data: topSubs } = useSWR<Sub[]>('/misc/top-subs');
 
   return (
     <Fragment>
