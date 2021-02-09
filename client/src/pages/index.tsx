@@ -8,7 +8,7 @@ import PostCard from '../components/PostCard';
 import { Sub, Post } from '../types';
 
 export default function Home() {
-  const { data: posts } = useSWR('/posts');
+  const { data: posts } = useSWR<Post[]>('/posts');
   const { data: topSubs } = useSWR<Sub[]>('/misc/top-subs');
 
   return (
