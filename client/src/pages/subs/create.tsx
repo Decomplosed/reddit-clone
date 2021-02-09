@@ -9,7 +9,7 @@ export default function Create() {
   const [error, setError] = useState<Partial<any>>({});
 
   return (
-    <div>
+    <div className='flex bg-white'>
       <Head>
         <title>Create a Community</title>
       </Head>
