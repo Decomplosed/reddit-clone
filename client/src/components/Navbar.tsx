@@ -53,6 +53,7 @@ const Navbar: React.FC = () => {
 
   const goToSub = (subName: string) => {
     router.push(`/r/${subName}`);
+    setName('');
   };
 
   return (
