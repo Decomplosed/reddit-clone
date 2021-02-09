@@ -61,7 +61,9 @@ export default function Home() {
             {authenticated && (
               <div className='p-4 border-t-2'>
                 <Link href='/subs/create'>
-                  <a className='w-full px-2 py-1 blue button'></a>
+                  <a className='w-full px-2 py-1 blue button'>
+                    Create Community
+                  </a>
                 </Link>
               </div>
             )}
