@@ -13,6 +13,10 @@ export default function Create() {
       <Head>
         <title>Create a Community</title>
       </Head>
+      <div
+        className='h-screen bg-center bg-cover w-36'
+        style={{ backgroundImage: "url('/images/bricks.jpg')" }}
+      />
     </div>
   );
 }
