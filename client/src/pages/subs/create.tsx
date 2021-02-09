@@ -26,6 +26,9 @@ export default function Create() {
           <form>
             <div className='my-6'>
               <p className='font-medium'>Name</p>
+              <p className='mb-2 text-xs text-gray-500'>
+                Community names including capitalization cannot be changed.
+              </p>
             </div>
           </form>
         </div>
