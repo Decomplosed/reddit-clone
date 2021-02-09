@@ -6,6 +6,7 @@ import Link from 'next/link';
 
 import PostCard from '../components/PostCard';
 import { Sub, Post } from '../types';
+import { useAuthState } from '../context/auth';
 
 export default function Home() {
   const { data: posts } = useSWR<Post[]>('/posts');
