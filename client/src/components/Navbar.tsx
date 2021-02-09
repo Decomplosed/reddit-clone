@@ -51,7 +51,9 @@ const Navbar: React.FC = () => {
     );
   };
 
-  const goToSub = (subName: string) => {};
+  const goToSub = (subName: string) => {
+    router.push(`/r/${subName}`);
+  };
 
   return (
     <div className='fixed inset-x-0 top-0 z-10 flex items-center justify-center h-12 px-5 bg-white'>
