@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import PostCard from '../components/PostCard';
-import { Sub } from '../types';
+import { Sub, Post } from '../types';
 
 export default function Home() {
   const { data: posts } = useSWR('/posts');
