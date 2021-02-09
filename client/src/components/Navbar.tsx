@@ -17,6 +17,8 @@ const Navbar: React.FC = () => {
   const { authenticated, loading } = useAuthState();
   const dispatch = useAuthDispatch();
 
+  const router = useRouter();
+
   const logout = () => {
     Axios.get('/auth/logout')
       .then(() => {
