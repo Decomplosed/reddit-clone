@@ -30,6 +30,13 @@ export default function Create() {
               <p className='mb-2 text-xs text-gray-500'>
                 Community names including capitalization cannot be changed.
               </p>
+              <input
+                type='text'
+                className={classNames(
+                  'w-full p-3 border border-gray-200 rounded hover:border-gray-500',
+                  { 'border-red-600': errors.name },
+                )}
+              />
             </div>
           </form>
         </div>
