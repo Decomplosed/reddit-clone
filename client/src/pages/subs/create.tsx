@@ -9,7 +9,7 @@ export default function Create() {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
 
-  const [error, setError] = useState<Partial<any>>({});
+  const [errors, setErrors] = useState<Partial<any>>({});
 
   return (
     <div className='flex bg-white'>
