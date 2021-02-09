@@ -22,6 +22,7 @@ export default function Create() {
       <div className='flex flex-col justify-center pl-6'>
         <div className='w-98'>
           <h1 className='mb-2 text-lg font-medium'>Create a Community</h1>
+          <hr />
         </div>
       </div>
     </div>
