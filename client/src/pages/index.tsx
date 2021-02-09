@@ -58,7 +58,7 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <div className='p-4 border-t-2'></div>
+            {authenticated && <div className='p-4 border-t-2'></div>}
           </div>
         </div>
       </div>
