@@ -58,7 +58,11 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            {authenticated && <div className='p-4 border-t-2'></div>}
+            {authenticated && (
+              <div className='p-4 border-t-2'>
+                <Link href='/subs/create'></Link>
+              </div>
+            )}
           </div>
         </div>
       </div>
