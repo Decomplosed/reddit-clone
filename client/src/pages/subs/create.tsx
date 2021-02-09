@@ -5,5 +5,7 @@ export default function Create() {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
 
+  const [error, setError] = useState<Partial<any>>({});
+
   return <div></div>;
 }
