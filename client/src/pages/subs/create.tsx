@@ -10,7 +10,9 @@ export default function Create() {
 
   return (
     <div>
-      <Head></Head>
+      <Head>
+        <title>Create a Community</title>
+      </Head>
     </div>
   );
 }
