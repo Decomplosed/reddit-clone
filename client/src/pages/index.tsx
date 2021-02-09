@@ -12,6 +12,8 @@ export default function Home() {
   const { data: posts } = useSWR<Post[]>('/posts');
   const { data: topSubs } = useSWR<Sub[]>('/misc/top-subs');
 
+  const { authenticated } = useAuthState();
+
   return (
     <Fragment>
       <Head>
