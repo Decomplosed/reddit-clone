@@ -17,6 +17,7 @@ export default function Create() {
         className='h-screen bg-center bg-cover w-36'
         style={{ backgroundImage: "url('/images/bricks.jpg')" }}
       />
+      <div className='flex flex-col justify-center pl-6'></div>
     </div>
   );
 }
