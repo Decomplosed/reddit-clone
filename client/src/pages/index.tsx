@@ -60,7 +60,9 @@ export default function Home() {
             </div>
             {authenticated && (
               <div className='p-4 border-t-2'>
-                <Link href='/subs/create'></Link>
+                <Link href='/subs/create'>
+                  <a className='w-full px-2 py-1 blue button'></a>
+                </Link>
               </div>
             )}
           </div>
