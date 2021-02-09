@@ -8,5 +8,9 @@ export default function Create() {
 
   const [error, setError] = useState<Partial<any>>({});
 
-  return <div></div>;
+  return (
+    <div>
+      <Head></Head>
+    </div>
+  );
 }
