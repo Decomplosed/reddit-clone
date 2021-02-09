@@ -7,6 +7,7 @@ import { useAuthState, useAuthDispatch } from '../context/auth';
 
 import RedditLogo from '../images/reddit.svg';
 import { Sub } from '../types';
+import { useRouter } from 'next/router';
 
 const Navbar: React.FC = () => {
   const [name, setName] = useState('');
