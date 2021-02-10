@@ -11,6 +11,8 @@ export default function Create() {
 
   const [errors, setErrors] = useState<Partial<any>>({});
 
+  const submitForm = () => {};
+
   return (
     <div className='flex bg-white'>
       <Head>
