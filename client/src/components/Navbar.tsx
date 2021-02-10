@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
             <RedditLogo className='w-8 h-8 mr-2' />
           </a>
         </Link>
-        <span className='text-2xl font-semibold'>
+        <span className='hidden text-2xl font-semibold'>
           <Link href='/'>readit</Link>
         </span>
       </div>
