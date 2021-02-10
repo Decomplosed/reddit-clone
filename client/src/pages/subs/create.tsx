@@ -24,7 +24,7 @@ export default function Create() {
         <div className='w-98'>
           <h1 className='mb-2 text-lg font-medium'>Create a Community</h1>
           <hr />
-          <form>
+          <form onSubmit={submitForm}>
             <div className='my-6'>
               <p className='font-medium'>Name</p>
               <p className='mb-2 text-xs text-gray-500'>
