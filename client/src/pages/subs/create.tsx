@@ -56,6 +56,7 @@ export default function Create() {
               />
               <small className='font-medium text-red-600'>{errors.title}</small>
             </div>
+            <div className='my-6'></div>
           </form>
         </div>
       </div>
