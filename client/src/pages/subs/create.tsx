@@ -54,6 +54,7 @@ export default function Create() {
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
               />
+              <small className='font-medium text-red-600'>{errors.title}</small>
             </div>
           </form>
         </div>
