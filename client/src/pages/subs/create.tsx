@@ -73,7 +73,9 @@ export default function Create() {
                 {errors.description}
               </small>
             </div>
-            <div className='flex justify-end'></div>
+            <div className='flex justify-end'>
+              <button className='px-4 py-1 text-sm font-semibold capitalize blue button'></button>
+            </div>
           </form>
         </div>
       </div>
