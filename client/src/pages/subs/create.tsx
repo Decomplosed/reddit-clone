@@ -52,6 +52,7 @@ export default function Create() {
                   { 'border-red-600': errors.name },
                 )}
                 value={title}
+                onChange={(e) => setTitle(e.target.value)}
               />
             </div>
           </form>
