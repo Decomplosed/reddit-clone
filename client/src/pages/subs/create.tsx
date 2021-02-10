@@ -74,7 +74,9 @@ export default function Create() {
               </small>
             </div>
             <div className='flex justify-end'>
-              <button className='px-4 py-1 text-sm font-semibold capitalize blue button'></button>
+              <button className='px-4 py-1 text-sm font-semibold capitalize blue button'>
+                Create Community
+              </button>
             </div>
           </form>
         </div>
