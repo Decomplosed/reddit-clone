@@ -37,7 +37,7 @@ export default function Create() {
                   { 'border-red-600': errors.name },
                 )}
               />
-              <small className='font-medium text-red-600'></small>
+              <small className='font-medium text-red-600'>{errors.name}</small>
             </div>
           </form>
         </div>
