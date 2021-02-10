@@ -19,7 +19,8 @@ export default function Create() {
 
       router.push(`/r/${res.data.name}`);
     } catch (error) {
-      console.log(err);
+      console.log(error);
+      setErrors(error.response.data);
     }
   };
 
