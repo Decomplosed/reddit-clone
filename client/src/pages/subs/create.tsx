@@ -69,6 +69,9 @@ export default function Create() {
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
               />
+              <small className='font-medium text-red-600'>
+                {errors.description}
+              </small>
             </div>
           </form>
         </div>
