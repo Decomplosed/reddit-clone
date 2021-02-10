@@ -58,6 +58,9 @@ export default function Create() {
             </div>
             <div className='my-6'>
               <p className='font-medium'>Description</p>
+              <p className='mb-2 text-xs text-gray-500'>
+                This is how new members come to understand your community.
+              </p>
             </div>
           </form>
         </div>
