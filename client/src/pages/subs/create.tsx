@@ -12,6 +12,8 @@ export default function Create() {
 
   const [errors, setErrors] = useState<Partial<any>>({});
 
+  const router = useRouter();
+
   const submitForm = async (event: FormEvent) => {
     event.preventDefault();
 
