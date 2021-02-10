@@ -61,6 +61,12 @@ export default function Create() {
               <p className='mb-2 text-xs text-gray-500'>
                 This is how new members come to understand your community.
               </p>
+              <textarea
+                className={classNames(
+                  'w-full p-3 border border-gray-200 rounded hover:border-gray-500',
+                  { 'border-red-600': errors.description },
+                )}
+              />
             </div>
           </form>
         </div>
