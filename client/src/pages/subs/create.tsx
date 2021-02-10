@@ -41,6 +41,10 @@ export default function Create() {
             </div>
             <div className='my-6'>
               <p className='font-medium'>Title</p>
+              <p className='mb-2 text-xs text-gray-500'>
+                Community title represent the topic an you change it at any
+                time.
+              </p>
             </div>
           </form>
         </div>
