@@ -15,6 +15,7 @@ export default function Create() {
     event.preventDefault();
 
     try {
+      const res = await Axios.post('/subs', { name, title, description });
     } catch (error) {}
   };
 
