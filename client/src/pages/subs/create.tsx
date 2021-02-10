@@ -2,6 +2,7 @@ import { GetServerSideProps } from 'next';
 import Axios from 'axios';
 import Head from 'next/head';
 import { FormEvent, useState } from 'react';
+import { useRouter } from 'next/router';
 import classNames from 'classnames';
 
 export default function Create() {
