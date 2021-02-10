@@ -45,6 +45,13 @@ export default function Create() {
                 Community title represent the topic an you change it at any
                 time.
               </p>
+              <input
+                type='text'
+                className={classNames(
+                  'w-full p-3 border border-gray-200 rounded hover:border-gray-500',
+                  { 'border-red-600': errors.name },
+                )}
+              />
             </div>
           </form>
         </div>
