@@ -1,7 +1,7 @@
 import { GetServerSideProps } from 'next';
 import Axios from 'axios';
 import Head from 'next/head';
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import classNames from 'classnames';
 
 export default function Create() {
