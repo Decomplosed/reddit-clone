@@ -68,6 +68,7 @@ const Navbar: React.FC = () => {
           <Link href='/'>readit</Link>
         </span>
       </div>
+      <div className='px-4'></div>
       <div className='relative flex items-center mx-auto bg-gray-100 border rounded hover:border-blue-500 hover:bg-white'>
         <i className='pl-4 pr-3 text-gray-500 fas fa-search' />
         <input
