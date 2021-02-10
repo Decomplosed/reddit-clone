@@ -67,6 +67,7 @@ export default function Create() {
                   { 'border-red-600': errors.description },
                 )}
                 value={description}
+                onChange={(e) => setDescription(e.target.value)}
               />
             </div>
           </form>
