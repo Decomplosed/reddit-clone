@@ -51,6 +51,7 @@ export default function Create() {
                   'w-full p-3 border border-gray-200 rounded hover:border-gray-500',
                   { 'border-red-600': errors.name },
                 )}
+                value={title}
               />
             </div>
           </form>
