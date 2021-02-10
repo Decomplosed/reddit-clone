@@ -13,6 +13,9 @@ export default function Create() {
 
   const submitForm = async (event: FormEvent) => {
     event.preventDefault();
+
+    try {
+    } catch (error) {}
   };
 
   return (
