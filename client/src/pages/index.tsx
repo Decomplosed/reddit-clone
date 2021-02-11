@@ -22,7 +22,7 @@ export default function Home() {
     size: page,
     setSize: setPage,
     isValidating,
-  } = useSWRInfinite<Post[]>();
+  } = useSWRInfinite<Post[]>((index) => `/posts?page=${index}`);
 
   useEffect(() => {
     if (!posts || posts.length === 0) return;
