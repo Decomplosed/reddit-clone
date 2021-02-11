@@ -25,6 +25,8 @@ export default function Home() {
     }
   }, [posts]);
 
+  const observeElement = () => {};
+
   return (
     <Fragment>
       <Head>
