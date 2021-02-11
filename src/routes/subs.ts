@@ -24,7 +24,7 @@ const createSub = async (req: Request, res: Response) => {
 
     const sub = await getRepository(Sub)
       .createQueryBuilder('sub')
-      .where('lower(sub.name = :name)', { name: name.toLowerCase() })
+      .where('lower(sub.name) = :name', { name: name.toLowerCase() })
       .getOne();
 
     if (sub) errors.name = 'Sub exists already';
