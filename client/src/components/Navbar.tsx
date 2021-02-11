@@ -109,7 +109,7 @@ const Navbar: React.FC = () => {
         {!loading &&
           (authenticated ? (
             <button
-              className='w-32 py-1 mr-4 leading-5 hollow blue button'
+              className='w-20 py-1 mr-4 leading-5 lg:w-32 hollow blue button'
               onClick={logout}
             >
               Logout
