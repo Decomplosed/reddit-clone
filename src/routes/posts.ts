@@ -37,6 +37,7 @@ const getPosts = async (req: Request, res: Response) => {
     const posts = await Post.find({
       order: { createdAt: 'DESC' },
       relations: ['comments', 'votes', 'sub'],
+      skip: currentPage * postsPerPage,
     });
 
     if (res.locals.user) {
