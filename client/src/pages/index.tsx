@@ -27,6 +27,8 @@ export default function Home() {
 
   const observeElement = (element: HTMLElement) => {
     if (!element) return;
+
+    const observer = new IntersectionObserver((entries) => {});
   };
 
   return (
