@@ -15,7 +15,9 @@ export default function Home() {
 
   const { authenticated } = useAuthState();
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    if (!posts || posts.length === 0) return;
+  }, []);
 
   return (
     <Fragment>
