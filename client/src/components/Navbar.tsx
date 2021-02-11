@@ -117,12 +117,12 @@ const Navbar: React.FC = () => {
           ) : (
             <Fragment>
               <Link href='/login'>
-                <a className='w-32 py-1 mr-4 leading-5 hollow blue button'>
+                <a className='py-1 mr-4 leading-5 lg:w-32 hollow blue button'>
                   Log In
                 </a>
               </Link>
               <Link href='/register'>
-                <a className='w-32 py-1 leading-5 blue button'>Register</a>
+                <a className='py-1 leading-5 lg:w-32 blue button'>Register</a>
               </Link>
             </Fragment>
           ))}
