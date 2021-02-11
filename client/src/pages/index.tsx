@@ -15,6 +15,8 @@ export default function Home() {
 
   const { authenticated } = useAuthState();
 
+  useEffect(() => {}, []);
+
   return (
     <Fragment>
       <Head>
