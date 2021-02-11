@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { Fragment, useState, useEffect } from 'react';
-import useSWR from 'swr';
+import useSWR, { useSWRInfinite } from 'swr';
 import Image from 'next/image';
 import Link from 'next/link';
 
