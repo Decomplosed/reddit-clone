@@ -31,7 +31,7 @@ const createPost = async (req: Request, res: Response) => {
 
 const getPosts = async (req: Request, res: Response) => {
   const currentPage: number = (req.query.page || 0) as number;
-  const postsPerPage: number = (req.query.page || 0) as number;
+  const postsPerPage: number = (req.query.page || 8) as number;
 
   try {
     const posts = await Post.find({
