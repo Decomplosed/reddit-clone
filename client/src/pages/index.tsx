@@ -22,7 +22,7 @@ export default function Home() {
 
     if (id !== observedPost) {
       setObservedPost(id);
-      observeElement();
+      observeElement(document.getElementById(id));
     }
   }, [posts]);
 
