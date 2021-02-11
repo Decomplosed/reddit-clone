@@ -23,7 +23,7 @@ export default function Home() {
     if (id !== observedPost) {
       setObservedPost(id);
     }
-  }, []);
+  }, [posts]);
 
   return (
     <Fragment>
