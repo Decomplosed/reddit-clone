@@ -17,6 +17,8 @@ export default function Home() {
 
   useEffect(() => {
     if (!posts || posts.length === 0) return;
+
+    const id = posts[posts.length - 1].identifier;
   }, []);
 
   return (
