@@ -31,8 +31,11 @@ export default function Home() {
     const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting === true) {
         console.log('Reached bottom of post');
+        observer.unobserve(element);
       }
     });
+
+    
   };
 
   return (
