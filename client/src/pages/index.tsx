@@ -15,7 +15,14 @@ export default function Home() {
 
   const { authenticated } = useAuthState();
 
-  const {data, error, mutate, size: page, setSize: setPage, isValidating} = useSWRInfinite()
+  const {
+    data,
+    error,
+    mutate,
+    size: page,
+    setSize: setPage,
+    isValidating,
+  } = useSWRInfinite<Post[]>();
 
   useEffect(() => {
     if (!posts || posts.length === 0) return;
