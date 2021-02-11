@@ -75,6 +75,8 @@ const Navbar: React.FC = () => {
             type='text'
             className='py-1 pr-3 bg-transparent rounded focus:outline-none'
             placeholder='Search'
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
           <div
             className='absolute left-0 right-0 bg-white'
