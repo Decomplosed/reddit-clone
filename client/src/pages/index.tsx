@@ -19,6 +19,10 @@ export default function Home() {
     if (!posts || posts.length === 0) return;
 
     const id = posts[posts.length - 1].identifier;
+
+    if (id !== observedPost) {
+      setObservedPost(id);
+    }
   }, []);
 
   return (
