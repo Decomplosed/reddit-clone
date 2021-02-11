@@ -52,6 +52,8 @@ export default function Create() {
                   'w-full p-3 border border-gray-200 rounded hover:border-gray-500',
                   { 'border-red-600': errors.name },
                 )}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
               <small className='font-medium text-red-600'>{errors.name}</small>
             </div>
