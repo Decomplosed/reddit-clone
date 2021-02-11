@@ -22,6 +22,7 @@ export default function Home() {
 
     if (id !== observedPost) {
       setObservedPost(id);
+      observeElement();
     }
   }, [posts]);
 
