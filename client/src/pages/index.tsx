@@ -25,7 +25,9 @@ export default function Home() {
     }
   }, [posts]);
 
-  const observeElement = (element: HTMLElement) => {};
+  const observeElement = (element: HTMLElement) => {
+    if (!element) return;
+  };
 
   return (
     <Fragment>
