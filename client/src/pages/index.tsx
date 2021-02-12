@@ -24,6 +24,8 @@ export default function Home() {
     isValidating,
   } = useSWRInfinite<Post[]>((index) => `/posts?page=${index}`);
 
+  const posts = data ? [].concat(...data) : []
+
   useEffect(() => {
     if (!posts || posts.length === 0) return;
 
