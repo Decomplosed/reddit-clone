@@ -12,6 +12,7 @@ import { useRouter } from 'next/router';
 
 interface PostCardProps {
   post: Post;
+  revalidate?: Function;
 }
 
 dayjs.extend(relativeTime);
