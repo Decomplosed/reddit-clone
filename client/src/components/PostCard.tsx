@@ -31,6 +31,7 @@ export default function PostCard({
     url,
     username,
   },
+  revalidate,
 }: PostCardProps) {
   const { authenticated } = useAuthState();
 
