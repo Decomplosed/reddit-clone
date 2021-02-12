@@ -43,7 +43,7 @@ export default function PostCard({
     if (value === userVote) value = 0;
 
     try {
-      const res = Axios.post('/misc/vote', {
+      const res = await Axios.post('/misc/vote', {
         identifier,
         slug,
         value,
