@@ -59,7 +59,7 @@ export default function Home() {
       </Head>
       <div className='container flex pt-4'>
         <div className='w-full px-4 md:w-160 md:p-0'>
-          {isValidating && posts.length > 0 && (
+          {isInitialLoading && (
             <p className='text-lg text-center'>Loading...</p>
           )}
           {posts?.map((post) => (
