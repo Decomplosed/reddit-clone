@@ -40,6 +40,8 @@ export default function PostCard({
   const vote = async (value: number) => {
     if (!authenticated) router.push('/login');
 
+    if (value === userVote) value = 0;
+
     try {
       const res = Axios.post('/misc/vote', {
         identifier,
