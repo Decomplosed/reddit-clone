@@ -30,6 +30,7 @@ export default function PostCard({
     commentCount,
     url,
     username,
+    sub,
   },
   revalidate,
 }: PostCardProps) {
