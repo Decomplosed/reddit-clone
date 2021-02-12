@@ -104,10 +104,10 @@ export default function PostCard({
                   /r/{subName}
                 </a>
               </Link>
+              <span className='mx-1'>•</span>
             </>
           )}
           <p className='text-xs text-gray-500'>
-            <span className='mx-1'>•</span>
             <Link href={`/u/${username}`}>
               <a className='mx-1 hover:underline'>/u/{username}</a>
             </Link>
