@@ -23,7 +23,6 @@ export default function Home() {
     revalidate,
   } = useSWRInfinite<Post[]>((index) => `/posts?page=${index}`);
 
-  const isInitialLoading = !data && !error;
   const posts: Post[] = data ? [].concat(...data) : [];
 
   useEffect(() => {
