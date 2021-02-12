@@ -17,14 +17,14 @@ export default function Home() {
   const {
     data,
     error,
-    mutate,
     size: page,
     setSize: setPage,
     isValidating,
+    revalidate,
   } = useSWRInfinite<Post[]>((index) => `/posts?page=${index}`);
 
+  const isInitialLoading = !data && !error;
   const posts: Post[] = data ? [].concat(...data) : [];
-  const isLoadingInitialState = !data && !error;
 
   useEffect(() => {
     if (!posts || posts.length === 0) return;
@@ -39,7 +39,6 @@ export default function Home() {
 
   const observeElement = (element: HTMLElement) => {
     if (!element) return;
-
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting === true) {
@@ -50,7 +49,6 @@ export default function Home() {
       },
       { threshold: 1 },
     );
-
     observer.observe(element);
   };
 
