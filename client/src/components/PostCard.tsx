@@ -46,6 +46,8 @@ export default function PostCard({
         slug,
         value,
       });
+
+      if (revalidate) revalidate()
     } catch (error) {
       console.log(error);
     }
