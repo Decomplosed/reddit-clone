@@ -10,7 +10,6 @@ import { useAuthState } from '../context/auth';
 
 export default function Home() {
   const [observedPost, setObservedPost] = useState('');
-  const { data: posts } = useSWR<Post[]>('/posts');
   const { data: topSubs } = useSWR<Sub[]>('/misc/top-subs');
 
   const { authenticated } = useAuthState();
