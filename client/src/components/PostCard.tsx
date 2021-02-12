@@ -8,6 +8,7 @@ import ActionButton from './ActionButton';
 
 import { Post } from '../types';
 import { useAuthState } from '../context/auth';
+import { useRouter } from 'next/router';
 
 interface PostCardProps {
   post: Post;
