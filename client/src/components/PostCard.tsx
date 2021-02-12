@@ -7,6 +7,7 @@ import classNames from 'classnames';
 import ActionButton from './ActionButton';
 
 import { Post } from '../types';
+import { useAuthState } from '../context/auth';
 
 interface PostCardProps {
   post: Post;
