@@ -24,6 +24,7 @@ export default function Home() {
   } = useSWRInfinite<Post[]>((index) => `/posts?page=${index}`);
 
   const posts: Post[] = data ? [].concat(...data) : [];
+  const isLoadingInitialState = !data && !error;
 
   useEffect(() => {
     if (!posts || posts.length === 0) return;
