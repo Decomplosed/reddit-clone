@@ -69,6 +69,9 @@ export default function Home() {
               revalidate={revalidate}
             />
           ))}
+          {isValidating && posts.length > 0 && (
+            <p className='text-lg text-center'>Loading more...</p>
+          )}
         </div>
         <div className='hidden ml-6 md:block w-80'>
           <div className='bg-white rounded'>
