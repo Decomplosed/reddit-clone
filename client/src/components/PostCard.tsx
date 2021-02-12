@@ -36,6 +36,8 @@ export default function PostCard({
   const router = useRouter();
 
   const vote = async (value: number) => {
+    if (!authenticated) router.push('/login');
+
     try {
       const res = Axios.post('/misc/vote', {
         identifier,
