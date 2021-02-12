@@ -30,6 +30,7 @@ export default function PostCard({
     username,
   },
 }: PostCardProps) {
+  const { authenticated } = useAuthState();
   const vote = async (value: number) => {
     try {
       const res = Axios.post('/misc/vote', {
