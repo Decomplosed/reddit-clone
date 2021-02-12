@@ -62,7 +62,11 @@ export default function Home() {
             <p className='text-lg text-center'>Loading...</p>
           )}
           {posts?.map((post) => (
-            <PostCard post={post} key={post.identifier} />
+            <PostCard
+              post={post}
+              key={post.identifier}
+              revalidate={revalidate}
+            />
           ))}
         </div>
         <div className='hidden ml-6 md:block w-80'>
