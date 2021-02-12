@@ -49,7 +49,7 @@ export default function PostCard({
         value,
       });
 
-      if (revalidate) revalidate()
+      if (revalidate) revalidate();
     } catch (error) {
       console.log(error);
     }
