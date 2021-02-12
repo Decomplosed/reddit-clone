@@ -58,7 +58,7 @@ export default function Home() {
       </Head>
       <div className='container flex pt-4'>
         <div className='w-full px-4 md:w-160 md:p-0'>
-          {isValidating && (
+          {isValidating && posts.length > 0 && (
             <p className='text-lg text-center'>No posts submitted yet</p>
           )}
           {posts?.map((post) => (
