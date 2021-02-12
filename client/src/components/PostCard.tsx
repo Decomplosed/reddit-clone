@@ -91,7 +91,7 @@ export default function PostCard({
         <div className='flex items-center'>
           <Link href={`r/${subName}`}>
             <img
-              src='https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y'
+              src={sub.imageUrl}
               className='w-6 h-6 mr-1 rounded-full cursor-pointer'
             />
           </Link>
