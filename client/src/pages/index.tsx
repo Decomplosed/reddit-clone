@@ -46,7 +46,6 @@ export default function Home() {
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting === true) {
-          console.log('Reached bottom of post');
           setPage(page + 1);
           observer.unobserve(element);
         }
