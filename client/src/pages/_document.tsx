@@ -20,6 +20,7 @@ class MyDocument extends Document {
           <meta property='og:site_name' content='Readit' />
           <meta property='twitter:card' content='summary' />
           <meta property='og:type' content='website' />
+          <meta property='og:iamge' content={} />
           <link rel='icon' type='image/svg+xml' href='/reddit.svg' />
           <link rel='preconnect' href='https://fonts.gstatic.com' />
           <link
