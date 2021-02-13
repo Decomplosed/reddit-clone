@@ -69,6 +69,11 @@ export default function SubPage() {
     <div>
       <Head>
         <title>{sub?.title}</title>
+        <meta name='description' content={description} />
+        <meta property='og:description' content={description} />
+        <meta property='twitter:description' content={description} />
+        <meta property='og:title' content={post?.title} />
+        <meta property='twitter:title' content={post?.title} />
       </Head>
       {sub && (
         <Fragment>
