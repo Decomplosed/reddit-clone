@@ -13,6 +13,7 @@ import Sidebar from '../../components/Sidebar';
 
 export default function SubPage() {
   const [ownSub, setOwnSub] = useState(false);
+  const [description, setDescription] = useState('');
 
   const { authenticated, user } = useAuthState();
 
