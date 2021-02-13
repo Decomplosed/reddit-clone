@@ -38,6 +38,8 @@ export default function PostPage() {
 
   useEffect(() => {
     if (!post) return;
+
+    let desc = post.body || post.title;
   }, [post]);
 
   const vote = async (value: number, comment?: Comment) => {
