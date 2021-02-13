@@ -60,7 +60,7 @@ export default function Home() {
       <Head>
         <title>Readit</title>
         <meta name='description' content={description} />
-        <meta property='og:title' content={description} />
+        <meta property='og:description' content={description} />
       </Head>
       <div className='container flex pt-4'>
         <div className='w-full px-4 md:w-160 md:p-0'>
