@@ -24,6 +24,10 @@ class MyDocument extends Document {
             property='og:iamge'
             content={`${process.env.NEXT_PUBLIC_CLIENT_BASE_URL}/reddit.svg`}
           />
+          <meta
+            property='twitter:iamge'
+            content={`${process.env.NEXT_PUBLIC_CLIENT_BASE_URL}/reddit.svg`}
+          />
           <link rel='icon' type='image/svg+xml' href='/reddit.svg' />
           <link rel='preconnect' href='https://fonts.gstatic.com' />
           <link
