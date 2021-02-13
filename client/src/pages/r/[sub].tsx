@@ -32,6 +32,7 @@ export default function SubPage() {
 
     let desc = sub.description || sub.title;
     desc = desc.substring(0, 158).concat('..');
+    setDescription(desc);
   }, [sub]);
 
   const openFileInput = (type: string) => {
