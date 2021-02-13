@@ -31,6 +31,7 @@ export default function SubPage() {
     setOwnSub(authenticated && user.username === sub.username);
 
     let desc = sub.description || sub.title;
+    desc = desc.substring(0, 158).concat('..');
   }, [sub]);
 
   const openFileInput = (type: string) => {
