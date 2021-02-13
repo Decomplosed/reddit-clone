@@ -73,8 +73,8 @@ export default function SubPage() {
         <meta name='description' content={description} />
         <meta property='og:description' content={description} />
         <meta property='twitter:description' content={description} />
-        <meta property='og:title' content={post?.title} />
-        <meta property='twitter:title' content={post?.title} />
+        <meta property='og:title' content={sub?.title} />
+        <meta property='twitter:title' content={sub?.title} />
       </Head>
       {sub && (
         <Fragment>
