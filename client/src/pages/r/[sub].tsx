@@ -29,6 +29,8 @@ export default function SubPage() {
   useEffect(() => {
     if (!sub) return;
     setOwnSub(authenticated && user.username === sub.username);
+
+    let desc = sub.description || sub.title;
   }, [sub]);
 
   const openFileInput = (type: string) => {
