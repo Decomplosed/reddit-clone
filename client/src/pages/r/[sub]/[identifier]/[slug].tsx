@@ -36,6 +36,8 @@ export default function PostPage() {
 
   if (error) router.push('/');
 
+  useEffect(() => {}, []);
+
   const vote = async (value: number, comment?: Comment) => {
     if (!authenticated) router.push('/login');
 
