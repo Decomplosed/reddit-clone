@@ -40,6 +40,7 @@ export default function PostPage() {
     if (!post) return;
 
     let desc = post.body || post.title;
+    desc = desc.substring(0, 158).concat('..');
   }, [post]);
 
   const vote = async (value: number, comment?: Comment) => {
