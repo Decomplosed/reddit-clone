@@ -91,8 +91,8 @@ export default function PostPage() {
         <meta name='description' content={description} />
         <meta property='og:description' content={description} />
         <meta property='twitter:description' content={description} />
-        <meta property='og:title' content={title} />
-        <meta property='twitter:title' content={title} />
+        <meta property='og:title' content={post?.title} />
+        <meta property='twitter:title' content={post?.title} />
       </Head>
       <Link href={`/r/${sub}`}>
         <a>
