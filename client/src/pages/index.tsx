@@ -59,7 +59,7 @@ export default function Home() {
   return (
     <Fragment>
       <Head>
-        <title>Readit</title>
+        <title>{title}</title>
         <meta name='description' content={description} />
         <meta property='og:description' content={description} />
         <meta property='twitter:description' content={description} />
