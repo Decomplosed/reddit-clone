@@ -63,6 +63,7 @@ export default function Home() {
         <meta property='og:description' content={description} />
         <meta property='twitter:description' content={description} />
         <meta property='og:title' content={title} />
+        <meta property='twitter:title' content={title} />
       </Head>
       <div className='container flex pt-4'>
         <div className='w-full px-4 md:w-160 md:p-0'>
