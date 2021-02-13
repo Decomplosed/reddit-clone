@@ -17,6 +17,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <title>Readit</title>
+          <meta property='og:site' content='Readit' />
           <link rel='icon' type='image/svg+xml' href='/reddit.svg' />
           <link rel='preconnect' href='https://fonts.gstatic.com' />
           <link
